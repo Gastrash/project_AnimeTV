@@ -1,0 +1,30 @@
+/* ancho + centrado */
+
+:root {
+    --container-modal-radius: 40px;
+}
+
+.section {}
+
+.container {
+    width: min(1400px, 90%);
+    margin-inline: auto;
+}
+
+.desactivar-container {
+    display: none;
+}
+
+/* debug outlines */
+
+.outlineRed {
+    outline: red solid 3px;
+}
+
+.outlineBlue {
+    outline: blue solid 3px;
+}
+
+.outlineYellow {
+    outline: yellow solid 3px;
+}

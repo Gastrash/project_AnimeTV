@@ -1,0 +1,5 @@
+/* hero */
+
+.hero {
+    background: var(--background-hero) no-repeat center center/cover;
+}
