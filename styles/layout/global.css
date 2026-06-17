@@ -2,4 +2,16 @@
 
 * {
     outline: red solid 3px;
+    margin: 0;
+    padding: 0;
+    border-sizing: border-box;
+}
+
+html {
+
+}
+
+main {
+    outline: red solid 3px;
+    width: 100%;
 }
