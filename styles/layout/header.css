@@ -1,7 +1,13 @@
 /* header */
 
-.section2 {
-    height: 50vh;
-    width: 90vh;
-    background: gray;
+.header {
+    background-color: var(--color-primary);
+
+    h3 {
+        color: var(--color-secondary);
+    }
+}
+
+.header_nav buttons{
+    color: var(--color-secondary);
 }

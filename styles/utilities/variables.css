@@ -1,5 +1,14 @@
 /* variables */
 
 :root {
-    --background-hero: url('../img/hero.jpg');
+    --background-hero: url('../../assets/image/img-01.jpeg');
+
+    --text-primary: #000000;
+    --text-secondary: #333333;
+    --text-muted: #666666;
+
+    --color-primary: #0b1326;
+    --color-secondary: #7C3AED;
+
+    --font-primary: montserrat, sans-serif;
 }

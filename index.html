@@ -5,8 +5,11 @@
         <meta charset="UTF-8" />
         <meta name="description" content="Mira tus series y peliculas favoritas en AnimeTV, contenido actualizado y de primera clase.">
         <link rel="stylesheet" href="styles/layout/global.css">
+        <link rel="stylesheet" href="styles/layout/header.css">
+        <link rel="stylesheet" href="styles/layout/hero.css">
         <link rel="stylesheet" href="styles/utilities/flex.css">
         <link rel="stylesheet" href="styles/utilities/container.css">
+        <link rel="stylesheet" href="styles/utilities/variables.css">
     </head>
     <body>
         
@@ -28,17 +31,26 @@
         </header>
         
         <main>
-            <section class="hero">
-                <div class="container">
-                    <div class="hero__info">
-                        <h1>Bienvenido a AnimeTV</h1>
-                        <p>Tu destino para disfrutar de las mejores series y películas de anime.</p>
+            <section>
+                <div class="container hero flex flex-column">
+                    <div class="hero__image">
+                        <img src="assets/image/img-01.jpeg" alt="Imagen de anime" />
                     </div>
-                    <div>
-                        <button id="btn-hero-start">Empezar</button>
-                        <button id="btn-hero-addList">Añadir a lista</button>
-                        <button id="btn-hero-favorite"></button>
-                        <button id="btn-hero-like"></button>
+                    <div class="hero__overlay">
+                        <div class="hero__secondary">
+                            <p>tendencias</p>
+                            <p>estrenos</p>
+                        </div>
+                        <div class="hero__info">
+                            <h1>Bienvenido a AnimeTV</h1>
+                            <p>Tu destino para disfrutar de las mejores series y películas de anime.</p>
+                        </div>
+                        <div class="hero__buttons">
+                            <button id="btn-hero-start">Empezar</button>
+                            <button id="btn-hero-addList">Añadir a lista</button>
+                            <button id="btn-hero-favorite"></button>
+                            <button id="btn-hero-like"></button>
+                        </div>
                     </div>
                 </div>
             </section>
