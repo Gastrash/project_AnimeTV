@@ -1,0 +1,6 @@
+/* buttons */
+
+.btn-primary {
+    background-color: var(--color-secondary);
+    border-radius: var(--radius-1);
+}

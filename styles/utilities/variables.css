@@ -3,12 +3,15 @@
 :root {
     --background-hero: url('../../assets/image/img-01.jpeg');
 
-    --text-primary: #000000;
+    --text-primary: #c0bebe;
     --text-secondary: #333333;
     --text-muted: #666666;
 
     --color-primary: #0b1326;
-    --color-secondary: #7C3AED;
+    --color-secondary: #9776cf;
 
     --font-primary: montserrat, sans-serif;
+
+    --radius-1: 20px;
+    --radius-2: 40px;
 }

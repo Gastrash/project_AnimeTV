@@ -2,7 +2,7 @@
 
 .header {
     background-color: var(--color-primary);
-
+    min-width: 100%;
     h3 {
         color: var(--color-secondary);
     }
