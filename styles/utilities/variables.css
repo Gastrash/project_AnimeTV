@@ -8,10 +8,15 @@
     --text-muted: #666666;
 
     --color-primary: #0b1326;
-    --color-secondary: #9776cf;
+    --color-secondary: #b89be8;
+    --color-terciary: #4d305f;
 
     --font-primary: montserrat, sans-serif;
 
-    --radius-1: 20px;
-    --radius-2: 40px;
+    --radius-one: 10px;
+    --radius-two: 40px;
+    
+    --font-xl: 20px;
+    
+    --font-bolt: 500;
 }
