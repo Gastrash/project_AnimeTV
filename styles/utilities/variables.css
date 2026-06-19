@@ -4,19 +4,22 @@
     --background-hero: url('../../assets/image/img-01.jpeg');
 
     --text-primary: #c0bebe;
-    --text-secondary: #333333;
+    --text-secondary: #b89be8;
     --text-muted: #666666;
 
     --color-primary: #0b1326;
     --color-secondary: #b89be8;
     --color-terciary: #4d305f;
+    --color-cuatro: #2DD4BF;
 
     --font-primary: montserrat, sans-serif;
 
     --radius-one: 10px;
     --radius-two: 40px;
     
+    --font-l: 15px;
+    --font-x: 18px;
     --font-xl: 20px;
     
-    --font-bolt: 500;
+    --font-bold: 600;
 }

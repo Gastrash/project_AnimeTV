@@ -1,17 +1,24 @@
 /* hero */
 
 .hero {
-    height: 50vh;
+    height: 90vh;
     width: 100%;
     position: relative;
+    background: linear-gradient(
+    to top,
+    #0b1326ff,
+    #0b132655,
+    transparent,
+    transparent
+    );
 }
 
 .hero__image {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    inset: 0;
     overflow: hidden;
     z-index: -1;
-    
+
     img {
         width: 100%;
         height: 100%;
@@ -21,15 +28,12 @@
 
 .hero__overlay {
     position: absolute;
-    inset: 0;
-    padding: 0 4rem 8vh 4rem;
+    max-width: 50%;
+    min-height: 70%;
+    bottom: 0;
+    left: 0;
+    padding: 0 4rem 15vh 4rem;
     color: var(--text-primary);
-    background: linear-gradient(
-    to top,
-    rgba(0,0,0,.95),
-    rgba(0,0,0,.1),
-    transparent
-    );
 
     .hero__secondary {
         gap: 1rem;
@@ -40,8 +44,9 @@
         margin-bottom: 4rem;
         
         p {
-            margin-top: 5px;
-            font-size: var(--font-xl);
+            margin-top: 10px;
+            font-size: var(--font-l);
+            max-width: 80%;
         }
     }
     

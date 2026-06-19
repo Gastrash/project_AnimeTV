@@ -1,7 +1,6 @@
 /* content */
 
-.section3 {
-    height: 50vh;
-    width: 90vh;
-    background: black;
+.content {
+    height: 20vh;
+    width: 100%;
 }

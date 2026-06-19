@@ -3,15 +3,23 @@
 .header {
     background-color: var(--color-primary);
     min-width: 100%;
+    position: fixed;
+    z-index: 999;
     h2 {
         color: var(--color-secondary);
     }
 }
 
-.header__nav {
-    gap: 2rem;
+.header__left {
+    gap: 3rem;
+    padding: 1rem 1rem;
 }
 
-.header__nav button{
-    color: var(--color-secondary);
+.header__right {
+    gap: 2rem;
+    padding: 1rem 1rem;
+}
+
+.header__nav {
+    gap: 1.5rem;
 }
