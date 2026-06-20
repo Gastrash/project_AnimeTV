@@ -1,6 +1,16 @@
 /* content */
 
 .content {
-    height: 20vh;
+    margin-top: 2rem;
+    min-height: 20vh;
     width: 100%;
+}
+
+.content__header {
+    width: 100%;
+}
+
+.content__list {}
+
+.content__item {
 }

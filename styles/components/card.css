@@ -1,0 +1,23 @@
+/* card.css */
+
+.card {
+    border-radius: var(--radius-one);
+    width: 200px;
+    height: 300px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card__overlay {
+    background: linear-gradient(
+        to top,
+        #0b1326ff,
+        #0b132644
+    );
+
+    color: var(--text-primary);
+    padding: 1rem;
+    margin-top: auto;
+}

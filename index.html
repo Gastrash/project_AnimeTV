@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="styles/layout/content.css">
         <link rel="stylesheet" href="styles/components/buttons.css">
         <link rel="stylesheet" href="styles/components/icons.css">
+        <link rel="stylesheet" href="styles/components/card.css">
         <link rel="stylesheet" href="styles/utilities/flex.css">
         <link rel="stylesheet" href="styles/utilities/container.css">
         <link rel="stylesheet" href="styles/utilities/variables.css">
@@ -70,12 +71,21 @@
             </section>
             
             <section class="content">
-                <div class="container flex flex-column">
-                    <header>
+                <div class="flex flex-column">
+                    <header class="content__header">
                         <h3>Novedades para ti</h3>
                     </header>
                     <footer>
-                    
+                        <ul>
+                            <li class="content__item">
+                                <article class="card flex flex-column" style="background-image: url(assets/image/img-01.jpeg);">
+                                    <div class="card__overlay">
+                                        <h3>Cyberpunk Odyssey</h3>
+                                        <p></p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
                     </footer>
                 </div>
             </section>
