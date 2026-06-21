@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="styles/layout/global.css">
         <link rel="stylesheet" href="styles/layout/header.css">
         <link rel="stylesheet" href="styles/layout/hero.css">
+        <link rel="stylesheet" href="styles/layout/ranking.css">
         <link rel="stylesheet" href="styles/layout/content.css">
         <link rel="stylesheet" href="styles/components/buttons.css">
         <link rel="stylesheet" href="styles/components/icons.css">
@@ -70,39 +71,52 @@
                 </div>
             </section>
             
-            <section class="content">
-                <div class="flex flex-column">
-                    <header class="content__header">
+            <section id="content">
+                <div class="content flex flex-column">
+                    <header class="content__header container">
                         <h3>Novedades para ti</h3>
                     </header>
                     <footer>
-                        <ul>
-                            <li class="content__item">
-                                <article class="card flex flex-column" style="background-image: url(assets/image/img-01.jpeg);">
-                                    <div class="card__overlay">
-                                        <h3>Cyberpunk Odyssey</h3>
-                                        <p></p>
-                                    </div>
-                                </article>
-                            </li>
-                        </ul>
+                        <div class="content__viewport container">
+                            <ul class="content__list flex flex-row justify-flex-start">
+                                <li class="content__item">
+                                    <article class="card flex flex-column" style="background-image: url(assets/image/img-01.jpeg);">
+                                        <div class="card__overlay">
+                                            <h4>Cyberpunk Odyssey</h4>
+                                            <p></p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
                     </footer>
                 </div>
             </section>
             
-            <section class="ranking">
-                <div class="container flex flex-column">
-                    <header>
-
+            <section id="ranking">
+                <div class="ranking flex flex-column">
+                    <header class="ranking__header container">
+                        <h3>Top 10 Estrenos</h3>
                     </header>
                     <footer>
-                    
+                        <div class="ranking__viewport container">
+                            <ul class="ranking__list flex flex-row justify-flex-start">
+                                <li class="ranking__item">
+                                    <article class="card flex flex-column" style="background-image: url(assets/image/img-01.jpeg);">
+                                        <div class="card__overlay">
+                                            <h4>Cyberpunk Odyssey</h4>
+                                            <p></p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
                     </footer>
                 </div>
             </section>
             
-            <section class="content">
-                <div class="container flex flex-column">
+            <section id="content">
+                <div class="content flex flex-column">
                     <header>
 
                     </header>

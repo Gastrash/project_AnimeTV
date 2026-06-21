@@ -1,16 +1,22 @@
 /* content */
 
 .content {
-    margin-top: 2rem;
-    min-height: 20vh;
     width: 100%;
+    gap: 2rem;
+    padding: 2rem 0;
 }
 
 .content__header {
     width: 100%;
 }
 
-.content__list {}
+.content__viewport {
+    margin: 0 auto;
+}
+
+.content__list {
+    gap: 1rem;
+}
 
 .content__item {
 }

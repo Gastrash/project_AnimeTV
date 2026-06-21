@@ -1,1 +1,23 @@
 /* ranking */
+
+.ranking {
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.ranking__header {
+    width: 100%;
+}
+
+.ranking__viewport {
+    margin: 0 auto;
+}
+
+.ranking__list {
+    gap: 1rem;
+}
+
+.ranking__item {
+    margin: 0;
+}
