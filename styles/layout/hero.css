@@ -58,6 +58,6 @@
     }
     
     .hero__buttons {
-        gap: 10px;
+        gap: 1rem;
     }
 }

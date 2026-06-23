@@ -5,6 +5,7 @@
     padding: 15px 25px;
     font-size: var(--font-xl);
     font-weight: var(--font-bold);
+    box-shadow: var(--shadow-one);
 }
 
 .btn-primary {

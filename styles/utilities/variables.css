@@ -22,4 +22,6 @@
     --font-xl: 20px;
     
     --font-bold: 600;
+
+    --shadow-one: 0 0 10px rgba(0, 0, 0, 0.5);
 }

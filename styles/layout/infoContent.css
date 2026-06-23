@@ -5,6 +5,7 @@
     overflow: hidden;
     position: relative;
     margin-block: 2rem;
+    padding: 4rem;
 }
 
 .infoContent::before {
@@ -26,29 +27,42 @@
     filter: blur(10px);
 }
 
-.header__infoContent, .details__infoContent, .buttons__infoContent {
-    padding: 30px;
-    width: 100%;
+.primary__infoContent, .secondary__infoContent {
     position: relative;
     z-index: 2;
 }
 
-.header__infoContent h2 {
-    background: linear-gradient(120deg, var(--color-terciary), var(--color-secondary));
-    opacity: 0.7;
-    padding: 5px 10px;
+.header__infoContent {
+    gap: 6rem;
+    padding-block: 1rem;
+
+    h2 {
+    /*background: linear-gradient(120deg, var(--color-terciary), var(--color-secondary));
+    opacity: 0.7;*/
     border-radius: var(--radius-one);
+    }
+}
+
+.secondary__infoContent {
+    width: 100%;
+    border-radius: var(--radius-one);
+    padding: 1rem;
+
+    .trailer__infoContent {
+        width: 100%;
+        max-width: 450px;
+        border-radius: var(--radius-one);
+        box-shadow: var(--shadow-one);
+    }
 }
 
 .details__infoContent {
-    padding-inline: 60px;
+    padding-block: 2rem;
+    padding-right: 8rem;
     gap: 2rem;
 }
 
 .buttons__infoContent {
-    
-}
-
-.secundary__details {
-    gap: 2rem;
+    padding-top: 2rem;
+    gap: 1rem;
 }
