@@ -1,7 +1,7 @@
 /* variables */
 
 :root {
-    --background-hero: url('../../assets/image/img-01.jpeg');
+    --background-hero: url("../../assets/image/img-01.jpeg");
 
     --text-primary: #c0bebe;
     --text-secondary: #b89be8;

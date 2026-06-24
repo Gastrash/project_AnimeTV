@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="styles/layout/ranking.css">
         <link rel="stylesheet" href="styles/layout/content.css">
         <link rel="stylesheet" href="styles/layout/infoContent.css">
+        <link rel="stylesheet" href="styles/layout/seasonContent.css">
         <link rel="stylesheet" href="styles/components/buttons.css">
         <link rel="stylesheet" href="styles/components/icons.css">
         <link rel="stylesheet" href="styles/components/card.css">
@@ -164,8 +165,8 @@
                 </div>
             </section>
             
-            <section id="seasonContent">
-                <div class="seasonContent container flex flex-column">
+            <section id="seasonContent" class="container">
+                <div class="seasonContent flex flex-column">
                     <header class="header__seasonContent flex flex-row justify-flex-start">
                         <button id="season-selector">Temporada 1</button>
                     </header>
@@ -185,14 +186,14 @@
                                 </article>
                             </li>
                         </ul>
-                        <nav class="season__navigation flex flex-row">
-                            <button id="prev-button" class=""></button>
-                            <div class="navigation__display">
-                                <button class="pagination__dot"></button>
-                            </div>
-                            <button id="-button" class=""></button>
-                        </nav>
                     </div>
+                    <nav class="season__navigation flex flex-row justify-center align-center">
+                        <button id="prev-button" class=""></button>
+                        <div class="navigation__display flex justify-center">
+                            <button class="pagination__dot"></button>
+                        </div>
+                        <button id="prew-button" class=""></button>
+                    </nav>
                 </div>
             </section>
             
