@@ -1,0 +1,65 @@
+/* seasonContent.css */
+
+.seasonContent {
+    min-height: 40vh;
+    background-color: rgba(0, 0, 0, 0,9);
+}
+
+.header__seasonContent, .body__seasonContent {
+    padding: 2rem 4rem;
+}
+
+.header__seasonContent {
+
+}
+
+.body__seasonContent {
+
+}
+
+.grid__episodes {
+    display: grid;
+    grid-template-rows: 6fr;
+}
+
+.episode__item {
+    width: 200px;
+    height: 100px;
+}
+
+.episode__card {
+    background-image: url(../../assets/image/img-01.jpeg);
+    background-size: cover;
+    background-position: center;
+    transition: all ease 0.5s;
+}
+
+.episode__card:hover {
+    transform: scale(1.2);
+    transition: all ease 0.5s;
+}
+
+.episode__overlay {
+    background-color: rgba(0, 0, 0, 0,9);
+}
+
+.episode__info {
+
+}
+
+.episode__duration {
+
+}
+
+.season__navigation {
+    background-color: var(--color-terciary);
+    border-radius: var(--radius-two);
+}
+
+.navigation__display {
+    margin-inline: 2rem;
+}
+
+.pagination__dot {
+
+}

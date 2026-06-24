@@ -116,7 +116,7 @@
                 </div>
             </section>
             
-            <section id="content">
+            <!-- <section id="content">
                 <div class="content flex flex-column">
                     <header>
 
@@ -125,7 +125,7 @@
                         
                     </footer>
                 </div>
-            </section>
+            </section> -->
             
             <section id="infoContent" class="container">
                 <div class="infoContent flex flex-row">
@@ -136,7 +136,7 @@
                         </header>
                         <footer class="footer__infoContent flex flex-column">
                             <div class="details__infoContent flex flex-column justify-space-between">
-                                <div class="secundary__details flex flex-row justify-space-between">
+                                <div class="secondary__details flex flex-row justify-space-between">
                                     <p>En emisión</p>
                                     <p>Duración: 2h 15m</p>
                                     <p>+16</p>
@@ -164,8 +164,40 @@
                 </div>
             </section>
             
-            <section class="season-content">
-                <div class="container flex flex-column">
+            <section id="seasonContent">
+                <div class="seasonContent container flex flex-column">
+                    <header class="header__seasonContent flex flex-row justify-flex-start">
+                        <button id="season-selector">Temporada 1</button>
+                    </header>
+                    <div class="body__seasonContent flex flex-column">
+                        <ul class="grid__episodes">
+                            <li class="episode__item">
+                                <article class="episode__card flex flex-column">
+                                    <div class="episode__overlay flex flex-column">
+                                        <div class="episode__info flex flex-column">
+                                            <h4 id="episode-title"></h4>
+                                            <p id="episode-description"></p>
+                                        </div>
+                                        <div class="episode__duration">
+                                            <p id="episode-duration"></p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <nav class="season__navigation flex flex-row">
+                            <button id="prev-button" class=""></button>
+                            <div class="navigation__display">
+                                <button class="pagination__dot"></button>
+                            </div>
+                            <button id="-button" class=""></button>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="mediaPlayer">
+                <div class="mediaPlayer container flex flex-column">
                     <header>
 
                     </header>
@@ -175,19 +207,8 @@
                 </div>
             </section>
             
-            <section class="media-player">
-                <div class="container flex flex-column">
-                    <header>
-
-                    </header>
-                    <footer>
-                    
-                    </footer>
-                </div>
-            </section>
-            
-            <section class="comments">
-                <div class="container flex flex-column">
+            <section id="comments">
+                <div class="comments container flex flex-column">
                     <header>
 
                     </header>

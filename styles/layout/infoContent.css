@@ -60,6 +60,9 @@
     padding-block: 2rem;
     padding-right: 8rem;
     gap: 2rem;
+
+    /*.secondary__details {
+    }*/
 }
 
 .buttons__infoContent {
