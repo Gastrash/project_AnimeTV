@@ -34,11 +34,38 @@
     font-weight: var(--font-bold);
 }
 
-.btn-header-left::hover {
+.btn-header-left:hover {
     border-bottom: 2px solid var(--color-secondary);
     color: var(--text-secondary)
 }
 
 .btn-hero-icons {
     padding: 14px 15px;
+}
+
+.btn-season {
+    font-size: var(--font-x);
+    padding: 10px;
+    gap: 0.5rem;
+    transition: all ease 0.5s;
+}
+
+.btn-season:hover {
+    font-size: var(--font-xl);
+    color: white;
+    background-color: black;
+    border: white solid 2px;
+}
+
+.btn-season-nav {
+    padding: 0;
+    color: white;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    transition: transform ease 0.5s;
+}
+
+.btn-season-nav:hover {
+    transform: scale(1.3);
 }

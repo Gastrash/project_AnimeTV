@@ -12,17 +12,51 @@
 }
 
 .header__seasonContent {
-    border-bottom: solid 1px rgb(112, 108, 108);
+
 }
 
 .body__seasonContent {
+    position: relative;
+    border-block: solid 1px rgb(112, 108, 108);
+}
 
+.body__seasonContent::after {
+    content: "";
+    position: sticky;
+    bottom: 0;
+    height: 2rem;
+    display: block;
+
+    background: linear-gradient(
+        to top,
+        rgba(11, 19, 38, 0),
+        rgba(11, 19, 38, 1)
+    );
+    pointer-events: none;
+}
+
+.body__seasonContent::before {
+    content: "";
+    position: sticky;
+    top: 0;
+    height: 2rem;
+    display: block;
+
+    background: linear-gradient(
+        to top,
+        rgba(11, 19, 38, 1),
+        rgba(11, 19, 38, 0)
+    );
+    pointer-events: none;
 }
 
 .grid__episodes {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* grid-template-rows: repeat(autofit, minmax(280px, 1fr)); */
+    min-height: 560px;
+    grid-template-columns: repeat(autofit, minmax(200px, 1fr));
     gap: 1rem; /* column-gap: / row-gap */
+    padding-block: 1rem;
+    border: red solid 3px;
 }
 
 .episode__item {
@@ -30,6 +64,7 @@
     overflow: hidden;
     width: 200px;
     height: 100px;
+    transition: all ease 0.5s;
 }
 
 .episode__card {
@@ -38,12 +73,10 @@
     background-image: url("../../assets/image/img-01.jpeg");
     background-size: cover;
     background-position: center;
-    transition: all ease 0.5s;
 }
 
 .episode__item:hover {
     transform: scale(1.2);
-    transition: all ease 0.5s;
 }
 
 .episode__overlay {
@@ -59,7 +92,6 @@
 }
 
 .season__navigation {
-    border-top: solid 1px rgb(112, 108, 108);
     padding: 1rem;
 }
 
