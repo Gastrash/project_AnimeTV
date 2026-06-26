@@ -22,7 +22,7 @@
 
 .body__seasonContent::after {
     content: "";
-    position: sticky;
+    position: absolute;
     bottom: 0;
     height: 2rem;
     display: block;
@@ -37,7 +37,7 @@
 
 .body__seasonContent::before {
     content: "";
-    position: sticky;
+    position: absolute;
     top: 0;
     height: 2rem;
     display: block;
@@ -53,18 +53,17 @@
 .grid__episodes {
     display: grid;
     min-height: 560px;
-    grid-template-columns: repeat(autofit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem; /* column-gap: / row-gap */
     padding-block: 1rem;
-    border: red solid 3px;
 }
 
 .episode__item {
     border-radius: var(--radius-one);
     overflow: hidden;
-    width: 200px;
-    height: 100px;
-    transition: all ease 0.5s;
+    max-width: 300px;
+    aspect-ratio: 16/9;
+    transition: all ease 0.6s;
 }
 
 .episode__card {
@@ -76,11 +75,12 @@
 }
 
 .episode__item:hover {
-    transform: scale(1.2);
+    transform: scale(1.03);
+    border: rgba(185, 182, 182, 0.37) solid 1px; /* box-shadow */
 }
 
 .episode__overlay {
-    background-color: rgba(0, 0, 0, 0,9);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .episode__info {
@@ -97,8 +97,4 @@
 
 .navigation__display {
     margin-inline: 2rem;
-}
-
-.pagination__dot {
-
 }

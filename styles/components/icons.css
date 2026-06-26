@@ -24,6 +24,6 @@
     transform: rotate(0deg);
 }
 
-.icon-season-button-R {
+.icon-season-button--right {
     transform: rotate(180deg);
 }

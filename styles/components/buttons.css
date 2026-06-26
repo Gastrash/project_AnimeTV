@@ -69,3 +69,21 @@
 .btn-season-nav:hover {
     transform: scale(1.3);
 }
+
+.btn-pagination-dot {
+    border-radius: 100%;
+    background-color: transparent;
+    border: white solid 2px;
+    width: 10px;
+    height: 10px;
+    transition: all ease 0.5s;
+}
+
+.btn-pagination-dot.active {
+    border: none;
+    background-color: white;
+}
+
+.btn-pagination-dot:hover {
+    border: var(--color-cuatro) solid 2px;
+}
