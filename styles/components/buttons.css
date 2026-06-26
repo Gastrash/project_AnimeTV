@@ -87,3 +87,11 @@
 .btn-pagination-dot:hover {
     border: var(--color-cuatro) solid 2px;
 }
+
+.btn-videoFooter-primary {}
+
+.btn-videoFooter-secondary {}
+
+.btn-videoNav-primary {}
+
+.btn-videoNav-secondary {}

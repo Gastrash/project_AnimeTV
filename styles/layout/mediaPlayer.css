@@ -1,2 +1,11 @@
 /* mediaPlayer */
 
+.mediaPlayer {}
+
+.mediaPlayer__container {}
+
+.mediaPlayer__container-video {}
+
+.mediaPlayer__container-footer {}
+
+.mediaPlayer__nav {}
