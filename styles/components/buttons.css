@@ -94,7 +94,7 @@
     border: 2px solid var(--color-terciary);
     color: var(--color-terciary);
     padding: 20px 30px;
-    font-bold: var(--font-bold-two);
+    font-weight: var(--font-bold);
     gap: 1rem;
 }
 

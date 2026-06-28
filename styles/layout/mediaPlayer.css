@@ -22,7 +22,7 @@
     box-shadow: var(--shadow-one);
 }
 
-.mediaPlayer__container-footer {
+.mediaPlayer__container-footer { /* posible mejora si se cambia a adentro de video-container */
     width: 100%;
     gap: 2rem;
 }
