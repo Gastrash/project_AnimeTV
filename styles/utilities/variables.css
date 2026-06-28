@@ -11,6 +11,7 @@
     --color-secondary: #b89be8;
     --color-terciary: #4d305f;
     --color-cuatro: #2DD4BF;
+    --color-gris: rgb(112, 108, 108);
 
     --font-primary: montserrat, sans-serif;
 
@@ -22,6 +23,7 @@
     --font-xl: 20px;
     
     --font-bold: 600;
+    --font-bold-two: 800;
 
-    --shadow-one: 0 0 10px rgba(0, 0, 0, 0.5);
+    --shadow-one: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
