@@ -17,7 +17,7 @@
 
 .body__seasonContent {
     position: relative;
-    border-block: solid 1px rgb(112, 108, 108);
+    border-block: solid 1px var(--color-gris);
 }
 
 .body__seasonContent::after {
@@ -52,7 +52,7 @@
 
 .grid__episodes {
     display: grid;
-    min-height: 560px;
+    min-height: 450px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem; /* column-gap: / row-gap */
     padding-block: 1rem;
