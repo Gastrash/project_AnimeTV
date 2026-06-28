@@ -4,7 +4,7 @@
     --background-hero: url("../../assets/image/img-01.jpeg");
 
     --text-primary: #c0bebe;
-    --text-secondary: #b89be8;
+    --text-secondary: #b89be8;  
     --text-muted: #666666;
 
     --color-primary: #0b1326;
@@ -12,6 +12,7 @@
     --color-terciary: #4d305f;
     --color-cuatro: #2DD4BF;
     --color-gris: rgb(112, 108, 108);
+    --color-gris-two: rgb(63, 60, 60);
 
     --font-primary: montserrat, sans-serif;
 

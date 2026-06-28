@@ -2,7 +2,7 @@
 
 .btn {
     border-radius: var(--radius-one);
-    padding: 15px 25px;
+    padding: 1rem;
     font-size: var(--font-xl);
     font-weight: var(--font-bold);
     box-shadow: var(--shadow-one);

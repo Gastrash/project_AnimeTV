@@ -1,1 +1,69 @@
 /* comments */
+
+.comments {
+    border-radius: var(--radius-one);
+}
+
+.comments, .comments-card {
+    background-color: black;
+    border: var(--color-gris) solid 1px;
+    box-shadow: var(--shadow-one);
+}
+
+.comments__header {
+    padding: 1rem 2rem;
+}
+
+.comments__main {}
+
+.comments__footer {
+    padding: 1rem;
+}
+
+.comments-list {
+    border: 2px solid var(--color-gris);
+    padding: 0.5rem 4rem;
+    background-color: var(--color-gris-two);
+    gap: 1rem;
+}
+
+.comments-card {
+    padding: 1rem;
+    width: 100%;
+}
+
+.comments-form {
+
+}
+
+.comments-card__header, .comments-card__main, .comments-card__footer {
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.comments-card__header {
+    gap: 1rem;
+}
+
+.comments-card__main {
+    border-block: var(--color-gris) solid 1px;
+    padding-block: 0.5rem 1rem;
+}
+
+.comments-card__image {
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.comments-card__actions, .comments-card__info {
+    padding: 0 1rem;
+    gap: 0.5rem;
+    outline: red solid 3px;
+}

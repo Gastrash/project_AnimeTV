@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+
         <title>AnimeTV</title>
         <meta charset="UTF-8" />
         <meta name="description" content="Mira tus series y peliculas favoritas en AnimeTV, contenido actualizado y de primera clase.">
@@ -12,6 +13,7 @@
         <link rel="stylesheet" href="styles/layout/infoContent.css">
         <link rel="stylesheet" href="styles/layout/seasonContent.css">
         <link rel="stylesheet" href="styles/layout/mediaPlayer.css">
+        <link rel="stylesheet" href="styles/layout/comments.css">
         <link rel="stylesheet" href="styles/components/buttons.css">
         <link rel="stylesheet" href="styles/components/icons.css">
         <link rel="stylesheet" href="styles/components/card.css">
@@ -20,7 +22,6 @@
         <link rel="stylesheet" href="styles/utilities/variables.css">
     </head>
     <body>
-        
         <header>
             <div class="container header flex flex-row justify-space-between align-center">
                 <div class="header__left flex flex-row justify-center align-center">
@@ -46,6 +47,7 @@
         </header>
         
         <main>
+
             <section id="hero">
                 <div class="hero flex flex-column">
                     <div class="hero__image">
@@ -235,38 +237,53 @@
             
             <section id="comments" class="container">
                 <div class="comments flex flex-column">
+
                     <header class="comments__header flex flex-row justify-space-between align-center">
                         <h3>Comentarios</h3>
                         <p>43</p>
                     </header>
-                    <div class="comments__container">
-                        <ul class="comments__container__lista flex flex-column justify-flex-start align-center">
-                            <li class="comments__container__lista__card flex flex-column justify-center align-center">
-                                <header class="comments__container__lista__card__header flex flex-row justify-flex-start">
-                                    <div class="comments__card__header__imageContainer">
+
+                    <main class="comments__main">
+
+                        <ul class="comments-list flex flex-column justify-flex-start align-center">
+
+                            <li class="comments-card flex flex-column justify-center align-center">
+
+                                <header class="comments-card__header flex flex-row justify-flex-start">
+                                    <div class="comments-card__image">
                                         <img src="assets/image/img-01.jpeg">
                                     </div>
                                     <h4>Pedrito</h4>
                                 </header>
-                                <main class="comments__container__lista__card__main">
+                                <main class="comments-card__main">
                                     <div class="comments__card__main__commentContainer">
                                         <p>un mierdon, borra la cuenta</p>
                                     </div>
                                 </main>
-                                <footer class="comments__container__lista__card__footer flex flex-row justify-space-between align-center">
-                                    <div class="comments__card__footer__actionsContainer flex flex-column justify-center align-center">
-                                        <button></button>
-                                        <button></button>
-                                        <button></button>
+                                <footer class="comments-card__footer flex flex-row justify-space-between align-center">
+                                    <div class="comments-card__actions flex flex-row justify-center align-center">
+                                        <button class="btn"></button>
+                                        <button class="btn"></button>
+                                        <button class="btn"></button>
                                     </div>
-                                    <div class="comments__card__footer__infoContainer flex flex-column justify-center align-center">
+                                    <div class="comments-card__info flex flex-row justify-center align-center">
                                         <p></p>
                                         <p></p>
                                     </div>
                                 </footer>
                             </li>
                         </ul>
-                    </div>
+                    </main>
+                    <footer class="comments__footer flex flex-row justify-space-between align-center">
+                        <form class="comments-form flex flex-row">
+                            <input class="input" type="text">
+                            <button id="" class="" type="submit"></button>
+                        </form>
+                        <div class="comments-actions flex flex-row justify-center align-center">
+                            <button></button>
+                            <button></button>
+                        </div>
+                    </footer>
                 </div>
             </section>
             
