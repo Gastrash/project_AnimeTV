@@ -88,10 +88,36 @@
     border: var(--color-cuatro) solid 2px;
 }
 
-.btn-videoFooter-primary {}
+.btn-video {
+    background: black;
+    font-size: var(--font-xl);
+    border: 2px solid var(--color-terciary);
+    color: var(--color-terciary);
+    padding: 20px 30px;
+    font-bold: var(--font-bold-two);
+    gap: 1rem;
+}
 
-.btn-videoFooter-secondary {}
+.btn-videoFooter {
+    
+}
 
-.btn-videoNav-primary {}
+.btn-videoFooter-primary {
+    
+}
 
-.btn-videoNav-secondary {}
+.btn-videoFooter-secondary {
+    
+}
+
+.btn-videoNav {
+    padding: 20px 30px;
+}
+
+.btn-videoNav-primary {
+    flex: 10;
+}
+
+.btn-videoNav-secondary {
+    flex: 2;
+}
