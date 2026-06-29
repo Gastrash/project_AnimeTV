@@ -49,19 +49,19 @@
 
             <section id="hero">
                 <div class="hero flex flex-column">
-                    <div class="hero__image">
+                    <div class="hero-image">
                         <img src="assets/image/img-01.jpeg" alt="Imagen de anime" />
                     </div>
                     <div class="hero__overlay flex flex-column justify-flex-end">
-                        <div class="hero__secondary flex flex-row">
+                        <div class="hero-info__secondary flex flex-row">
                             <p class="tendencia">tendencias</p>
                             <p class="rating">estrenos</p>
                         </div>
-                        <div class="hero__info">
+                        <div class="hero-info__primary">
                             <h1>Cyberpunk Odyssey</h1>
                             <p>En una Neo-Tokio dividida por la tecnología, un joven hacker descubre un secreto que podría reiniciar la realidad misma. Una odisea visual de acción y existencialismo que redefine el género.</p>
                         </div>
-                        <div class="hero__buttons flex flex-row">
+                        <div class="hero-actions flex flex-row">
                             <button id="btn-start" class="btn btn-primary">Empezar</button>
                             <button id="btn-addList" class="btn btn-secondary">Añadir a lista</button>
                             <button id="btn-favorite" class="btn btn-secondary btn-hero-icons">
@@ -75,7 +75,7 @@
                 </div>
             </section>
             
-            <section id="content">
+            <section id="content" class="container-secondary">
                 <div class="content flex flex-column">
                     <header class="content__header container">
                         <h3>Novedades para ti</h3>
@@ -97,7 +97,7 @@
                 </div>
             </section>
             
-            <section id="ranking">
+            <section id="ranking" class="container-secondary">
                 <div class="ranking flex flex-column">
                     <header class="ranking__header container">
                         <h3>Top 10 Estrenos</h3>
@@ -170,7 +170,7 @@
             <section id="seasonContent" class="container">
                 <div class="seasonContent flex flex-column">
                     <header class="header__seasonContent flex flex-row justify-flex-start">
-                        <button id="season-selector" class="btn btn-season flex flex-row justify-center">Temporada 1 <svg class="icon icon-season-button-primary" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"><title xmlns="">arrow</title><path fill="currentColor" d="m11 7l-4 6h8z"/></svg> </button>
+                        <button id="season-selector" class="btn btn-secondary btn-season flex flex-row justify-center">Temporada 1 <svg class="icon icon-season-button-primary" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"><title xmlns="">arrow</title><path fill="currentColor" d="m11 7l-4 6h8z"/></svg> </button>
                     </header>
                     <div class="body__seasonContent flex flex-column">
                         <ul class="grid__episodes">
@@ -190,47 +190,49 @@
                         </ul>
                     </div>
                     <nav class="season__navigation flex flex-row justify-center align-center">
-                        <button id="prev-button" class="btn btn-season-nav"> <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">left-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg> </button>
+                        <button id="prev-button" class="btn btn-secondary btn-season-nav"> <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">left-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg> </button>
                         <div class="navigation__display flex justify-center">
-                            <button id="pagination-dot" class="btn-pagination-dot"></button>
+                            <button id="pagination-dot" class="btn-primary btn-pagination-dot"></button>
                         </div>
-                        <button id="adelante-button" class="btn btn-season-nav"> <svg class="icon icon-season-button-secondary-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">right-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg> </button>
+                        <button id="adelante-button" class="btn btn-secondary btn-season-nav"> <svg class="icon icon-season-button-secondary-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">right-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg> </button>
                     </nav>
                 </div>
             </section>
             
-            <section id="mediaPlayer" class="container mediaPlayer">
-                <div class="mediaPlayer flex flex-column">
-                    <div class="mediaPlayer__container flex flex-column">
-                        <img class="mediaPlayer__container-video" src="assets/image/img-01.jpeg"> <!-- controls -->
+            <section id="mediaPlayer" class="container">
+                <div class="mediaPlayer flex flex-column justify-center align-center">
+                    <main class="mediaPlayer__viewer flex flex-column">
+                        <img class="mediaPlayer-video" src="assets/image/img-01.jpeg"> <!-- controls -->
                             <!--<source src="assets/image/img-01.jpeg" type="image/jpeg">
                             Tu navegador no soporta la reproducción de videos.-->
                         </img>
-                    </div>
-                    <footer class="mediaPlayer__container-footer flex flex-row justify-center">
-                            <button class="btn btn-mediaPlayer btn-mediaPlayer-footer">Descargar</button>
-                            <button class="btn btn-mediaPlayer btn-mediaPlayer-footer">Compartir</button>
-                            <button class="btn btn-mediaPlayer btn-mediaPlayer-footer">Me gusta</button>
-                    </footer>
-                    <nav class="mediaPlayer__nav flex flex-row">
-                        <button id="mediaPlayer-nav-previous" class="btn btn-mediaPlayer btn-mediaPlayer-nav btn-mediaPlayer-nav-primary flex flex-row justify-flex-start align-center">
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">left-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg>
-                            <div class="mediaPlayer__nav-btnInfo-container flex flex-column justify-space-between">
-                                <p>ANTERIOR</p>
-                                <p>Cap. 35</p>
-                            </div>
-                        </button>
-                        <button id="mediaPlayer-nav-episodes" class="btn btn-mediaPlayer btn-mediaPlayer-nav btn-mediaPlayer-nav-secondary flex flex-row align-center">
+                    </main>
+                    <footer class="mediaPlayer__footer flex flex-column justify-flex-start align-center">
+                        <div class="mediaPlayer__actions flex flex-row justify-center align-center">
+                            <button class="btn btn-secondary btn-mediaPlayer">Descargar</button>
+                            <button class="btn btn-secondary btn-mediaPlayer">Compartir</button>
+                            <button class="btn btn-secondary btn-mediaPlayer">Me gusta</button>
+                        </div>
+                        <nav class="mediaPlayer__nav flex flex-row">
+                            <button id="mediaPlayer-nav-previous" class="btn btn-secondary btn-mediaPlayer btn-mediaPlayer-nav-primary flex flex-row justify-flex-start align-center">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">left-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg>
+                                <div class="flex flex-column justify-space-between">
+                                    <p>ANTERIOR</p>
+                                    <p>Cap. 35</p>
+                                </div>
+                            </button>
+                            <button id="mediaPlayer-nav-episodes" class="btn btn-secondary btn-mediaPlayer btn-mediaPlayer-nav-secondary flex flex-row align-center">
                             <p>Episodios</p>
-                        </button>
-                        <button id="mediaPlayer-nav-next" class="btn btn-mediaPlayer btn-mediaPlayer-nav btn-mediaPlayer-nav-primary flex flex-row justify-flex-end align-center">
-                            <svg class="icon icon-season-button-secondary-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">left-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg>
-                            <div class="mediaPlayer__nav-btnInfo-container flex flex-column justify-space-between">
+                            </button>
+                            <button id="mediaPlayer-nav-next" class="btn btn-secondary btn-mediaPlayer btn-mediaPlayer-nav-primary flex flex-row justify-flex-end align-center">
+                                <svg class="icon icon-season-button-secondary-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">left-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg>
+                                <div class="flex flex-column justify-space-between">
                                 <p>SIGUIENTE</p>
                                 <p>Cap. 37</p>
-                            </div>
-                        </button>
-                    </nav>
+                                </div>
+                            </button>
+                        </nav>
+                    </footer>
                 </div>
             </section>
             

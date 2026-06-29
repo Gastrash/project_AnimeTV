@@ -6,7 +6,7 @@
     position: relative;
 }
 
-.hero__image {
+.hero-image {
     position: absolute;
     inset: 0;
     z-index: -1;
@@ -19,7 +19,7 @@
     }
 }
 
-.hero__image::after {
+.hero-image::after {
     content: '';
     position: absolute;
     inset: 0;
@@ -42,11 +42,11 @@
     padding: 0 4rem 5vh 4rem;
     color: var(--text-primary);
 
-    .hero__secondary {
+    .hero-info__secondary {
         gap: 1rem;
     }
 
-    .hero__info {
+    .hero-info__primary {
         gap: 2rem;
         margin-bottom: 4rem;
         
@@ -57,7 +57,7 @@
         }
     }
     
-    .hero__buttons {
+    .hero-actions {
         gap: 1rem;
     }
 }

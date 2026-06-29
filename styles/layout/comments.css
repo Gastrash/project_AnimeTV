@@ -1,10 +1,8 @@
 /* comments */
 
-.comments {
-    border-radius: var(--radius-one);
-}
+.comments {}
 
-.comments, .comments-card {
+.comments__header, .comments__footer, .comments-card {
     background-color: black;
     border: var(--color-gris) solid 1px;
     box-shadow: var(--shadow-one);
@@ -21,9 +19,8 @@
 }
 
 .comments-list {
-    border: 2px solid var(--color-gris);
     padding: 0.5rem 4rem;
-    background-color: var(--color-gris-two);
+    background-color: transparent;
     gap: 1rem;
 }
 
