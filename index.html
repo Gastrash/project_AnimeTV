@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-
         <title>AnimeTV</title>
         <meta charset="UTF-8" />
         <meta name="description" content="Mira tus series y peliculas favoritas en AnimeTV, contenido actualizado y de primera clase.">
@@ -23,7 +22,7 @@
     </head>
     <body>
         <header>
-            <div class="container header flex flex-row justify-space-between align-center">
+            <div class="header flex flex-row justify-space-between align-center">
                 <div class="header__left flex flex-row justify-center align-center">
                     <h2>AnimeTV</h2>
                     <nav class="header__nav flex flex-row justify-center align-center">
@@ -209,22 +208,22 @@
                         </img>
                     </div>
                     <footer class="mediaPlayer__container-footer flex flex-row justify-center">
-                            <button class="btn btn-video btn-videoFooter-primary">Descargar</button>
-                            <button class="btn btn-video btn-videoFooter-primary">Compartir</button>
-                            <button class="btn btn-video btn-videoFooter-primary">Me gusta</button>
+                            <button class="btn btn-mediaPlayer btn-mediaPlayer-footer">Descargar</button>
+                            <button class="btn btn-mediaPlayer btn-mediaPlayer-footer">Compartir</button>
+                            <button class="btn btn-mediaPlayer btn-mediaPlayer-footer">Me gusta</button>
                     </footer>
                     <nav class="mediaPlayer__nav flex flex-row">
-                        <button id="mediaPlayer-nav-previous" class="btn btn-video btn-videoNav btn-videoNav-primary flex flex-row justify-flex-start align-center">
+                        <button id="mediaPlayer-nav-previous" class="btn btn-mediaPlayer btn-mediaPlayer-nav btn-mediaPlayer-nav-primary flex flex-row justify-flex-start align-center">
                             <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">left-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg>
                             <div class="mediaPlayer__nav-btnInfo-container flex flex-column justify-space-between">
                                 <p>ANTERIOR</p>
                                 <p>Cap. 35</p>
                             </div>
                         </button>
-                        <button id="mediaPlayer-nav-episodes" class="btn btn-video btn-videoNav btn-videoNav-secondary flex flex-row align-center">
+                        <button id="mediaPlayer-nav-episodes" class="btn btn-mediaPlayer btn-mediaPlayer-nav btn-mediaPlayer-nav-secondary flex flex-row align-center">
                             <p>Episodios</p>
                         </button>
-                        <button id="mediaPlayer-nav-next" class="btn btn-video btn-videoNav btn-videoNav-primary flex flex-row justify-flex-end align-center">
+                        <button id="mediaPlayer-nav-next" class="btn btn-mediaPlayer btn-mediaPlayer-nav btn-mediaPlayer-nav-primary flex flex-row justify-flex-end align-center">
                             <svg class="icon icon-season-button-secondary-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">left-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg>
                             <div class="mediaPlayer__nav-btnInfo-container flex flex-column justify-space-between">
                                 <p>SIGUIENTE</p>
@@ -262,9 +261,9 @@
                                 </main>
                                 <footer class="comments-card__footer flex flex-row justify-space-between align-center">
                                     <div class="comments-card__actions flex flex-row justify-center align-center">
-                                        <button class="btn"></button>
-                                        <button class="btn"></button>
-                                        <button class="btn"></button>
+                                        <button class="btn btn-secondary"></button>
+                                        <button class="btn btn-secondary"></button>
+                                        <button class="btn btn-secondary"></button>
                                     </div>
                                     <div class="comments-card__info flex flex-row justify-center align-center">
                                         <p></p>
@@ -277,11 +276,11 @@
                     <footer class="comments__footer flex flex-row justify-space-between align-center">
                         <form class="comments-form flex flex-row">
                             <input class="input" type="text">
-                            <button id="" class="" type="submit"></button>
+                            <button id="" class="btn btn-secondary" type="submit"></button>
                         </form>
                         <div class="comments-actions flex flex-row justify-center align-center">
-                            <button></button>
-                            <button></button>
+                            <button class="btn btn-secondary"></button>
+                            <button class="btn btn-secondary"></button>
                         </div>
                     </footer>
                 </div>
