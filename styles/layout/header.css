@@ -4,6 +4,7 @@
     background-color: var(--color-primary);
     min-width: 100%;
     position: fixed;
+    padding-inline: 2rem;
     z-index: 999;
     h2 {
         color: var(--color-secondary);
