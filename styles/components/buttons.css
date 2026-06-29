@@ -20,6 +20,10 @@
     color: var(--color-secondary);
 }
 
+.btn-submit {
+    
+}
+
 .btn-header-right {
     color: var(--text-secondary);
     background-color: transparent;
@@ -88,7 +92,7 @@
     border: var(--color-cuatro) solid 2px;
 }
 
-.btn-video {
+.btn-mediaPlayer {
     background: black;
     font-size: var(--font-xl);
     border: 2px solid var(--color-terciary);
@@ -98,26 +102,34 @@
     gap: 1rem;
 }
 
-.btn-videoFooter {
+.btn-mediaPlayer-footer{
     
 }
 
-.btn-videoFooter-primary {
+.btn-mediaPlayer-footer-primary {
     
 }
 
-.btn-videoFooter-secondary {
+.btn-mediaPlayer-footer-secondary {
     
 }
 
-.btn-videoNav {
+.btn-mediaPlayer-nav {
     padding: 20px 30px;
 }
 
-.btn-videoNav-primary {
+.btn-mediaPlayer-nav-primary {
     flex: 10;
 }
 
-.btn-videoNav-secondary {
+.btn-mediaPlayer-nav-secondary {
     flex: 2;
+}
+
+.btn-comments-primary {
+    
+}
+
+.btn-comments-secondary {
+    background-color: transparent;
 }
