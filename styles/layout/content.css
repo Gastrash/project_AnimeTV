@@ -14,9 +14,9 @@
     margin: 0 auto;
 }
 
-.content__list {
+.content--list {
     gap: 1rem;
 }
 
-.content__item {
+.content--item {
 }
