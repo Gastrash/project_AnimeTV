@@ -5,6 +5,11 @@
     height: 24px;
 }
 
+.icon--small {
+    width: 2rem;
+    height: 2rem;
+}
+
 .icon-favorite {
     width: 20px;
     height: 20px;

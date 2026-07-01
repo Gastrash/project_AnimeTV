@@ -27,12 +27,12 @@
     filter: blur(10px);
 }
 
-.primary__infoContent, .secondary__infoContent {
+.infoContent__primary, .infoContent__secondary {
     position: relative;
     z-index: 2;
 }
 
-.header__infoContent {
+.infoContent__title {
     gap: 6rem;
     padding-block: 1rem;
 
@@ -43,12 +43,12 @@
     }
 }
 
-.secondary__infoContent {
+.infoContent__secondary {
     width: 100%;
     border-radius: var(--radius-one);
     padding: 1rem;
 
-    .trailer__infoContent {
+    .infoContent__trailer {
         width: 100%;
         max-width: 450px;
         border-radius: var(--radius-one);
@@ -56,16 +56,17 @@
     }
 }
 
-.details__infoContent {
+.infoContent__details {
     padding-block: 2rem;
     padding-right: 8rem;
     gap: 2rem;
 
-    /*.secondary__details {
-    }*/
+    /*.infocontent__characteristics {}
+    .infoContent__description {}
+    */
 }
 
-.buttons__infoContent {
+.infoContent__actions {
     padding-top: 2rem;
     gap: 1rem;
 }

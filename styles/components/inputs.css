@@ -1,9 +1,21 @@
 /* inputs.css */
 
 .input {
-    border-radius: var(--radius-one);
     padding: 0.5rem 1rem;
     font-size: var(--font-xl);
     font-weight: var(--font-bold);
     box-shadow: var(--shadow-one);
+}
+
+.input--primary {
+    padding-block: 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: var(--color-gris) 2px solid;
+    color: var(--color-secondary);
+    box-shadow: none;
+}
+
+.input--secondary {
+
 }

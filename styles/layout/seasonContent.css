@@ -7,20 +7,20 @@
     padding: 1rem;
 }
 
-.header__seasonContent, .body__seasonContent {
+.seasonContent__actions, .seasonContent__body {
     padding: 1rem;
 }
 
-.header__seasonContent {
-
+/* .seasonContent__actions {
 }
+*/
 
-.body__seasonContent {
+.seasonContent__body {
     position: relative;
     border-block: solid 1px var(--color-gris);
 }
 
-.body__seasonContent::after {
+.seasonContent__body::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -35,7 +35,7 @@
     pointer-events: none;
 }
 
-.body__seasonContent::before {
+.seasonContent__body::before {
     content: "";
     position: absolute;
     top: 0;
@@ -50,7 +50,7 @@
     pointer-events: none;
 }
 
-.grid__episodes {
+.seasonContent__grid {
     display: grid;
     min-height: 450px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -58,43 +58,26 @@
     padding-block: 1rem;
 }
 
-.episode__item {
-    border-radius: var(--radius-one);
-    overflow: hidden;
-    max-width: 300px;
-    aspect-ratio: 16/9;
-    transition: all ease 0.6s;
+/*
+.seasonContent__item {
+    
 }
+*/
 
-.episode__card {
-    width: 100%;
-    height: 100%;
-    background-image: url("../../assets/image/img-01.jpeg");
-    background-size: cover;
-    background-position: center;
-}
-
-.episode__item:hover {
-    transform: scale(1.03);
-    border: rgba(185, 182, 182, 0.37) solid 1px; /* box-shadow */
-}
-
-.episode__overlay {
+.seasonContent__episodeOverlay {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-.episode__info {
+/*
+.seasonContent__episodeInfo {
 
 }
+*/
 
-.episode__duration {
-
-}
-
-.season__navigation {
+.seasonContent__navigation {
     padding: 1rem;
 }
 
-.navigation__display {
+.seasonContent__display {
     margin-inline: 2rem;
 }

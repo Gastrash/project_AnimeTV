@@ -34,8 +34,10 @@
     color: var(--color-terciary);
 }
 
-.btn-submit {
-    
+.btn--small {
+    padding: 0.5rem;
+    font-size: var(--font-l);
+    font-weight: var(--font-bold);
 }
 
 .btn-header-right {

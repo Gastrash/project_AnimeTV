@@ -30,7 +30,7 @@
 }
 
 .comments-form {
-
+    gap: 1rem;
 }
 
 .comments-card__header, .comments-card__main, .comments-card__footer {
