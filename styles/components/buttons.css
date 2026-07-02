@@ -1,44 +1,86 @@
 /* buttons */
 
+/* clase base: */
+
 .btn {
     border-radius: var(--radius-one);
-    padding: 1rem;
-    font-size: var(--font-xl);
     font-weight: var(--font-bold);
     box-shadow: var(--shadow-one);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn-primary {
-    background-color: var(--color-secondary);
-    border: 1px solid var(--color-terciary);
-    color: var(--color-terciary);
-    transition: all ease 0.5s;
-}
+/* clases de medida: */
 
-.btn-primary:hover {
-    background-color: var(--color-primary);
-    border: 1px solid var(--color-secondary);
-    color: var(--color-secondary);
-}
-
-.btn-secondary {
-    background-color: var(--color-primary);
-    border: 1px solid var(--color-secondary);
-    color: var(--color-secondary);
-    transition: all ease 0.5s;
-}
-
-.btn-secondary:hover {
-    background-color: var(--color-secondary);
-    border: 1px solid var(--color-terciary);
-    color: var(--color-terciary);
-}
-
-.btn--small {
+.btn--s {
     padding: 0.5rem;
     font-size: var(--font-l);
     font-weight: var(--font-bold);
+    line-height: 1.2;
 }
+
+.btn--m {
+    padding: 0.5rem;
+    font-size: var(--font-l);
+    font-weight: var(--font-bold);
+    line-height: 1.2;
+}
+
+.btn--l {
+    padding: 0.5rem;
+    font-size: var(--font-l);
+    line-height: 1.2;
+    gap: 0.5rem;
+}
+
+/* clases visuales: */
+
+.btn--primary {
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-terciary);
+    color: var(--color-terciary);
+    transition: all ease 0.5s;
+}
+
+.btn--primary:hover {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.btn--secondary {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.btn--secondary:hover {
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-terciary);
+    color: var(--color-terciary);
+}
+
+.btn--danger {
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-terciary);
+    color: var(--color-terciary);
+}
+
+.btn--ghost {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.btn--icon {
+    width: var(--size-icon);
+    height: var(--size-icon);
+}
+
+.btn--full {
+    width: 100%;
+}
+
+/*quitar*/
 
 .btn-header-right {
     color: var(--text-secondary);
