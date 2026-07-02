@@ -68,3 +68,13 @@
     gap: 0.5rem;
     outline: red solid 3px;
 }
+
+/* buttons */
+
+.btn-comments-primary {
+    
+}
+
+.btn-comments-secondary {
+    background-color: transparent;
+}

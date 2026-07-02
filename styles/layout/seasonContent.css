@@ -81,3 +81,42 @@
 .seasonContent__display {
     margin-inline: 2rem;
 }
+
+/* buttons */
+
+.btn-season {
+    font-size: var(--font-x);
+    padding: 10px;
+    gap: 0.5rem;
+    transition: all ease 0.5s;
+}
+
+.btn-season:hover {
+    font-size: var(--font-xl);
+    color: white;
+    background-color: black;
+    border: white solid 1px;
+}
+
+.btn-season-nav {
+    padding: 0.5rem;
+    transition: transform ease 0.5s;
+}
+
+.btn-season-nav:hover {
+    
+}
+
+.btn-pagination-dot {
+    border-radius: 100%;
+    background-color: transparent;
+    border: 2px solid var(--color-secondary);
+    width: 10px;
+    height: 10px;
+    transition: all ease 0.3s;
+}
+
+.btn-pagination-dot.active {
+    border: 1px solid var(--color-secondary);
+    background-color: var(--color-secondary);
+}

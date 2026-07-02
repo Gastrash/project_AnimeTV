@@ -12,21 +12,21 @@
 /* clases de medida: */
 
 .btn--s {
-    padding: 0.5rem;
+    padding: 1rem;
     font-size: var(--font-l);
     font-weight: var(--font-bold);
     line-height: 1.2;
 }
 
 .btn--m {
-    padding: 0.5rem;
+    padding: 2rem;
     font-size: var(--font-l);
     font-weight: var(--font-bold);
     line-height: 1.2;
 }
 
 .btn--l {
-    padding: 0.5rem;
+    padding: 4rem;
     font-size: var(--font-l);
     line-height: 1.2;
     gap: 0.5rem;
@@ -71,6 +71,8 @@
     color: var(--color-secondary);
 }
 
+/* buttons */
+
 .btn--icon {
     width: var(--size-icon);
     height: var(--size-icon);
@@ -78,98 +80,4 @@
 
 .btn--full {
     width: 100%;
-}
-
-/*quitar*/
-
-.btn-header-right {
-    color: var(--text-secondary);
-    background-color: transparent;
-    border: none;
-}
-
-.btn-header-left {
-    color: var(--text-primary);
-    background-color: transparent;
-    border: none;
-    font-size: var(--font-x);
-    font-weight: var(--font-bold);
-}
-
-.btn-header-left:hover {
-    border-bottom: 2px solid var(--color-secondary);
-    color: var(--text-secondary)
-}
-
-.btn-hero-icons {
-    padding: 14px 15px;
-}
-
-.btn-season {
-    font-size: var(--font-x);
-    padding: 10px;
-    gap: 0.5rem;
-    transition: all ease 0.5s;
-}
-
-.btn-season:hover {
-    font-size: var(--font-xl);
-    color: white;
-    background-color: black;
-    border: white solid 1px;
-}
-
-.btn-season-nav {
-    padding: 0.5rem;
-    transition: transform ease 0.5s;
-}
-
-.btn-season-nav:hover {
-    
-}
-
-.btn-pagination-dot {
-    border-radius: 100%;
-    background-color: transparent;
-    border: 2px solid var(--color-secondary);
-    width: 10px;
-    height: 10px;
-    transition: all ease 0.3s;
-}
-
-.btn-pagination-dot.active {
-    border: 1px solid var(--color-secondary);
-    background-color: var(--color-secondary);
-}
-
-.btn-mediaPlayer {
-    background-color: black;
-    font-size: var(--font-xl);
-    border: 1px solid var(--color-terciary);
-    color: var(--color-terciary);
-    padding: 20px 30px;
-    font-weight: var(--font-bold);
-    gap: 1rem;
-}
-
-.btn-mediaPlayer-nav-primary {
-    flex: 10;
-    padding: 20px 40px;
-
-    div {
-        gap: 0.5rem;
-    }
-}
-
-.btn-mediaPlayer-nav-secondary {
-    flex: 2;
-    padding: 20px 30px;
-}
-
-.btn-comments-primary {
-    
-}
-
-.btn-comments-secondary {
-    background-color: transparent;
 }

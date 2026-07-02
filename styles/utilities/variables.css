@@ -14,17 +14,20 @@
     --color-gris: rgb(112, 108, 108);
     --color-gris-two: rgb(63, 60, 60);
 
-    --font-primary: montserrat, sans-serif;
-
-    --radius-one: 10px;
-    --radius-two: 40px;
-    
-    --font-l: 15px;
-    --font-x: 18px;
-    --font-xl: 20px;
-    
-    --font-bold: 600;
-    --font-bold-two: 800;
-
     --shadow-one: 5px 5px 10px rgba(0, 0, 0, 0.6);
+
+    --font-primary: montserrat, sans-serif;
+    --font-secondary: montserrat, sans-serif;
+
+    --radius-s: 10px;
+    --radius-m: 40px;
+    --radius-full: 100%;
+    
+    --font-s: 15px;
+    --font-m: 18px;
+    --font-l: 20px;
+    
+    --font-bold-m: 500;
+    --font-bold-m: 600;
+    --font-bold-l: 800;
 }

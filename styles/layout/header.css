@@ -24,3 +24,24 @@
 .header__nav {
     gap: 1.5rem;
 }
+
+/* buttons */
+
+.btn-header-right {
+    color: var(--text-secondary);
+    background-color: transparent;
+    border: none;
+}
+
+.btn-header-left {
+    color: var(--text-primary);
+    background-color: transparent;
+    border: none;
+    font-size: var(--font-x);
+    font-weight: var(--font-bold);
+}
+
+.btn-header-left:hover {
+    border-bottom: 2px solid var(--color-secondary);
+    color: var(--text-secondary)
+}
