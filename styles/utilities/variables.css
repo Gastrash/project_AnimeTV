@@ -3,31 +3,85 @@
 :root {
     --background-hero: url("../../assets/image/img-01.jpeg");
 
-    --text-primary: #c0bebe;
-    --text-secondary: #b89be8;  
-    --text-muted: #666666;
-
-    --color-primary: #0b1326;
+    /* background */
+    --bg-main: #0b1326;
+    --bg-surface: ; /*superficies internas: sections, cards, containers, paneles*/
+    --bg-elevated: ; /*Elementos sobresalientes: modal, dropdown, sidebar, card importante, hover potente*/
+    
+    /*
     --color-secondary: #b89be8;
     --color-terciary: #4d305f;
     --color-cuatro: #2DD4BF;
     --color-gris: rgb(112, 108, 108);
     --color-gris-two: rgb(63, 60, 60);
+    */
 
-    --shadow-one: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    /* text */
+    --text-primary: #b8b2b2;
+    --text-secondary: black;
+    --text-heading: #b89be8;
+    --text-muted: #666666;
 
-    --font-primary: montserrat, sans-serif;
-    --font-secondary: montserrat, sans-serif;
+    /* accent */
+    --accent-primary: ;
+    --accent-secondary: ; /*badge*/
+    --accent-success: ; /*acción completada*/
 
-    --radius-s: 10px;
-    --radius-m: 40px;
-    --radius-full: 100%;
+    /* borders */
+    --border-primary: rgb(112, 108, 108);
+    --border-accent: red;
+
+    /* overlays */
+    --overlay-s: rgba(0, 0, 0, 0.5);
+    --overlay-m: rgba(0, 0, 0, 0.7);
+    --overlay-l: rgba(0, 0, 0, 0.9);
     
-    --font-s: 15px;
-    --font-m: 18px;
-    --font-l: 20px;
+    /* shadows */
+    --shadow-s: 0 2px 6px rgba(0,0,0,0.2);
+    --shadow-m: 0 4px 12px rgba(0,0,0,0.3);
+    --shadow-l: 0 8px 20px rgba(0,0,0,0.35);
     
-    --font-bold-m: 500;
-    --font-bold-m: 600;
-    --font-bold-l: 800;
+    /* font family */
+    --font-family-base: montserrat, sans-serif;
+    --font-family-secondary: montserrat, sans-serif;
+    
+    /* font sizes */
+    --font-size-xs: 0.75rem; /*12px*/
+    --font-size-s: 0.875rem; /*14px*/
+    --font-size-m: 1rem; /*16px*/
+    --font-size-l: 1.25rem; /*20px*/
+    --font-size-xl: 1.5rem;  /*24px*/
+    --font-size-2xl: 2rem; /*32px*/
+    --font-size-3xl: 2.5rem; /*48px*/
+    --font-size-4xl: 3.5rem; /*64px*/
+
+    /*font weights*/
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    
+    /*spacing*/
+    --space-3xs: 0.25rem; /*4px*/
+    --space-2xs: 0.5rem; /*8px*/
+    --space-xs: 0.75rem; /*12px*/
+    --space-s: 1rem; /*16px*/
+    --space-m: 1.5rem; /*24px*/
+    --space-l: 2rem; /*32px*/
+    --space-xl: 4rem; /*64px*/
+    --space-2xl: 6rem; /*96px*/
+    --space-3xl: 8rem; /*128px*/
+    
+    /* radius */
+    --radius-s: 0.5rem; /*8px*/
+    --radius-m: 0.75rem; /*12px*/
+    --radius-l: 1rem; /*16px*/
+    --radius-xl: 2rem; /*32px*/
+    --radius-xl: 3rem; /*48px*/
+    --radius-full: 9999px;
+
+    /*
+    Otras variables posibles: transition, z-index, containers, breakpoints (responsive), más accent, blur;
+    */
 }

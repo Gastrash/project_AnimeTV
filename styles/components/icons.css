@@ -1,36 +1,11 @@
 /* icons.css */
 
 .icon {
-    width: 24px;
-    height: 24px;
+    width: var(--space-m);
+    height: var(--space-m);
 }
 
 .icon--small {
-    width: 2rem;
-    height: 2rem;
-}
-
-.icon-favorite {
-    width: 20px;
-    height: 20px;
-}
-
-.icon-like {
-    width: 20px;
-    height: 20px;
-}
-
-.icon-season-button-primary {
-    transform: rotate(180deg);
-    transition: transform ease 1s;
-}
-
-.icon-season-button-primary.open {
-    transform: rotate(0deg);
-}
-
-.icon-season-button-secondary {}
-
-.icon-season-button-secondary-right {
-    transform: rotate(180deg);
+    width: var(--space-xs);
+    height: var(--space-xs);
 }

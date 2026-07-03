@@ -3,58 +3,57 @@
 /* clase base: */
 
 .btn {
-    border-radius: var(--radius-one);
-    font-weight: var(--font-bold);
-    box-shadow: var(--shadow-one);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-l);
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
 /* clases de medida: */
 
 .btn--s {
-    padding: 1rem;
-    font-size: var(--font-l);
-    font-weight: var(--font-bold);
+    padding: var(--space-s);
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-regular);
     line-height: 1.2;
 }
 
 .btn--m {
-    padding: 2rem;
-    font-size: var(--font-l);
+    padding: var(--space-l);
+    font-size: var(--font-size-xl);
     font-weight: var(--font-bold);
     line-height: 1.2;
 }
 
 .btn--l {
-    padding: 4rem;
+    padding: var(--space-xl);
     font-size: var(--font-l);
     line-height: 1.2;
-    gap: 0.5rem;
+    gap: var(--space-2xs);
 }
 
 /* clases visuales: */
 
 .btn--primary {
-    background-color: var(--color-secondary);
-    border: 1px solid var(--color-terciary);
-    color: var(--color-terciary);
+    background-color: var(--accent-primary);
+    border: 1px solid var(--border-accent);
+    color: var(--text-primary);
     transition: all ease 0.5s;
 }
 
 .btn--primary:hover {
-    background-color: var(--color-primary);
+    background-color: var(--accent-primary);
     border: 1px solid var(--color-secondary);
-    color: var(--color-secondary);
+    color: var(--text-secondary);
 }
 
 .btn--secondary {
-    background-color: var(--color-primary);
-    border: 1px solid var(--color-secondary);
-    color: var(--color-secondary);
+    background-color: var(--accent-primary);
+    border: 1px solid var(--accent-secondary);
+    color: var(--text-secondary);
 }
 
 .btn--secondary:hover {
-    background-color: var(--color-secondary);
+    background-color: var(--accent-secondary);
     border: 1px solid var(--color-terciary);
     color: var(--color-terciary);
 }
@@ -71,7 +70,7 @@
     color: var(--color-secondary);
 }
 
-/* buttons */
+/* otros: */
 
 .btn--icon {
     width: var(--size-icon);

@@ -1,34 +1,36 @@
 /* header */
 
 .header {
-    background-color: var(--color-primary);
+    background-color: var(--bg-main);
+    padding-inline: var(--space-l);
+    box-shadow: var(--shadow-l);
     min-width: 100%;
     position: fixed;
-    padding-inline: 2rem;
     z-index: 999;
-    h2 {
-        color: var(--color-secondary);
-    }
+}
+
+.header__title {
+    color: var(--text-heading);
 }
 
 .header__left {
-    gap: 3rem;
-    padding: 1rem 1rem;
+    gap: var(--space-l);
+    padding: var(--space-m);
 }
 
 .header__right {
-    gap: 2rem;
-    padding: 1rem 1rem;
+    gap: var(--space-l);
+    padding: var(--space-m);
 }
 
 .header__nav {
-    gap: 1.5rem;
+    gap: var(--space-m);
 }
 
 /* buttons */
 
 .btn-header-right {
-    color: var(--text-secondary);
+    color: var(--text-primary);
     background-color: transparent;
     border: none;
 }
@@ -37,11 +39,11 @@
     color: var(--text-primary);
     background-color: transparent;
     border: none;
-    font-size: var(--font-x);
-    font-weight: var(--font-bold);
+    font-size: var(--font-xl);
+    font-weight: var(--font-);
 }
 
 .btn-header-left:hover {
-    border-bottom: 2px solid var(--color-secondary);
-    color: var(--text-secondary)
+    border-bottom: 2px solid var(--border-accent);
+    color: var(--text-secondary);
 }

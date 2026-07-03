@@ -1,19 +1,23 @@
 /* inputs.css */
 
 .input {
-    padding: 0.5rem 1rem;
-    font-size: var(--font-xl);
-    font-weight: var(--font-bold);
-    box-shadow: var(--shadow-one);
+    padding: var(--space-2xs) var(--space-s);
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-medium);
+    box-shadow: var(--shadow-m);
 }
 
 .input--primary {
     padding-block: 0;
     background-color: transparent;
     border: none;
-    border-bottom: var(--color-gris) 2px solid;
-    color: var(--color-secondary);
+    border-bottom: var(--border-primary) 2px solid;
+    color: var(--text-primary);
     box-shadow: none;
+}
+
+.input--primary:hover {
+    color: var(--text-muted);
 }
 
 .input--secondary {

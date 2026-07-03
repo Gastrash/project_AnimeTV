@@ -39,31 +39,43 @@
     min-height: 70%;
     bottom: 0;
     left: 0;
-    padding: 0 4rem 5vh 4rem;
+    padding: 0 var(--space-xl) 5vh var(--space-xl);
     color: var(--text-primary);
 
     .hero-info__secondary {
-        gap: 1rem;
+        gap: var(--space-s);
     }
 
     .hero-info__primary {
-        gap: 2rem;
-        margin-bottom: 4rem;
+        gap: var(--space-l);
+        margin-bottom: var(--space-xl);
         
         p {
-            margin-top: 10px;
-            font-size: var(--font-l);
+            margin-top: var(--space-s);
+            font-size: var(--font-size-l);
             max-width: 80%;
         }
     }
     
     .hero-actions {
-        gap: 1rem;
+        gap: var(--space-s);
     }
 }
 
 /* buttons */
 
 .btn-hero-icons {
-    padding: 14px 15px;
+    padding: var(--space-l);
+}
+
+/* icons */
+
+.icon-favorite {
+    width: var(--space-s);
+    height: var(--space-s);
+}
+
+.icon-like {
+    width: var(--space-s);
+    height: var(--space-s);
 }

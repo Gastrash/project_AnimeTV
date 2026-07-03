@@ -1,20 +1,16 @@
 /* ancho + centrado */
 
-:root {
-    --container-modal-radius: 40px;
-}
-
 .section {}
 
 .container {
     width: 100%;
-    margin-block: 2rem;
-    padding: 0 4rem;
+    margin-block: var(--space-l);
+    padding: 0 var(--space-xl);
 }
 
 .container-secondary {
     width: 100%;
-    margin-block: 2rem;
+    margin-block: var(--space-l);
     padding: 0;
 }
 

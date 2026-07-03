@@ -2,8 +2,8 @@
 
 .ranking {
     width: 100%;
-    gap: 2rem;
-    padding: 2rem 0;
+    gap: var(--space-l);
+    padding: var(--space-l) 0;
 }
 
 .ranking__header {
@@ -15,7 +15,7 @@
 }
 
 .ranking__list {
-    gap: 1rem;
+    gap: var(--space-s);
 }
 
 .ranking__item {

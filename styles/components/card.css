@@ -8,19 +8,6 @@
     background-position: center;
 }
 
-.card--seasonContent {
-    border-radius: var(--radius-one);
-    overflow: hidden;
-    max-width: 300px;
-    aspect-ratio: 16/9;
-    transition: all ease 0.6s;
-}
-
-.card--seasonContent:hover {
-    transform: scale(1.03);
-    border: rgba(185, 182, 182, 0.37) solid 1px; /* box-shadow */
-}
-
 .card:hover {
     transform: scale(1.05);
 }
@@ -33,6 +20,6 @@
     );
 
     color: var(--text-primary);
-    padding: 1rem;
+    padding: var(--space-s);
     margin-top: auto;
 }
