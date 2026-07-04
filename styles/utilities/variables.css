@@ -5,8 +5,8 @@
 
     /* background */
     --bg-main: #0b1326;
-    --bg-surface: ; /*superficies internas: sections, cards, containers, paneles*/
-    --bg-elevated: ; /*Elementos sobresalientes: modal, dropdown, sidebar, card importante, hover potente*/
+    --bg-surface: #4d305f; /*superficies internas: sections, cards, containers, paneles*/
+    --bg-elevated: #ffffbf; /*Elementos sobresalientes: modal, dropdown, sidebar, card importante, hover potente*/
     
     /*
     --color-secondary: #b89be8;
@@ -17,18 +17,19 @@
     */
 
     /* text */
-    --text-primary: #b8b2b2;
+    --text-primary: #d0d0d0;
     --text-secondary: black;
-    --text-heading: #b89be8;
-    --text-muted: #666666;
+    --text-heading: #dfaaff;
+    --text-muted: #6d6d6dd0;
 
     /* accent */
-    --accent-primary: ;
-    --accent-secondary: ; /*badge*/
-    --accent-success: ; /*acción completada*/
+    --accent-primary: #3c2bff;
+    --accent-secondary: #ff6afc; /*badge*/
+    --accent-success: #ff6afc; /*acción completada*/
 
     /* borders */
     --border-primary: rgb(112, 108, 108);
+    --border-secondary: rgb(112, 108, 108);
     --border-accent: red;
 
     /* overlays */
@@ -72,6 +73,17 @@
     --space-xl: 4rem; /*64px*/
     --space-2xl: 6rem; /*96px*/
     --space-3xl: 8rem; /*128px*/
+
+    /*container*/
+    --container-3xs: 10rem; /*160px*/
+    --container-2xs: 14rem; /*224px*/
+    --container-xs: 18rem; /*288px*/
+    --container-s: 22rem; /*px*/
+    --container-m: 28rem; /*px*/
+    --container-l: 34rem; /*px*/
+    --container-xl: 40rem; /*px*/
+    --container-2xl: 48rem; /*px*/
+    --container-3xl: 56rem; /*px*/
     
     /* radius */
     --radius-s: 0.5rem; /*8px*/
