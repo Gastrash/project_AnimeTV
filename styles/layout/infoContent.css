@@ -39,13 +39,12 @@
 
 .infoContent__secondary {
     width: 100%;
-    border-radius: var(--radius-one);
     padding: var(--space-s);
 }
 
 .infoContent__trailer {
     width: 100%;
-    max-width: 450px;
+    max-width: var(--container-m);
     border-radius: var(--radius-s);
     box-shadow: var(--shadow-m);
 }
@@ -55,7 +54,7 @@
     padding-right: var(--space-3xl);
     gap: var(--space-l);
 
-    /*.infocontent__characteristics {}
+    /*.infocontent__characteristics{} cambiar a badges.
     .infoContent__description {}
     */
 }

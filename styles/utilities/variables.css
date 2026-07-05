@@ -19,18 +19,19 @@
     /* text */
     --text-primary: #d0d0d0;
     --text-secondary: black;
-    --text-heading: #dfaaff;
-    --text-muted: #6d6d6dd0;
+    --text-heading: #b89be8;
+    --text-muted: #79797946;
 
     /* accent */
-    --accent-primary: #3c2bff;
-    --accent-secondary: #ff6afc; /*badge*/
-    --accent-success: #ff6afc; /*acción completada*/
+    --accent-primary: #7338aa;
+    --accent-secondary: #b89be8; /*badge*/
+    --accent-success: #e100ff; /*acción completada*/
 
     /* borders */
     --border-primary: rgb(112, 108, 108);
-    --border-secondary: rgb(112, 108, 108);
-    --border-accent: red;
+    --border-secondary: #b89be8;
+    --border-muted: #79797946;
+    --border-accent: ;
 
     /* overlays */
     --overlay-s: rgba(0, 0, 0, 0.5);
@@ -75,15 +76,15 @@
     --space-3xl: 8rem; /*128px*/
 
     /*container*/
-    --container-3xs: 10rem; /*160px*/
-    --container-2xs: 14rem; /*224px*/
-    --container-xs: 18rem; /*288px*/
-    --container-s: 22rem; /*px*/
-    --container-m: 28rem; /*px*/
-    --container-l: 34rem; /*px*/
-    --container-xl: 40rem; /*px*/
-    --container-2xl: 48rem; /*px*/
-    --container-3xl: 56rem; /*px*/
+    --container-3xs: 10rem;  /*160px*/
+    --container-2xs: 14rem;  /*224px*/
+    --container-xs: 18rem;   /*288px*/
+    --container-s: 24rem;    /*384px*/
+    --container-m: 32rem;    /*512px*/
+    --container-l: 40rem;    /*640px*/
+    --container-xl: 48rem;   /*768px*/
+    --container-2xl: 64rem;  /*1024px*/
+    --container-3xl: 80rem;  /*1280px*/
     
     /* radius */
     --radius-s: 0.5rem; /*8px*/
@@ -94,6 +95,6 @@
     --radius-full: 9999px;
 
     /*
-    Otras variables posibles: transition, z-index, containers, breakpoints (responsive), más accent, blur;
+    Otras variables posibles: medidas del hero, transition, z-index, containers, breakpoints (responsive), más accent, blur;
     */
 }

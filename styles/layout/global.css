@@ -33,7 +33,7 @@ ul {
 }
 
 .footer {
-    border-top: 2px solid var(--border-primary);
+    border-top: 2px solid var(--border-muted);
     padding: var(--space-xl) var(--space-3xl);
 }
 

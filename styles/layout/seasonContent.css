@@ -2,7 +2,7 @@
 
 .seasonContent {
     background-color: var(--bg-surface);
-    border-radius: var(--radius-one);
+    border-radius: var(--radius-l);
     margin-block: var(--space-l);
     padding: var(--space-s);
 }
@@ -52,8 +52,8 @@
 
 .seasonContent__grid {
     display: grid;
-    min-height: 450px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    min-height: var(--container-m);
+    grid-template-columns: repeat(auto-fit, minmax(var(--container-2xs), 1fr));
     gap: var(--space-s); /* column-gap: / row-gap */
     padding-block: var(--space-s);
 }
@@ -75,31 +75,32 @@
 */
 
 .seasonContent__navigation {
-    padding: 1rem;
+    padding: var(--space-s);
 }
 
 .seasonContent__display {
-    margin-inline: 2rem;
+    margin-inline: var(--space-l);
 }
 
 /* buttons */
 
 .btn-season {
-    font-size: var(--font-x);
-    padding: 10px;
-    gap: 0.5rem;
+    font-size: var(--font-size-l);
+    padding: var(--space-s);
+    gap: var(--space-2xs);
     transition: all ease 0.5s;
+    border: black solid 1px;
 }
 
 .btn-season:hover {
-    font-size: var(--font-xl);
+    font-size: var(--font-size-l);
     color: white;
     background-color: black;
     border: white solid 1px;
 }
 
 .btn-season-nav {
-    padding: 0.5rem;
+    padding: var(--space-2xs);
     transition: transform ease 0.5s;
 }
 
@@ -110,15 +111,15 @@
 .btn-pagination-dot {
     border-radius: 100%;
     background-color: transparent;
-    border: 2px solid var(--color-secondary);
-    width: 10px;
-    height: 10px;
+    border: 2px solid var(--border-secondary);
+    width: var(--space-xs);
+    height: var(--space-xs);
     transition: all ease 0.3s;
 }
 
 .btn-pagination-dot.active {
-    border: 1px solid var(--color-secondary);
-    background-color: var(--color-secondary);
+    border: 1px solid var(--border-secondary);
+    background-color: var(--border-secondary);
 }
 
 /* icons */
@@ -143,12 +144,12 @@
 .card--seasonContent {
     border-radius: var(--radius-one);
     overflow: hidden;
-    max-width: 300px;
+    max-width: var(--container-xs);
     aspect-ratio: 16/9;
     transition: all ease 0.6s;
 }
 
 .card--seasonContent:hover {
     transform: scale(1.03);
-    border: rgba(185, 182, 182, 0.37) solid 1px; /* box-shadow */
+    box-shadow: var(--shadow-m); /* box-shadow */
 }

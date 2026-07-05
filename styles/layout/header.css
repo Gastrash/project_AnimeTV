@@ -39,11 +39,10 @@
     color: var(--text-primary);
     background-color: transparent;
     border: none;
-    font-size: var(--font-xl);
-    font-weight: var(--font-);
+    font-size: var(--font-size-m);
 }
 
 .btn-header-left:hover {
-    border-bottom: 2px solid var(--border-accent);
-    color: var(--text-secondary);
+    color: var(--accent-secondary);
+    border-bottom: 2px solid var(--accent-secondary);
 }

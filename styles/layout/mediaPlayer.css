@@ -1,7 +1,7 @@
 /* mediaPlayer */
 
 .mediaPlayer {
-    border-top: var(--border-primary) solid 3px;
+    border-top: var(--border-muted) solid 3px;
     outline: none;
 }
 
@@ -14,7 +14,7 @@
 
 .mediaPlayer__actions, 
 .mediaPlayer__nav {
-    border-top: var(--border-primary) solid 3px;
+    border-top: var(--border-muted) solid 3px;
     padding: var(--space-l);
 }
 
@@ -45,10 +45,9 @@
 .btn-mediaPlayer {
     background-color: black; /**/
     font-size: var(--font-size-xl); /**/
-    border: 1px solid var(--border-accent); /**/
+    border: 1px solid var(--border-secondary); /**/
     color: var(--color-terciary); /**/
     padding: var(--space-m) var(--space-l);
-    font-weight: var(--font-bold); /**/
     gap: var(--space-s);
 }
 
