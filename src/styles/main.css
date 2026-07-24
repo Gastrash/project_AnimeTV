@@ -1,4 +1,21 @@
 /* main.css */
 
 @import "../ui/index.css";
+
+/* Layout */
+
 @import "./layout/global.css";
+@import "./layout/hero.css";
+@import "./layout/comments.css";
+@import "./layout/content.css";
+@import "./layout/header.css";
+@import "./layout/infoContent.css";
+@import "./layout/mediaPlayer.css";
+@import "./layout/ranking.css";
+@import "./layout/seasonContent.css";
+
+/* Components */
+
+/* Utilities */
+
+@import "./utilities/container.css";
