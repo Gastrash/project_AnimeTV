@@ -14,7 +14,7 @@
 }
 
 .header__left {
-    gap: var(--space-l);
+    gap: var(--space-xl);
     padding: var(--space-m);
 }
 
@@ -24,25 +24,13 @@
 }
 
 .header__nav {
-    gap: var(--space-m);
+    gap: var(--space-xs);
 }
 
 /* buttons */
 
 .btn-header-right {
-    color: var(--text-primary);
+    color: var(--text-default);
     background-color: transparent;
     border: none;
-}
-
-.btn-header-left {
-    color: var(--text-primary);
-    background-color: transparent;
-    border: none;
-    font-size: var(--font-size-m);
-}
-
-.btn-header-left:hover {
-    color: var(--accent-secondary);
-    border-bottom: 2px solid var(--accent-secondary);
 }

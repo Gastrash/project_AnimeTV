@@ -40,7 +40,7 @@
     bottom: 0;
     left: 0;
     padding: 0 var(--space-xl) 5vh var(--space-xl);
-    color: var(--text-primary);
+    color: var(--text-default);
 
     .hero-info__secondary {
         gap: var(--space-s);
@@ -52,7 +52,7 @@
         
         p {
             margin-top: var(--space-s);
-            font-size: var(--font-size-l);
+            font-size: var(--font-size-s);
             max-width: 80%;
         }
     }

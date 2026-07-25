@@ -2,7 +2,7 @@
 
 .comments {}
 
-.comments__header, .comments__footer, .comments-card {
+.comments__header, .comments__footer {
     background-color: black;
     border: var(--border-muted) solid 1px;
     box-shadow: var(--shadow-s);

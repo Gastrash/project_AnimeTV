@@ -15,7 +15,7 @@ body {
     font-family: var(--font-family-base);
     background-color: var(--bg-main);
     font-weight: var(--font-weight-regular);
-    color: var(--text-primary); /*quitar*/
+    color: var(--text-default); /*quitar*/
 }
 
 section {
@@ -38,17 +38,17 @@ ul {
 }
 
 h1 {
-    font-size: var(--font-size-4xl);
-}
-
-h2 {
     font-size: var(--font-size-3xl);
 }
 
+h2 {
+    font-size: var(--font-size-xl);
+}
+
 h3 {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-l);
 }
 
 h4 {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-m);
 }
