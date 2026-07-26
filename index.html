@@ -30,7 +30,7 @@
                 </div>
             </div>
         </header>
-        
+
         <main>
 
             <section id="hero">
@@ -50,17 +50,17 @@
                         <div class="hero-actions flex flex-row">
                             <button id="btn-start" class="btn btn--size-3 btn--default">Empezar</button>
                             <button id="btn-addList" class="btn btn--size-3 btn--secondary">Añadir a lista</button>
-                            <button id="btn-favorite" class="btn btn--type-square btn--type-square-small btn--default">
-                                <svg class="icon-favorite" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">heart</title><path fill="currentColor" d="M12 4.528a6 6 0 0 0-8.243 8.715l6.829 6.828a2 2 0 0 0 2.828 0l6.829-6.828A6 6 0 0 0 12 4.528m-1.172 1.644l.465.464a1 1 0 0 0 1.414 0l.465-.464a4 4 0 1 1 5.656 5.656L12 18.657l-6.828-6.829a4 4 0 0 1 5.656-5.656"/></svg>
+                            <button id="btn-favorite" class="btn btn--type-square btn--type-square-small btn--secondary">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">heart</title><path fill="currentColor" d="M12 4.528a6 6 0 0 0-8.243 8.715l6.829 6.828a2 2 0 0 0 2.828 0l6.829-6.828A6 6 0 0 0 12 4.528m-1.172 1.644l.465.464a1 1 0 0 0 1.414 0l.465-.464a4 4 0 1 1 5.656 5.656L12 18.657l-6.828-6.829a4 4 0 0 1 5.656-5.656"/></svg>
                             </button>
-                            <button id="btn-like" class="btn btn--type-square btn--type-square-small btn--default">
-                                <svg class="icon-like" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">like</title><path fill="currentColor" d="M20 8h-5.61l1.12-3.37c.2-.61.1-1.28-.27-1.8c-.38-.52-.98-.83-1.62-.83h-1.61c-.3 0-.58.13-.77.36L6.54 8H4.01c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h13.31a2 2 0 0 0 1.87-1.3l2.76-7.35c.04-.11.06-.23.06-.35v-2c0-1.1-.9-2-2-2ZM6 19H4v-9h2zm14-7.18L17.31 19H8V9.36L12.47 4h1.15l-1.56 4.68a1.01 1.01 0 0 0 .95 1.32h7v1.82Z"/></svg>
+                            <button id="btn-like" class="btn btn--type-square btn--type-square-small btn--secondary">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">like</title><path fill="currentColor" d="M20 8h-5.61l1.12-3.37c.2-.61.1-1.28-.27-1.8c-.38-.52-.98-.83-1.62-.83h-1.61c-.3 0-.58.13-.77.36L6.54 8H4.01c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h13.31a2 2 0 0 0 1.87-1.3l2.76-7.35c.04-.11.06-.23.06-.35v-2c0-1.1-.9-2-2-2ZM6 19H4v-9h2zm14-7.18L17.31 19H8V9.36L12.47 4h1.15l-1.56 4.68a1.01 1.01 0 0 0 .95 1.32h7v1.82Z"/></svg>
                             </button>
                         </div>
                     </div>
                 </div>
             </section>
-            
+
             <section id="content" class="container-secondary">
                 <div class="content flex flex-column">
                     <header class="content__header container">
@@ -69,10 +69,12 @@
                     <main class="content__viewport">
                         <ul class="content__list flex flex-row justify-flex-start">
                             <li class="content__item">
-                                <article class="card flex flex-column" style="background-image: url(assets/image/img-01.jpeg);">
-                                    <div class="card__overlay">
-                                        <h4>Cyberpunk Odyssey</h4>
-                                        <p></p>
+                                <article class="card__container card--size-vertical">
+                                    <div class="card card--default" style="background-image: url('src/assets/image/img-01.jpeg');">
+                                        <div class="card__meta">
+                                            <h4>Neón City</h4>
+                                            <p>Una serie sobre detectives en una megaciudad futurista.</p>
+                                        </div>
                                     </div>
                                 </article>
                             </li>
@@ -80,7 +82,7 @@
                     </main>
                 </div>
             </section>
-            
+
             <section id="ranking" class="container-secondary">
                 <div class="ranking flex flex-column">
                     <header class="ranking__header container">
@@ -90,10 +92,12 @@
                         <div class="ranking__viewport">
                             <ul class="ranking__list flex flex-row justify-flex-start">
                                 <li class="ranking__item">
-                                    <article class="card flex flex-column" style="background-image: url(assets/image/img-01.jpeg);">
-                                        <div class="card__overlay">
-                                            <h4>Cyberpunk Odyssey</h4>
-                                            <p></p>
+                                    <article class="card__container card--size-horizontal">
+                                        <div class="card card--default" style="background-image: url('src/assets/image/img-01.jpeg');">
+                                            <div class="card__meta">
+                                                <h4>Neón City</h4>
+                                                <p>Una serie sobre detectives en una megaciudad futurista.</p>
+                                            </div>
                                         </div>
                                     </article>
                                 </li>
@@ -102,7 +106,7 @@
                     </footer>
                 </div>
             </section>
-            
+
             <!-- <section id="content">
                 <div class="content flex flex-column">
                     <header>
@@ -113,7 +117,7 @@
                     </footer>
                 </div>
             </section> -->
-            
+
             <section id="infoContent" class="container">
                 <div class="infoContent flex flex-row">
                     <div class="infoContent__primary flex flex-column"> 
@@ -132,13 +136,13 @@
                             </div>
                         </main>
                         <footer class="infoContent__actions flex flex-row">
-                            <button id="btn-start" class="btn btn-primary">Empezar</button>
-                            <button id="btn-addList" class="btn btn-secondary">Añadir a lista</button>
-                            <button id="btn-favorite" class="btn btn-secondary btn-hero-icons">
-                                <svg class="icon-favorite" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">heart</title><path fill="currentColor" d="M12 4.528a6 6 0 0 0-8.243 8.715l6.829 6.828a2 2 0 0 0 2.828 0l6.829-6.828A6 6 0 0 0 12 4.528m-1.172 1.644l.465.464a1 1 0 0 0 1.414 0l.465-.464a4 4 0 1 1 5.656 5.656L12 18.657l-6.828-6.829a4 4 0 0 1 5.656-5.656"/></svg>
+                            <button id="btn-start" class="btn btn--size-2 btn--default">Empezar</button>
+                            <button id="btn-addList" class="btn btn--size-2 btn--secondary">Añadir a lista</button>
+                            <button id="btn-favorite" class="btn btn--type-square btn--type-square-medium btn-secondary">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">heart</title><path fill="currentColor" d="M12 4.528a6 6 0 0 0-8.243 8.715l6.829 6.828a2 2 0 0 0 2.828 0l6.829-6.828A6 6 0 0 0 12 4.528m-1.172 1.644l.465.464a1 1 0 0 0 1.414 0l.465-.464a4 4 0 1 1 5.656 5.656L12 18.657l-6.828-6.829a4 4 0 0 1 5.656-5.656"/></svg>
                             </button>
-                            <button id="btn-like" class="btn btn-secondary btn-hero-icons">
-                                <svg class="icon-like" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">like</title><path fill="currentColor" d="M20 8h-5.61l1.12-3.37c.2-.61.1-1.28-.27-1.8c-.38-.52-.98-.83-1.62-.83h-1.61c-.3 0-.58.13-.77.36L6.54 8H4.01c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h13.31a2 2 0 0 0 1.87-1.3l2.76-7.35c.04-.11.06-.23.06-.35v-2c0-1.1-.9-2-2-2ZM6 19H4v-9h2zm14-7.18L17.31 19H8V9.36L12.47 4h1.15l-1.56 4.68a1.01 1.01 0 0 0 .95 1.32h7v1.82Z"/></svg>
+                            <button id="btn-like" class="btn btn--type-square btn--type-square-medium btn-secondary">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">like</title><path fill="currentColor" d="M20 8h-5.61l1.12-3.37c.2-.61.1-1.28-.27-1.8c-.38-.52-.98-.83-1.62-.83h-1.61c-.3 0-.58.13-.77.36L6.54 8H4.01c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h13.31a2 2 0 0 0 1.87-1.3l2.76-7.35c.04-.11.06-.23.06-.35v-2c0-1.1-.9-2-2-2ZM6 19H4v-9h2zm14-7.18L17.31 19H8V9.36L12.47 4h1.15l-1.56 4.68a1.01 1.01 0 0 0 .95 1.32h7v1.82Z"/></svg>
                             </button>
                         </footer>
                     </div>
@@ -150,21 +154,20 @@
                     </div>
                 </div>
             </section>
-            
+
             <section id="seasonContent" class="container">
                 <div class="seasonContent flex flex-column">
                     <div class="seasonContent__actions flex flex-row justify-flex-start">
-                        <button id="season-selector" class="btn btn-secondary btn-season flex flex-row justify-center">Temporada 1 <svg class="icon icon-season-button-primary" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"><title xmlns="">arrow</title><path fill="currentColor" d="m11 7l-4 6h8z"/></svg> </button>
+                        <button id="season-selector" class="btn btn--size-2 btn--type-split btn--secondary">Temporada 1 <svg class="icon icon-season-button-primary" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"><title xmlns="">arrow</title><path fill="currentColor" d="m11 7l-4 6h8z"/></svg> </button>
                     </div>
                     <main class="seasonContent__body flex flex-column">
                         <ul class="seasonContent__grid">
                             <li class="seasonContent__item">
-                                <article class="card card--seasonContent flex flex-column" style="background-image: url(assets/image/img-01.jpeg);">
-                                    <div class="seasonContent__episodeOverlay flex flex-column">
-                                        <div class=".seasonContent__episodeInfo flex flex-column">
-                                            <h4 id="episode-title"></h4>
-                                            <p id="episode-description"></p>
-                                            <p id="episode-duration"></p>
+                                <article class="card__container card--size-horizontal">
+                                    <div class="card card--default" style="background-image: url('src/assets/image/img-01.jpeg');">
+                                        <div class="card__meta">
+                                            <h4>Neón City</h4>
+                                            <p>Una serie sobre detectives en una megaciudad futurista.</p>
                                         </div>
                                     </div>
                                 </article>
@@ -172,15 +175,15 @@
                         </ul>
                     </main>
                     <nav class="seasonContent__navigation flex flex-row justify-center align-center">
-                        <button id="prev-button" class="btn btn-secondary btn-season-nav"> <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">left-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg> </button>
+                        <button id="prev-button" class="btn btn--type-square btn--type-square-small btn--secondary btn-season-nav"> <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">left-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg> </button>
                         <div class="seasonContent__display flex justify-center">
                             <button id="pagination-dot" class="btn-primary btn-pagination-dot"></button>
                         </div>
-                        <button id="adelante-button" class="btn btn-secondary btn-season-nav"> <svg class="icon icon-season-button-secondary-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">right-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg> </button>
+                        <button id="adelante-button" class="btn btn--type-square btn--type-square-small btn--secondary btn-season-nav"> <svg class="icon icon--right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">right-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg> </button>
                     </nav>
                 </div>
             </section>
-            
+
             <section id="mediaPlayer" class="container">
                 <div class="mediaPlayer flex flex-column justify-center align-center">
                     <main class="mediaPlayer__viewer flex flex-column">
@@ -191,23 +194,23 @@
                     </main>
                     <footer class="mediaPlayer__footer flex flex-column justify-flex-start align-center">
                         <div class="mediaPlayer__actions flex flex-row justify-center align-center">
-                            <button class="btn btn-secondary btn-mediaPlayer">Descargar</button>
-                            <button class="btn btn-secondary btn-mediaPlayer">Compartir</button>
-                            <button class="btn btn-secondary btn-mediaPlayer">Me gusta</button>
+                            <button class="btn btn--size-2 btn-secondary btn--mediaPlayer">Descargar</button>
+                            <button class="btn btn--size-2 btn-secondary btn--mediaPlayer">Compartir</button>
+                            <button class="btn btn--size-2 btn-secondary btn--mediaPlayer">Me gusta</button>
                         </div>
                         <nav class="mediaPlayer__nav flex flex-row">
-                            <button id="mediaPlayer-nav-previous" class="btn btn-secondary btn-mediaPlayer btn-mediaPlayer-nav-primary flex flex-row justify-flex-start align-center">
+                            <button id="mediaPlayer-nav-previous" class="btn btn--size-3 btn--icon-left btn--secondary btn--mediaPlayer btn--mediaPlayer-nav-primary">
                                 <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">left-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg>
                                 <div class="flex flex-column justify-space-between">
                                     <p>ANTERIOR</p>
                                     <p>Cap. 35</p>
                                 </div>
                             </button>
-                            <button id="mediaPlayer-nav-episodes" class="btn btn-secondary btn-mediaPlayer btn-mediaPlayer-nav-secondary flex flex-row align-center">
-                            <p>Episodios</p>
+                            <button id="mediaPlayer-nav-episodes" class="btn btn--type-square btn--type-square-medium btn--secondary">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 21 21"><title xmlns="">episodes</title><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 16.5v-6a2 2 0 0 0-2-2h-9a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2"/><path d="M16.5 16.5V9.505a3 3 0 0 0-3-3h-.005L4.5 6.521"/><path d="M18.5 14.5V8.507a4 4 0 0 0-4-4h-.007L6.5 4.52"/></g></svg>
                             </button>
-                            <button id="mediaPlayer-nav-next" class="btn btn-secondary btn-mediaPlayer btn-mediaPlayer-nav-primary flex flex-row justify-flex-end align-center">
-                                <svg class="icon icon-season-button-secondary-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">left-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg>
+                            <button id="mediaPlayer-nav-next" class="btn btn--size-3 btn--icon-left btn-secondary btn--mediaPlayer btn--mediaPlayer-nav-secondary">
+                                <svg class="icon icon-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">left-arrow</title><path fill="currentColor" d="m4.431 12.822l13 9A1 1 0 0 0 19 21V3a1 1 0 0 0-1.569-.823l-13 9a1.003 1.003 0 0 0 0 1.645"/></svg>
                                 <div class="flex flex-column justify-space-between">
                                 <p>SIGUIENTE</p>
                                 <p>Cap. 37</p>
@@ -217,7 +220,7 @@
                     </footer>
                 </div>
             </section>
-            
+
             <section id="comments" class="container">
                 <div class="comments flex flex-column">
 
@@ -259,26 +262,26 @@
                     </main>
                     <footer class="comments__footer flex flex-row justify-space-between align-center">
                         <form class="comments-form flex flex-row justify-center align-center">
-                            <input class="input input--primary" type="text" placeholder="Agregar comentario" required>
-                            <button id="" class="btn btn-secondary btn--small" type="submit">Comentar</button>
+                            <input class="input input--size-medium input--default" type="text" placeholder="Agregar comentario" required>
+                            <button id="submit" class="btn btn--type-square btn--type-square-small btn--default" type="submit">Comentar</button>
                         </form>
                         <div class="comments-actions flex flex-row justify-center align-center">
-                            <button class="btn btn-secondary btn--small"></button>
-                            <button class="btn btn-secondary btn--small">
+                            <button class="btn btn--type-square btn--type-square-small btn--secondary"></button>
+                            <button class="btn btn--type-square btn--type-square-small btn--secondary">
                                 <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title xmlns="">options-vertical</title><path fill="currentColor" d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0-4 0m0-6a2 2 0 1 0 4 0a2 2 0 0 0-4 0m0 12a2 2 0 1 0 4 0a2 2 0 0 0-4 0"/></svg>
                             </button>
                         </div>
                     </footer>
                 </div>
             </section>
-            
+
         </main>
-        
+
         <footer>
             <div class="footer flex">
                 <small>&copy; 2026 AnimeTV. Todos los derechos reservados.</small>
             </div>
         </footer>
-        
+
     </body>
 </html>
