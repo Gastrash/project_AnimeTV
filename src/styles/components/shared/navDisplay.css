@@ -1,0 +1,18 @@
+/* navDisplay */
+
+.navDisplay__btn-dot {
+    border-radius: var(--radius-full);
+    background-color: transparent;
+    border: 2px solid var(--border-secondary);
+    width: var(--space-xs);
+    height: var(--space-xs);
+    transition: all ease 0.3s;
+}
+
+.navDisplay__btn-dot.active {
+    border: 2px solid var(--border-secondary);
+}
+
+.navDisplay__btn-dot:hover {
+    border: 2px solid var(--border-secondary);
+}

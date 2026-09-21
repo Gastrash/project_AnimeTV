@@ -1,0 +1,26 @@
+/* badge */
+
+.badge {
+    border-radius: var(--radius-s);
+    gap: var(--space-2xs)
+}
+
+.badge--size-1 {
+    padding: var(--space-3xs) var(--space-2xs);
+    font-size: var(--font-size-2xs);
+}
+
+.badge--size-2 {
+    padding: var(--space-3xs) var(--space-s);
+    font-size: var(--font-size-s);
+}
+
+.badge--variant-default {
+    border: 1px solid var(--border-muted);
+    background-color: var(--accent-secondary);
+}
+
+.badge--variant-secondary {
+    border: 1px solid var(--border-muted);
+    background-color: var(--accent-secondary);
+}

@@ -19,17 +19,11 @@ body {
 }
 
 section {
-    /* outline: red solid 3px; */
+    outline: red solid 3px;
 }
 
 main {
     width: 100%;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .footer {

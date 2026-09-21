@@ -1,0 +1,37 @@
+//layout/sections/Content.jsx
+
+import { Carousel, Card } from "../ui";
+
+/**/
+
+export default function Content ({
+    title = "Novedades para ti",
+    container = "none", //primary, secondary,
+    data = []
+}) {
+    return (
+        <section id="content" className={`container--${container}`}>
+            <div className="content">
+                <div className="content__header">
+                    <h3>{title}</h3>
+                </div>
+                <div className="content__viewport">
+                    <Carousel
+                        className="content__list"
+                        layout="horizontal"
+                        data={data}
+                        renderItem={(item) => (
+                            <Card
+                                className="content__item"
+                                variant="default"
+                                size="2"
+                                layout="vertical"
+                                data={item}
+                            />
+                        )}
+                    />
+                </div>
+            </div>
+        </section>
+    )
+}

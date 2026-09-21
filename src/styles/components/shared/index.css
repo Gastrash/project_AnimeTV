@@ -1,0 +1,8 @@
+/* components/shared */
+
+@import "./card.css";
+@import "./commentCard.css";
+@import "./form.css";
+@import "./carousel.css";
+@import "./navDisplay.css";
+@import "./actions.css";

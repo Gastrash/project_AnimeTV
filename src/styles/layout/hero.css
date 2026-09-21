@@ -6,23 +6,24 @@
     position: relative;
 }
 
-.hero-image {
+.hero__image {
     position: absolute;
     inset: 0;
     z-index: -1;
     height: 90vh;
-
-    img {
-        width: 100%;
-        height: 90vh;
-        object-fit: cover;
-    }
 }
 
-.hero-image::after {
+.hero__image img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.hero__image::after {
     content: '';
     position: absolute;
     inset: 0;
+    z-index: 1;
     background: linear-gradient(
         to top,
         #0b1326ff,
@@ -30,52 +31,39 @@
         transparent,
         transparent
     );
-    pointer-events: none;
+    /*pointer-events: none;*/
 }
 
 .hero__overlay {
     position: absolute;
+    z-index: 0;
     max-width: 50%;
     min-height: 70%;
     bottom: 0;
     left: 0;
     padding: 0 var(--space-xl) 5vh var(--space-xl);
     color: var(--text-default);
+    outline: auto;
+}
 
-    .hero-info__secondary {
-        gap: var(--space-s);
-    }
-
-    .hero-info__primary {
-        gap: var(--space-l);
-        margin-bottom: var(--space-xl);
-        
-        p {
-            margin-top: var(--space-s);
-            font-size: var(--font-size-s);
-            max-width: 80%;
-        }
-    }
-    
-    .hero-actions {
-        gap: var(--space-s);
+.hero__info {
+    gap: var(--space-xs);
+    padding-block: var(--space-s);
+    outline: auto;
+    p {        
+        font-size: var(--font-size-xs);
+        max-width: 80%;
     }
 }
 
-/* buttons */
-
-.btn-hero-icons {
-    padding: var(--space-l);
+.hero__info--badges {
+    gap: var(--space-s);
 }
 
-/* icons */
-
-.icon-favorite {
-    width: var(--space-s);
-    height: var(--space-s);
+.hero__actions {
+    gap: var(--space-s);
+    padding-block: var(--space-s);
+    outline: auto;
 }
 
-.icon-like {
-    width: var(--space-s);
-    height: var(--space-s);
-}
+/* actions */

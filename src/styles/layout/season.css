@@ -1,13 +1,13 @@
 /* seasonContent.css */
 
-.seasonContent {
+.season {
     background-color: var(--bg-surface);
     border-radius: var(--radius-l);
     margin-block: var(--space-l);
     padding: var(--space-s);
 }
 
-.seasonContent__actions, .seasonContent__body {
+.season__actions, .season__content {
     padding: var(--space-s);
 }
 
@@ -15,12 +15,12 @@
 }
 */
 
-.seasonContent__body {
+.season__content {
     position: relative;
     border-block: solid 1px var(--border-primary);
 }
 
-.seasonContent__body::after {
+.season__content::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -35,7 +35,7 @@
     pointer-events: none;
 }
 
-.seasonContent__body::before {
+.season__content::before {
     content: "";
     position: absolute;
     top: 0;
@@ -50,41 +50,24 @@
     pointer-events: none;
 }
 
-.seasonContent__grid {
-    display: grid;
-    min-height: var(--container-m);
-    grid-template-columns: repeat(auto-fit, minmax(var(--container-2xs), 1fr));
-    gap: var(--space-s); /* column-gap: / row-gap */
+.season__grid {
+    min-height: 35vh;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--space-2xs); /* column-gap: / row-gap */
     padding-block: var(--space-s);
 }
 
-/*
-.seasonContent__item {
-    
-}
-*/
-
-.seasonContent__episodeOverlay {
-    background-color: var(--overlay-l);
-}
-
-/*
-.seasonContent__episodeInfo {
-
-}
-*/
-
-.seasonContent__navigation {
+.season__navigation {
     padding: var(--space-s);
 }
 
-.seasonContent__display {
+.season__display {
     margin-inline: var(--space-l);
 }
 
 /* buttons */
 
-.btn-season {
+.season__btn-split {
     font-size: var(--font-size-l);
     padding: var(--space-s);
     gap: var(--space-2xs);
@@ -92,51 +75,20 @@
     border: black solid 1px;
 }
 
-.btn-season:hover {
+.season__btn-split:hover {
     font-size: var(--font-size-l);
     color: white;
     background-color: black;
     border: white solid 1px;
 }
 
-.btn-season-nav {
+.season__btn-nav {
     padding: var(--space-2xs);
     transition: transform ease 0.5s;
 }
 
-.btn-season-nav:hover {
+.season__btn-nav:hover {
     
-}
-
-.btn-pagination-dot {
-    border-radius: 100%;
-    background-color: transparent;
-    border: 2px solid var(--border-secondary);
-    width: var(--space-xs);
-    height: var(--space-xs);
-    transition: all ease 0.3s;
-}
-
-.btn-pagination-dot.active {
-    border: 1px solid var(--border-secondary);
-    background-color: var(--border-secondary);
-}
-
-/* icons */
-
-.icon-season-button-primary {
-    transform: rotate(180deg);
-    transition: transform ease 1s;
-}
-
-.icon-season-button-primary.open {
-    transform: rotate(0deg);
-}
-
-.icon-season-button-secondary {}
-
-.icon-season-button-secondary-right {
-    transform: rotate(180deg);
 }
 
 /* cards */

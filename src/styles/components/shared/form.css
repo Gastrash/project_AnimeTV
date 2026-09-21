@@ -1,0 +1,27 @@
+/* form.css */
+
+.form {
+  width: 100%;
+  height: 100%;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-m);
+  gap: var(--space-m);
+}
+
+/* layout */
+
+
+
+/* variant */
+
+.form--variant-default {
+  background: var(--text-secondary);
+}
+
+form__container--variant-default {
+  background: var(--text-default);
+}

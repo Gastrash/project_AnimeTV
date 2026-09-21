@@ -1,0 +1,30 @@
+/* carousel */
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel__button--variant {
+    background-color: var(--overlay-s);
+    border: none;
+    color: var(--text-default);
+    box-shadow: none;
+    opacity: 0.5;
+}
+
+.carousel__button--variant:hover{
+    opacity: 1;
+}
+
+.carousel .btn:disabled {
+    display: none;
+}

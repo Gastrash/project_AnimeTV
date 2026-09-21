@@ -4,9 +4,11 @@
     width: 100%;
     gap: var(--space-l);
     padding: var(--space-l) 0;
+    background-color: var(--bg-elevated);
 }
 
 .content__header {
+    padding-inline: var(--space-xl);
     width: 100%;
 }
 
@@ -15,8 +17,9 @@
 }
 
 .content__list {
-    gap: var(--space-s);
+    gap: var(--space-xl);
 }
 
 .content__item {
+    border: 3px solid violet;
 }

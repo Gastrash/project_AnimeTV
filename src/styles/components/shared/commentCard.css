@@ -1,0 +1,41 @@
+/* commentCard.jsx */
+
+.commentCard {
+    padding: var(--space-s);
+    width: 100%;
+}
+
+.commentCard__header, .commentCard__main, .commentCard__footer {
+    width: 100%;
+    padding: var(--space-3xs) var(--space-s);
+}
+
+.commentCard__main {
+    padding: var(--space-2xs) var(--space-s);
+}
+
+.commentCard__header {
+    gap: var(--space-s);
+}
+
+.commentCard__main {
+    border-block: var(--border-muted) solid 1px;
+    padding-block: var(--space-2xs) var(--space-s);
+}
+
+.commentCard__avatar {
+    border-radius: 100%;
+    width: var(--space-m);
+    height: var(--space-m);
+    overflow: hidden;
+}
+
+.commentCard__avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.commentCard__actions, .commentCard__info {
+    padding: 0 var(--space-s);
+    gap: var(--space-2xs);
+}

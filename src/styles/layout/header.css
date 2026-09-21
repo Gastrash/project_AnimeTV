@@ -1,16 +1,19 @@
 /* header */
 
 .header {
-    background-color: var(--bg-main);
+    background-color: var(--bg-elevated);
     padding-inline: var(--space-l);
     box-shadow: var(--shadow-l);
     min-width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 999;
 }
 
 .header__title {
     color: var(--text-heading);
+    font-size: 30px; /*quitar*/
 }
 
 .header__left {
@@ -23,13 +26,15 @@
     padding: var(--space-m);
 }
 
-.header__nav {
+.header__nav {outline: auto;}
+
+.header__list {
     gap: var(--space-xs);
 }
 
 /* buttons */
 
-.btn-header-right {
+.header__btnRight {
     color: var(--text-default);
     background-color: transparent;
     border: none;

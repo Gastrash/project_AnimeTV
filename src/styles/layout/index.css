@@ -1,0 +1,9 @@
+/* layout */
+
+@import "./header.css";
+@import "./hero.css";
+@import "./content.css";
+@import "./info.css";
+@import "./season.css";
+@import "./media.css";
+@import "./comments.css";

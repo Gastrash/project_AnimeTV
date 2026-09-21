@@ -1,0 +1,8 @@
+/* components/basic */
+
+@import "./button.css";
+@import "./icon.css";
+@import "./input.css";
+@import "./badge.css";
+@import "./modal.css";
+@import "./list.css";

@@ -1,0 +1,173 @@
+/* variables */
+
+/* 
+refactor en colores base con abstracción, terminar refactor a transition.
+
+Más variables:
+breakpoints
+z-index
+animation-duration
+opacity
+blur
+*/
+
+:root {
+
+    /*aux*/
+    --image-hero: url("../assets/image/img-01.jpeg");
+
+    /* background */
+    --bg-main: #0b1326;
+    --bg-surface: #202F49; /*superficies internas: sections, cards, containers, paneles*/
+    --bg-surface-2: #202F49;
+    --bg-elevated: #1d1630; /*Elementos sobresalientes: modal, dropdown, sidebar, card importante, hover potente*/
+    --bg-elevated-2: #36285d;
+
+    /* gradients*/
+    --gradient-1: linear-gradient(
+        to bottom,
+        transparent,
+        var(--bg-elevated),
+        var(--bg-elevated),
+        var(--bg-elevated)
+    );
+    --gradient-2: linear-gradient(
+        to bottom,
+        transparent,
+        var(--bg-elevated-secondary),
+        var(--bg-elevated-secondary)
+    );
+    --gradient-3: linear-gradient(
+        to bottom,
+        white,
+        #cdcdcd
+    );
+
+    /* text */
+    --text-default: #ffffff;
+    --text-secondary: rgb(63, 60, 60);
+    --text-heading: #b49eda;
+    --text-muted: #797979; 
+
+    /* accent */
+    --accent-default: #b49eda;
+    --accent-default-hover: #755b95;
+    --accent-secondary: #42365c;
+    --accent-secondary-hover: #130f17;
+    --accent-success: #01c918;
+    --accent-success-hover: #018c11;
+    --accent-danger: red;
+    --accent-danger-hover: #8a0000;
+    --accent-disabled: #a8a8b7b2;
+    --accent-ghost: #ffffff42;
+
+    /* borders */
+    --border-default: #1e1226;
+    --border-secondary: #27073e;
+    --border-muted: #797979b1;
+    --border-accent: #BEA4EA;
+
+    /* overlays */
+    --overlay-xs: rgba(0, 0, 0, 0.05);
+    --overlay-s: rgba(0, 0, 0, 0.5); 
+    --overlay-m: rgba(0, 0, 0, 0.7);
+    --overlay-l: rgba(0, 0, 0, 0.9);
+    
+    /* shadows */ /* refactor */
+    --shadow-s: 0 4px 12px rgba(0,0,0,0.3);
+    --shadow-m: 0 8px 20px rgba(0,0,0,0.3);
+    --shadow-l: 0 12px 24px rgba(0,0,0,0.35);
+    --shadow-bottom: 2px 10px 20px rgba(0,0,0,0.35);
+    --shadow-accent: 0 8 20px #eeeeee;
+    
+    /* font family */
+    --font-family-base: montserrat, sans-serif;
+    --font-family-secondary: montserrat, sans-serif;
+    
+    /* font sizes */
+    --font-size-2xs: 0.75rem; /*12px*/
+    --font-size-xs: 1rem; /*16px*/
+    --font-size-s: 1.25rem; /*20px*/
+    --font-size-m: 1.5rem;  /*24px*/
+    --font-size-l: 2rem; /*32px*/
+    --font-size-xl: 2.5rem; /*48px*/
+    --font-size-2xl: 3.5rem; /*64px*/
+    --font-size-3xl: 4rem;
+
+    /*font weights*/
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    
+    /*spacing*/
+    --space-3xs: 0.25rem; /*4px*/
+    --space-2xs: 0.5rem; /*8px*/
+    --space-xs: 0.75rem; /*12px*/
+    --space-s: 1rem; /*16px*/
+    --space-m: 1.5rem; /*24px*/
+    --space-l: 2rem; /*32px*/
+    --space-xl: 3rem; /*64px*/
+    --space-2xl: 5rem; /*96px*/
+    --space-3xl: 7rem; /*128px*/
+
+    /*container*/
+    --container-3xs: 10rem;  /*160px*/
+    --container-2xs: 14rem;  /*224px*/
+    --container-xs: 18rem;   /*288px*/
+    --container-s: 24rem;    /*384px*/
+    --container-m: 32rem;    /*512px*/
+    --container-l: 40rem;    /*640px*/
+    --container-xl: 48rem;   /*768px*/
+    --container-2xl: 64rem;  /*1024px*/
+    --container-3xl: 80rem;  /*1280px*/
+    
+    /* radius */
+    --radius-s: 0.5rem; /*8px*/ /*1*/
+    --radius-m: 0.75rem; /*12px*/
+    --radius-l: 1rem; /*16px*/
+    --radius-xl: 2rem; /*32px*/
+    --radius-2xl: 3rem; /*48px*/
+    --radius-full: 9999px;
+    
+    /*blur*/
+    --blur-1: ;
+    
+    /*breakpoint*/
+    --breakpoint-1: ;
+    
+    /*transition*/
+    --transition-all: all 0.5 ease;
+    
+    --transition-default:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    height 0.5s ease,
+    width 0.5s ease,
+    max-height 0.5s ease,
+    max-width 0.5s ease;
+
+    --transition-card: 
+    background-color 0.5s ease,
+    color 0.5s ease,
+    border-color 0.5s ease,
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    height 0.5s ease,
+    width 0.7s ease,
+    max-height 0.5s ease,
+    max-width 0.5s ease,
+    top 0.7s ease,
+    left 0.7s ease;
+
+    --transition-color: ;
+    --transition-layout: ;
+    --transition-transform: ;
+    --transition-opacity: ;
+    
+    --animation-duration: ;
+}
