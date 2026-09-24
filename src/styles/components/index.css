@@ -1,4 +1,4 @@
 /* components */
 
-@import "./basic";
-@import "./shared";
+@import "./basic/index.css";
+@import "./shared/index.css";

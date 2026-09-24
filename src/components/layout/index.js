@@ -1,7 +1,7 @@
 // components/layout/index
 
 // AnimeTV
-export { default as AnimeTV } from "./AnimeTV";
+export { default as AnimeTV } from "../../app/AnimeTV";
 
 // sections
 export { default as Header } from "./Header";
@@ -11,3 +11,4 @@ export { default as Info } from "./Info";
 export { default as Season } from "./Season";
 export { default as Media } from "./Media";
 export { default as Comments } from "./Comments";
+export { default as Footer } from "./Footer";

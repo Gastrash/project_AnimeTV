@@ -2,8 +2,11 @@
 
 /*
 aria-label para navs.
+
+<Button size="1" variant="link">Favoritos</Button>
 */
 
+import { NavLink } from "react-router";
 import { List, Button, Icon } from "../ui";
 
 export default function Header ({
@@ -17,9 +20,9 @@ export default function Header ({
                     <h2 className="header__title">{title}</h2>
                     <nav className="header__nav flex flex-row justify-center align-center">
                         <List classUl="header__list">
-                            <Button size="1" variant="link">Películas</Button>
-                            <Button size="1" variant="link">Series</Button>
-                            <Button size="1" variant="link">Favoritos</Button>
+                            <NavLink to="/peliculas" className="header__navLink">Películas</NavLink>
+                            <NavLink to="/series" className="header__navLink">Series</NavLink>
+                            <NavLink to="/favoritos" className="header__navLink">Favoritos</NavLink>
                         </List>
                     </nav>
                 </div>

@@ -1,6 +1,6 @@
 /* main.css */
 
-@import "./base";
-@import "./components";
-@import "./layout";
-@import "./utilities";
+@import "./base/index.css";
+@import "./components/index.css";
+@import "./layout/index.css";
+@import "./utilities/index.css";
