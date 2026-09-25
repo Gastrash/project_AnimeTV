@@ -1,4 +1,4 @@
 // data
 
-export { default as data } from "./dataAnime"
+export { default as dataAnime } from "./dataAnime"
 export * from "./dataAnime"

@@ -36,7 +36,8 @@ export default function Season ({
     container = "container", //primary, secondary,
     data = {}
 }) {
-  const [seasonPosition, setPosition] = useState(0);
+    const [seasonPosition, setPosition] = useState(0);
+    const currentSeason = data[seasonPosition];
     return (
         <section id="season" className={`${container}`}>
             <div className="season">
@@ -48,9 +49,10 @@ export default function Season ({
                     classUl="season__grid"
                     layout="grid"
                     type="data"
-                    data={data}
+                    data={currentSeason?.episodes ?? []}
                     renderItem={(item) => (
                         <Card 
+                        type="episodeCard"
                         variant="default"
                         size="2"
                         layout="horizontal"

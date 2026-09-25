@@ -8,6 +8,11 @@ terminar video.
 {!isMovie && ()}
 
 datos: video, isMovie.
+
+<video className="media__video" controls> 
+                        <source src="assets/image/img-01.jpeg" type="image/jpeg"/>
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
 */
 
 export default function Media ({
@@ -18,10 +23,7 @@ export default function Media ({
         <section id="media" className={`${container}`}>
             <div className="media">
                 <div className="media__viewer flex flex-column">
-                    <video className="media__video" controls> 
-                        <source src="assets/image/img-01.jpeg" type="image/jpeg"/>
-                        Tu navegador no soporta la reproducción de videos.
-                    </video>
+                    <img src={data.cardImage} alt={data.title} />
                 </div>
                 <div className="media__footer flex flex-column justify-flex-start align-center">
                     <div className="media__actions flex flex-row justify-center align-center">

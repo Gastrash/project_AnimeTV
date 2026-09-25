@@ -3,12 +3,7 @@
 import { Routes, Route } from "react-router-dom";
 
 // pages
-import Home from "../pages";
-import AnimeDetail from "../pages";
-import Movies from "../pages";
-import Series from "../pages";
-import Favorites from "../pages";
-import AnimePlayer from "../pages";
+import { Home, AnimeDetail, Movies, Series, Favorites, AnimePlayer } from "../pages";
 
 export default function AnimeTVRoutes() {
     return (

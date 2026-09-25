@@ -1,7 +1,7 @@
 // AnimePlayer.jsx
 
 import { useParams } from "react-router-dom";
-import { Info, Media, Comments } from "../components/layout";
+import { Info, Media, Content, Comments } from "../components/layout";
 import { dataAnime } from "../data";
 
 export default function AnimePlayer ({}) {
@@ -14,7 +14,7 @@ export default function AnimePlayer ({}) {
             <Info data={anime} />
             <Media data={anime} />
             <Content title="Algunos relacionados con {}" data={data} />
-            <Comments data={anime} />
+            <Comments data={anime.comments} />
         </>
     )
 }

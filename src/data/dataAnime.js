@@ -182,100 +182,104 @@ const comments = {
     }
 }
 
-const episodes = {
-    11: {
-        1: {
-            cardImage: cardImage1,
-            media: "media1",
-            duration: "25min",
-            title: "episodio 1 de serie 1",
-            description: "xddd",
-            comments: comments[111]
-        },
-        2: {
-            cardImage: cardImage1,
-            media: "media1",
-            duration: "26min",
-            title: "episodio 2 de serie 1",
-            description: "xdd",
-            comments: comments[112]
-        }
+const episodes = [
+    {
+        animeId: 1,
+        season: 1,
+        cardImage: cardImage1,
+        media: "media1",
+        duration: "25min",
+        title: "episodio 1 de serie 1",
+        description: "xddd",
+        comments: comments[111]
     },
-    12: {
-        1: {
-            cardImage: cardImage1,
-            media: "media1",
-            duration: "25min",
-            title: "episodio 2 de serie 1",
-            description: "xd",
-            comments: comments[121]
-        }
+    {
+        animeId: 1,
+        season: 1,
+        cardImage: cardImage1,
+        media: "media1",
+        duration: "26min",
+        title: "episodio 2 de serie 1",
+        description: "xdd",
+        comments: comments[112]
     },
-    13: {
-        1: {
-            cardImage: cardImage1,
-            media: "media1",
-            duration: "25min",
-            title: "episodio 3 de serie 1",
-            description: "xd",
-            comments: comments[131]
-        }
+    {
+        animeId: 1,
+        season: 2,
+        cardImage: cardImage1,
+        media: "media1",
+        duration: "25min",
+        title: "episodio 2 de serie 1",
+        description: "xd",
+        comments: comments[121]
     },
-    21: {
-        1: {
-            cardImage: cardImage2,
-            media: "media2",
-            duration: "25min",
-            title: "episodio 1 de serie 1",
-            description: "xddd",
-            comments: comments[211]
-        },
-        2: {
-            cardImage: cardImage2,
-            media: "media2",
-            duration: "26min",
-            title: "episodio 2 de serie 1",
-            description: "xdd",
-            comments: comments[212]
-        }
+    {
+        animeId: 1,
+        season: 3,
+        cardImage: cardImage1,
+        media: "media1",
+        duration: "25min",
+        title: "episodio 3 de serie 1",
+        description: "xd",
+        comments: comments[131]
     },
-    22: {
-        1: {
-            cardImage: cardImage2,
-            media: "media2",
-            duration: "25min",
-            title: "episodio 2 de serie 1",
-            description: "xd",
-            comments: comments[221]
-        }
+    {
+        animeId: 3,
+        season: 1,
+        cardImage: cardImage2,
+        media: "media2",
+        duration: "25min",
+        title: "episodio 1 de serie 1",
+        description: "xddd",
+        comments: comments[211]
     },
-    23: {
-        1: {
-            cardImage: cardImage2,
-            media: "media2",
-            duration: "25min",
-            title: "episodio 3 de serie 1",
-            description: "xd",
-            comments: comments[231]
-        }
+    {
+        animeId: 3,
+        season: 1,
+        cardImage: cardImage2,
+        media: "media2",
+        duration: "26min",
+        title: "episodio 2 de serie 1",
+        description: "xdd",
+        comments: comments[212]
+    },
+    {
+        animeId: 3,
+        season: 2,
+        cardImage: cardImage2,
+        media: "media2",
+        duration: "25min",
+        title: "episodio 2 de serie 1",
+        description: "xd",
+        comments: comments[221]
+    },
+    {
+        animeId: 3,
+        season: 3,
+        cardImage: cardImage2,
+        media: "media2",
+        duration: "25min",
+        title: "episodio 3 de serie 1",
+        description: "xd",
+        comments: comments[231]
     }
-}
+    
+]
 
-const seasons = {
-    1: {
-        season1: episodes[11],
-        season2: episodes[12],
-        season3: episodes[13]
+const seasons = [
+    {
+        id: 1,
+        seasons: 3
     },
-    3: {
-        season1: episodes[21],
-        season2: episodes[22],
-        season3: episodes[23]
+    {
+        id: 3,
+        seasons: 3
     }
-}
+]
 
 const dataAnime = {
   1: {
+    id: 1,
     cardImage: cardImage1,
     title: "serie 1",
     duration: "3 Temporadas",
@@ -290,6 +294,7 @@ const dataAnime = {
     seasons: seasons[1]
   },
   2: {
+    id: 2,
     media: "media3",
     cardImage: cardImage3,
     title: "Pelicula 3477",
@@ -301,9 +306,39 @@ const dataAnime = {
     ranking: "no disponible",
     trailer: "trailer3",
     isMovie: true,
-    comments: comments[2]
+    comments: 
+    [
+    {    
+        user: users[1],
+        content: "borra la serie",
+        createdAt: "Hace 17 años",
+        reactions: {
+            likes: 12,
+            dislikes: 2
+        }
+    },
+    {
+        user: users[1],
+        content: "borra la serie",
+        createdAt: "Hace 17 años",
+        reactions: {
+            likes: 12,
+            dislikes: 2
+        }
+    },
+    {
+        user: users[1],
+        content: "borra la serie",
+        createdAt: "Hace 17 años",
+        reactions: {
+            likes: 12,
+            dislikes: 2
+        }
+    }
+    ]
   },
   3: {
+    id: 3,
     cardImage: cardImage2,
     title: "serie 3",
     duration: "3 Temporadas",

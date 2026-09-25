@@ -2,10 +2,10 @@
 
 // layout
 import { Header, Footer } from "../components/layout";
-import '../styles/main.css'
+import '../styles/main.css';
 
 // routes
-import AnimeTVRoutes from "../routes";
+import { AnimeTVRoutes } from "../routes";
 
 export default function AnimeTV () {
     return (

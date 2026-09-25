@@ -1,6 +1,6 @@
 // Icon.jsx
 
-import icons from "../icons";
+import icons from "./icons";
 
 export default function Icon({
     name = "heart",

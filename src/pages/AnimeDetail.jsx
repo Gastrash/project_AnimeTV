@@ -2,19 +2,28 @@
 
 import { useParams } from "react-router-dom";
 import { Content, Info, Season, Comments } from "../components/layout";
-import { dataAnime } from "../data";
+import { dataAnime, dataAux } from "../data";
 
 export default function AnimeDetail({}) {
   const { animeId } = useParams();
-  console.log(animeId);
+  const episodes = dataAux.episodes;
   const data = Object.values(dataAnime);
   const anime = Object.values(dataAnime).find(item => item.id == animeId);
+  const seasons = [1, 2, 3].map(seasonNumber => ({
+    number: seasonNumber,
+    episodes: episodes.filter(
+      episodes => 
+        episodes.animeId === Number(animeId) &&
+        episodes.season === seasonNumber
+  )
+  }));
+  console.log(seasons);
   return (
     <>
       <Info data={anime} />
-      {!data.isMovie && (<Season data={anime} />)}
+      {!anime.isMovie && (<Season data={seasons} />)}
       <Content data={data} />
-      {data.isMovie && (<Comments data={anime.comments} />)}
+      {anime.isMovie && (<Comments data={anime.comments} />)}
     </>
   )
 }

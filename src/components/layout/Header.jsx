@@ -17,12 +17,17 @@ export default function Header ({
         <header id="header" className={`${container}`}>
             <div className="header flex flex-row justify-space-between align-center">
                 <div className="header__left flex flex-row justify-center align-center">
-                    <h2 className="header__title">{title}</h2>
+                    <NavLink to="/" className="header__title">
+                        {title}
+                    </NavLink>
                     <nav className="header__nav flex flex-row justify-center align-center">
                         <List classUl="header__list">
                             <NavLink to="/peliculas" className="header__navLink">Películas</NavLink>
                             <NavLink to="/series" className="header__navLink">Series</NavLink>
                             <NavLink to="/favoritos" className="header__navLink">Favoritos</NavLink>
+                            <NavLink to="/anime/3" className="header__navLink">AnimeDetail/3</NavLink>
+                            <NavLink to="/anime/2" className="header__navLink">AnimeDetail/2</NavLink>
+                            <NavLink to="/animePlayer/2" className="header__navLink">AnimePlayer/2</NavLink>
                         </List>
                     </nav>
                 </div>

@@ -1,10 +1,11 @@
-/* Card.jsx */
+/* EpisodeCard.jsx */
 
 import Actions from "./Actions"
 
 //refactor de clases, realizar versión con ActionsAnimeTV en vez de description.
 
-export default function Card({
+export default function EpisodeCard({
+  type = "card", //card, episodeCard
   variant = "default", //default, secondary, episode
   size = "2", //1, 2, 3
   layout = "vertical", // horizontal(16:9), vertical(3:4)
@@ -12,12 +13,12 @@ export default function Card({
   data = {} //cardImage, title, description.
 }) {
   return (
-    <article className={`card__container card--size-${size} card--layout-${layout}`}>
+    <article className={`${type}__container card--size-${size} card--layout-${layout}`}>
         <div className={`card card--variant-${variant} ${className}`} style={{ backgroundImage: `url(${data.cardImage})`}}>
-            <div className={`card__meta`}>
+            <div className={`${type}__meta`}>
                 <h4>{data.title}</h4>
-                <div className={`card__meta-hidden`}>
-                  <Actions className={`card__actions`} size="1" data={data}/>
+                <div className={`${type}__meta-hidden`}>
+                  <Actions className={`${type}__actions`} size="1" data={data}/>
                 </div>
             </div>
         </div>

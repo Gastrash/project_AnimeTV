@@ -12,6 +12,8 @@ html {
 }
 
 body {
+    padding-top: var(--space-2xl);
+    margin: 0; 
     font-family: var(--font-family-base);
     background-color: var(--bg-main);
     font-weight: var(--font-weight-regular);
@@ -19,7 +21,7 @@ body {
 }
 
 section {
-    outline: red solid 3px;
+    outline: none;
 }
 
 main {
@@ -32,11 +34,11 @@ main {
 }
 
 h1 {
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-2xl);
 }
 
 h2 {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-l);
 }
 
 h3 {
@@ -44,5 +46,5 @@ h3 {
 }
 
 h4 {
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-s);
 }

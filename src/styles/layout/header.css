@@ -13,7 +13,9 @@
 
 .header__title {
     color: var(--text-heading);
-    font-size: 30px; /*quitar*/
+    font-size: var(--font-size-xl);
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
 }
 
 .header__left {
@@ -26,7 +28,15 @@
     padding: var(--space-m);
 }
 
-.header__nav {outline: auto;}
+.header__nav {outline: none;}
+
+.header__navLink {
+    color: var(--text-heading);
+    text-decoration: none;
+    color: var(--text-default);
+    font-size: var(--font-size-s);
+    transition: all ease 0.3s;
+}
 
 .header__list {
     gap: var(--space-xs);

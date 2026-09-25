@@ -1,6 +1,6 @@
 // CommentCard.jsx
 
-import { Button, Icon, List, Badge } from "./basic";
+import { Button, Icon, List, Badge } from "../basic";
 
 /*
   var user.
