@@ -1,16 +1,22 @@
 /* carousel */
 
 .carousel {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    position: relative;        
+}
+
+.carousel__viewport {
+    width: 100%;
+    padding: var(--space-xs) var(--space-2xs);
+    overflow: hidden;
+}
+
+.carousel__track {
+    transition: transform 400ms ease;
 }
 
 .carousel__button {
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 .carousel__button--variant {
@@ -23,8 +29,4 @@
 
 .carousel__button--variant:hover{
     opacity: 1;
-}
-
-.carousel .btn:disabled {
-    display: none;
 }

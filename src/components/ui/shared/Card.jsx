@@ -5,7 +5,7 @@ import Actions from "./Actions"
 //refactor de clases, realizar versión con ActionsAnimeTV en vez de description.
 
 export default function Card({
-  variant = "default", //default, secondary, episode
+  variant = "default", //default, secondary
   size = "2", //1, 2, 3
   layout = "vertical", // horizontal(16:9), vertical(3:4)
   className,

@@ -2,9 +2,12 @@
 
 import { Carousel, Card } from "../ui";
 
-/**/
+/*
+const shuffledData = [...contentData].sort(() => Math.random() - 0.5);
+*/
 
 export default function Content ({
+    
     title = "Novedades para ti",
     container = "none", //primary, secondary,
     data = []

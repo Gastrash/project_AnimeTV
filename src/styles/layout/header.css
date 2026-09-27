@@ -2,8 +2,8 @@
 
 .header {
     background-color: var(--bg-elevated);
-    padding-inline: var(--space-l);
     box-shadow: var(--shadow-l);
+    gap: var(--space-xl);
     min-width: 100%;
     position: fixed;
     top: 0;
@@ -20,22 +20,31 @@
 
 .header__left {
     gap: var(--space-xl);
-    padding: var(--space-m);
+    padding: 0 var(--space-m);
 }
 
 .header__right {
     gap: var(--space-l);
-    padding: var(--space-m);
+    padding: 0 var(--space-m);
 }
 
-.header__nav {outline: none;}
+.header__nav {
+    gap: var(--space-l);
+    padding: var(--space-xs) var(--space-m);
+}
 
 .header__navLink {
-    color: var(--text-heading);
+    border-bottom: 2px solid var(--text-default);
+    padding-block: var(--space-3xs);
     text-decoration: none;
     color: var(--text-default);
     font-size: var(--font-size-s);
-    transition: all ease 0.3s;
+    transition: all ease 0.5s;
+}
+
+.header__navLink:hover {
+    color: var(--text-heading);
+    border-bottom: 2px solid var(--text-heading);
 }
 
 .header__list {
@@ -47,5 +56,4 @@
 .header__btnRight {
     color: var(--text-default);
     background-color: transparent;
-    border: none;
 }

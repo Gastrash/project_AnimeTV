@@ -182,6 +182,10 @@ const comments = {
     }
 }
 
+const dataContent = [
+  {number: 1,},{number: 2,},{number: 3,},{number: 4,},{number: 5,},{number: 6,},{number: 7,},{number: 8,},{number: 9,},{number: 10,}, {number: 1,},{number: 2,},{number: 3,},{number: 4,},{number: 5,},{number: 6,},{number: 7,},{number: 8,},{number: 9,},{number: 10,}
+]
+
 const episodes = [
     {
         animeId: 1,
@@ -355,7 +359,7 @@ const dataAnime = {
 }
 
 export const dataAux = {
-    users, comments, episodes, seasons
+    users, comments, episodes, seasons, dataContent
 }
 
 export const dataSeries = Object.values(dataAnime).filter(

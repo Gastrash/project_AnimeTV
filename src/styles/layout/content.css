@@ -4,15 +4,16 @@
     width: 100%;
     gap: var(--space-l);
     padding: var(--space-l) 0;
-    background-color: var(--bg-elevated);
 }
 
 .content__header {
-    padding-inline: var(--space-xl);
+    padding: var(--space-xs) var(--space-xl);
     width: 100%;
 }
 
 .content__viewport {
+    width: 100%;
+    padding: var(--space-xs) var(--space-l);
     margin: 0 auto;
 }
 

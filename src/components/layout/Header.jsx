@@ -15,7 +15,7 @@ export default function Header ({
 }) {
     return (
         <header id="header" className={`${container}`}>
-            <div className="header flex flex-row justify-space-between align-center">
+            <div className="header flex flex-row justify-center align-center">
                 <div className="header__left flex flex-row justify-center align-center">
                     <NavLink to="/" className="header__title">
                         {title}
