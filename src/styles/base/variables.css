@@ -17,7 +17,7 @@ blur
     --image-hero: url("../assets/image/img-01.jpeg");
 
     /* background */
-    --bg-main: #0b1326;
+    --bg-main: #0e2345;
     --bg-surface: #202F49; /*superficies internas: sections, cards, containers, paneles*/
     --bg-surface-2: #202F49;
     --bg-elevated: #1d1630; /*Elementos sobresalientes: modal, dropdown, sidebar, card importante, hover potente*/
@@ -152,17 +152,17 @@ blur
     max-width 0.5s ease;
 
     --transition-card: 
-    background-color 0.5s ease,
-    color 0.5s ease,
-    border-color 0.5s ease,
-    opacity 0.5s ease,
-    transform 0.5s ease,
-    height 0.5s ease,
-    width 0.7s ease,
-    max-height 0.5s ease,
-    max-width 0.5s ease,
-    top 0.7s ease,
-    left 0.7s ease;
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    height 0.3s ease,
+    width 0.3s ease,
+    max-height 0.3s ease,
+    max-width 0.3s ease,
+    top 0.3s ease,
+    left 0.3s ease;
 
     --transition-color: ;
     --transition-layout: ;

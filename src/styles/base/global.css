@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    padding-top: var(--space-2xl);
+    padding-top: var(--space-xl);
     margin: 0; 
     font-family: var(--font-family-base);
     background-color: var(--bg-main);
@@ -42,7 +42,7 @@ h2 {
 }
 
 h3 {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-m);
 }
 
 h4 {

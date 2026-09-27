@@ -20,17 +20,17 @@
 
 .header__left {
     gap: var(--space-xl);
-    padding: 0 var(--space-m);
+    padding: var(--space-xs) var(--space-m);
 }
 
 .header__right {
     gap: var(--space-l);
-    padding: 0 var(--space-m);
+    padding: var(--space-xs) var(--space-m);
 }
 
 .header__nav {
     gap: var(--space-l);
-    padding: var(--space-xs) var(--space-m);
+    padding: var(--space-2xs) var(--space-m);
 }
 
 .header__navLink {

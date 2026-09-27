@@ -16,7 +16,6 @@
 }
 
 .card__container {
-    outline: 3px solid var(--border-muted);
     position: relative;
     z-index: 0;
     overflow: visible;

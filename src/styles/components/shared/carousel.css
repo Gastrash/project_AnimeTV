@@ -6,8 +6,7 @@
 
 .carousel__viewport {
     width: 100%;
-    padding: var(--space-xs) var(--space-2xs);
-    overflow: hidden;
+    padding: var(--space-xs) var(--space-m);
 }
 
 .carousel__track {

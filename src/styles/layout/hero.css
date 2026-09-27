@@ -1,7 +1,7 @@
 /* hero */
 
 .hero {
-    height: 75vh;
+    height: 70vh;
     width: 100%;
     position: relative;
 }
@@ -26,8 +26,8 @@
     z-index: 1;
     background: linear-gradient(
         to top,
-        #0b1326ff,
-        #0b132655,
+        var(--bg-main),
+        transparent 40%,
         transparent,
         transparent
     );
@@ -43,16 +43,15 @@
     left: 0;
     padding: 0 var(--space-xl) 5vh var(--space-xl);
     color: var(--text-default);
-    outline: auto;
 }
 
 .hero__info {
     gap: var(--space-xs);
     padding-block: var(--space-s);
-    outline: auto;
     p {        
         font-size: var(--font-size-xs);
         max-width: 80%;
+        padding: 0 var(--space-2xs);
     }
 }
 
@@ -63,7 +62,6 @@
 .hero__actions {
     gap: var(--space-s);
     padding-block: var(--space-s);
-    outline: auto;
 }
 
 /* actions */

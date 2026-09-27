@@ -3,11 +3,12 @@
 .content {
     width: 100%;
     gap: var(--space-l);
-    padding: var(--space-l) 0;
+    padding: var(--space-s) 0;
 }
 
 .content__header {
-    padding: var(--space-xs) var(--space-xl);
+    border-bottom: 1px solid var(--border-muted);
+    padding: var(--space-s);
     width: 100%;
 }
 
@@ -18,9 +19,9 @@
 }
 
 .content__list {
-    gap: var(--space-xl);
+    gap: var(--space-xs);
 }
 
 .content__item {
-    border: 3px solid violet;
+    border: none;
 }

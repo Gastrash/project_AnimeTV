@@ -2,10 +2,13 @@
 
 .info {
     border-radius: var(--radius-l);
-    margin-block: var(--space-l);
-    padding: var(--space-xl);;
+    margin-block: var(--space-xl);
+    padding: var(--space-l);
+    min-height: 65vh;
     overflow: hidden;
     position: relative;
+    outline: 1px solid white;
+    box-shadow: var(--shadow-l);
 }
 
 .info__image {
@@ -32,13 +35,18 @@
 }
 
 .info__header {
-    gap: var(--space-xl);
+    gap: var(--space-3xs);
     padding-block: var(--space-2xs);
+}
+
+.info__badges {
+    gap: var(--space-2xs);
 }
 
 .info__primary {
     flex: 1;
     padding: var(--space-xs);
+    gap: var(--space-s);
     z-index: 1;
 }
 
@@ -56,22 +64,12 @@
     box-shadow: var(--shadow-m);
 }
 
-.info__details {
-    padding-block: var(--space-l);
-    padding-right: var(--space-3xl);
-    gap: var(--space-l);
-}
-
-.info__badges {
-    gap: var(--space-xs);
-}
-
 .info__description {
     padding-inline: var(--space-m);
 }
 
 .info__actions {
     justify-content: flex-start;
-    padding-top: var(--space-l);
+    padding-block: var(--space-s);
     gap: var(--space-s);
 }

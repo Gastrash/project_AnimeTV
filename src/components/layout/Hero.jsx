@@ -20,8 +20,8 @@ export default function Hero ({
                 <div className="hero__overlay flex flex-column justify-flex-end">
                         <div className="hero__info flex flex-column">
                             <div className="hero__info--badges flex flex-row">
-                            <Badge size="2">{data.ranking}</Badge>
-                            <Badge size="2" className="hero__badges">{data.rating}</Badge>
+                            <Badge size="1">{data.ranking}</Badge>
+                            <Badge size="1" className="hero__badges">{data.rating}</Badge>
                         </div>
                             <h1 className="hero__title">{data.title}</h1>
                             <p className="">{data.description}</p>
