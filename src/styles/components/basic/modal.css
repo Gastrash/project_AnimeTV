@@ -1,1 +1,28 @@
 /* modal.css */
+
+.modal.open {
+    position: fixed;
+    inset: 0;
+    border-radius: var(--radius-s);
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    pointer-events: auto;
+    transition: opacity 0.2s ease;
+    background-color: var(--bg-surface-2);
+    z-index: 9999;
+}
+
+.modal.close {
+    opacity: 0;
+    pointer-events: auto;
+}
+
+.modal__container {
+    overflow: hidden;
+    position: relative;
+    pointer-events: none;
+    inset: 0;
+    border: var(--border-default);
+    background-color: var(--bg-surface-2);
+}

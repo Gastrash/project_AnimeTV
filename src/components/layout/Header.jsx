@@ -6,13 +6,18 @@ aria-label para navs.
 <Button size="1" variant="link">Favoritos</Button>
 */
 
+import { useState } from "react";
 import { NavLink } from "react-router";
-import { List, Button, Icon } from "../ui";
+import { List, Button, Icon, Modal } from "../ui";
 
 export default function Header ({
     container = "container", //secondary,
     title = "AnimeTV"
 }) {
+    const [OpenNotifications, setOpenNotifications] = useState(false);
+    const [OpenLogin, setOpenLogin] = useState(false);
+    const [OpenMenu, setOpenMenu] = useState(false);
+
     return (
         <header id="header" className={`${container}`}>
             <div className="header flex flex-row justify-center align-center">
@@ -35,11 +40,35 @@ export default function Header ({
                     <nav className="header__nav flex flex-row justify-center align-center">
                         <List classUl="header__list">
                             <Button className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="search" />}></Button>
-                            <Button className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="notifications" />}></Button>
-                            <Button className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="account" />}></Button>
+                            <Button onClick={() => setOpenNotifications(value => !value)} className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="notifications" />}></Button>
+                            <Button
+                            onClick={() => setOpenLogin(value => !value)} className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="account" />}></Button>
+                            <Button
+                            onClick={() => setOpenMenu(value => !value)} className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="options" />}></Button>
                         </List>
                     </nav>
                 </div>
+                {OpenLogin && (
+                    <Modal>
+                    <div className="header__search flex flex-row justify-center align-center">
+                        <input type="text" className="header__searchInput" placeholder="Buscar..." />
+                    </div>
+                    </Modal>
+                )}
+                {OpenMenu && (
+                    <Modal Open={OpenMenu} Close={() => setOpenMenu(false)}>
+                    <div className="header__search flex flex-row justify-center align-center">
+                        <input type="text" className="header__searchInput" placeholder="Buscar..." />
+                    </div>
+                    </Modal>
+                )}
+                {OpenNotifications && (
+                    <Modal>
+                    <div className="header__search flex flex-row justify-center align-center">
+                        <input type="text" className="header__searchInput" placeholder="Buscar..." />
+                    </div>
+                    </Modal>
+                )}
             </div>
         </header>
     )
