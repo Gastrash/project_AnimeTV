@@ -370,4 +370,6 @@ export const dataPeliculas = Object.values(dataAnime).filter(
     (item) => item.isMovie === true
 );
 
+console.log("dataSeries", dataPeliculas);
+
 export default dataAnime

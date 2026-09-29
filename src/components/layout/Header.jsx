@@ -22,9 +22,9 @@ export default function Header ({
                     </NavLink>
                     <nav className="header__nav flex flex-row justify-center align-center">
                         <List classUl="header__list">
-                            <NavLink to="/peliculas" className="header__navLink">Películas</NavLink>
+                            <NavLink to="/movies" className="header__navLink">Películas</NavLink>
                             <NavLink to="/series" className="header__navLink">Series</NavLink>
-                            <NavLink to="/favoritos" className="header__navLink">Favoritos</NavLink>
+                            <NavLink to="/favorites" className="header__navLink">Favoritos</NavLink>
                             <NavLink to="/anime/3" className="header__navLink">AnimeDetail/3</NavLink>
                             <NavLink to="/anime/2" className="header__navLink">AnimeDetail/2</NavLink>
                             <NavLink to="/animePlayer/2" className="header__navLink">AnimePlayer/2</NavLink>
@@ -34,9 +34,9 @@ export default function Header ({
                 <div className="header__right flex flex-row justify-center align-center">
                     <nav className="header__nav flex flex-row justify-center align-center">
                         <List classUl="header__list">
-                            <Button className="header__btnRight" variant="secondary" size="1" layout="square" icon={<Icon name="search" />}></Button>
-                            <Button className="header__btnRight" variant="secondary" size="1" layout="square" icon={<Icon name="notifications" />}></Button>
-                            <Button className="header__btnRight" variant="secondary" size="1" layout="square" icon={<Icon name="account" />}></Button>
+                            <Button className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="search" />}></Button>
+                            <Button className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="notifications" />}></Button>
+                            <Button className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="account" />}></Button>
                         </List>
                     </nav>
                 </div>

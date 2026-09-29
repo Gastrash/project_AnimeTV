@@ -26,7 +26,7 @@ export default function Hero ({
                             <h1 className="hero__title">{data.title}</h1>
                             <p className="">{data.description}</p>
                         </div>
-                        <Actions className="hero__actions" size="2" data={data}/>
+                        <Actions className="hero__actions" size="3" data={data}/>
                 </div>
             </div>
         </section>

@@ -4,14 +4,9 @@
     background-color: var(--bg-surface-2);
 }
 
-.comment__header, .comment__footer {
-    background-color: black;
-    border: var(--border-muted) solid 1px;
-    box-shadow: var(--shadow-s);
-}
-
 .comment__header {
     padding: var(--space-xs) var(--space-m);
+    border-bottom: 2px solid var(--border-default);
 }
 
 .comment__main {
@@ -19,7 +14,7 @@
 }
 
 .comment__footer {
-    padding: var(--space-s);
+    padding: var(--space-m);
 }
 
 .comment__list {
@@ -28,10 +23,24 @@
 }
 
 .comment__form {
-    gap: var(--space-s);
-    flex-direction: row;
+    outline: 1px solid var(--border-default);
+    padding: var(--space-m);
+    gap: var(--space-2xs);;
+}
+
+.comment__input {
+    height: 100%;
+    flex: 2.5;
+    background-color: var(--bg-surface-3);
+    box-shadow: var(--shadow-s);
 }
 
 /* buttons */
 
 .comment__btn {outline: auto;}
+
+.comment__btn--form {
+    height: 100%;
+    border-radius: 0;
+    flex: 1;
+}

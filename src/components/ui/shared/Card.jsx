@@ -14,7 +14,7 @@ export default function Card({
   return (
     <article className={`card__container card--size-${size} card--layout-${layout}`}>
         <div className={`card card--variant-${variant} ${className}`} style={{ backgroundImage: `url(${data.cardImage})`}}>
-            <div className={`card__meta`}>
+            <div className={`card__meta flex flex-column justify-center align-flex-start`}>
                 <h4>{data.title}</h4>
                 <div className={`card__meta-hidden`}>
                   <Actions className={`card__actions`} size="1" data={data}/>

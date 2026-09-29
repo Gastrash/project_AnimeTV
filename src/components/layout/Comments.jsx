@@ -1,6 +1,6 @@
 //layout/sections/Comments.jsx
 
-import { List, CommentCard, Form, Button, Icon } from "../ui";
+import { List, CommentCard, Form, Button, Input, Icon } from "../ui";
 
 /*
 
@@ -11,7 +11,7 @@ class="comments-actions flex flex-row justify-center align-center"
 */
 
 export default function Comments ({
-    container = "container", //primary, secondary,
+    container = "none", //primary, secondary,
     data = [] //comments[id]
 }) {
     return (
@@ -21,6 +21,10 @@ export default function Comments ({
                     <h3>Comentarios</h3>
                     <p>{data.length}</p>
                 </div>
+                <Form className="comment__form flex flex-row justify-center align-center" type="comment">
+                        <Input className="comment__input" placeholder="comentar" required={true} />
+                        <Button className="comment__btn--form" variant="secondary" size="3">Comentar</Button>
+                </Form>
                 <div className="comment__main">
                     <List
                     layout="vertical"
@@ -32,21 +36,6 @@ export default function Comments ({
                     />
                 </div>
                 <div className="comment__footer flex flex-row justify-space-between align-center">
-                    <Form className="comment__form" type="comment"/>
-                    <List classUl="comment__list">
-                        <Button 
-                        layout="square"
-                        variant="secondary"
-                        icon={<Icon name="options" />}/>
-                        <Button 
-                        layout="square"
-                        variant="secondary"
-                        icon={<Icon name="options" />}/>
-                        <Button 
-                        layout="square"
-                        variant="secondary"
-                        icon={<Icon name="options" />}/>
-                    </List>
                 </div>
             </div>
         </section>

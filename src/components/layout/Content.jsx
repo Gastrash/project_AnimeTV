@@ -27,8 +27,8 @@ export default function Content ({
                             <Card
                                 className="content__item"
                                 variant="default"
-                                size="3"
-                                layout="horizontal"
+                                size="2"
+                                layout="vertical"
                                 data={item}
                             />
                         )}

@@ -26,7 +26,7 @@ export default function Info ({
                     <div className="info__description flex flex-column justify-flex-start align-flex-start">
                         <p>Descripcion: {data.description}</p>
                     </div>
-                    <Actions data={data} size="2" className="info__actions"/>
+                    <Actions data={data} info={false} size="3" className="info__actions"/>
                 </div>
                 <div className="info__secondary flex flex-column justify-center align-center">
                     <video className="info__trailer" controls>

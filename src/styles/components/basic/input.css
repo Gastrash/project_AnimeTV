@@ -13,17 +13,24 @@ probar: text-fit: grow;
 
 /* clases base */
 .input {
-  outline: none;
-  border: none;
   appearance: none;
   box-shadow: var(--shadow-l);
   font-family: inherit;
   width: 100%;
+  height: 100%;
   border-radius: var(--radius-s);
   box-shadow: var(--shadow-s);
   transition: var(--transition-default);
   line-height: 1.5;
   font-weight: var(--font-weight-medium);
+}
+
+.input__container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 textarea.input {
@@ -52,11 +59,6 @@ textarea.input {
   border-color: green;
 } */
 
-.input:focus-visible:not(:disabled) {
-  outline: 2px solid var(--accent-default);
-  outline-offset: 2px;
-}
-
 /* size */
 .input--size-1 {
   padding: var(--space-2xs) var(--space-xs);
@@ -71,15 +73,21 @@ textarea.input {
 /* variant */
 .input--variant-default {
   background-color: transparent;
-  border: none;
   border-radius: 0;
-  border-bottom: var(--border-muted) 2px solid;
+  border: var(--border-muted) 2px solid;
   color: var(--text-default);
   caret-color: var(--accent-default);
   box-shadow: var(--shadow-bottom);
 }
 
 .input--variant-default:hover:not(:disabled) {
+  border-bottom: var(--border-accent) 2px solid;
+}
+
+.input--variant-default:focus-visible:not(:disabled) {
+  outline: 2px solid var(--accent-default);
+  outline-offset: 2px;
+  border: none;
   border-bottom: var(--border-accent) 2px solid;
 }
 

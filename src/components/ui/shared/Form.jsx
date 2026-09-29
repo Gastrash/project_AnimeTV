@@ -25,7 +25,7 @@ function Form({
 */
 
 import { Button, Input, Icon } from "../basic";
-
+/*
 const COMPONENTS = {
   login: () => 
   <>
@@ -40,25 +40,19 @@ const COMPONENTS = {
     <Input size="2"></Input>
     <Button size="2"></Button>
   </>,
-  comment: () => 
-  <>
-    <input className="input input--size-medium input--default" type="text" placeholder="Agregar comentario" required/>
-    <button id="submit" className="btn btn--size-2 btn--default" type="submit">Comentar</button>
-  </>,
+  comment: () =>
   default: ({children}) => children
 };
-
+*/
 export default function Form ({
   type = "default",
+  className = "",
   children
 }) {
-  const ComponentToRender = COMPONENTS[type];
   return (
     <form className={`form form--layout-${type}`}>
-      <div className={`form__container form--variant-${type}`}>
-        <ComponentToRender>
+      <div className={`form__container form--variant-${type} ${className}`}>
           {children}
-        </ComponentToRender>
       </div>
     </form>
   )

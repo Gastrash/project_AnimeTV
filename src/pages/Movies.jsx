@@ -7,7 +7,7 @@ export default function Movies ({}) {
     const data = Object.values(dataPeliculas);
     return (
         <>
-            <Hero data={data[1]} />
+            <Hero data={data[0]} />
             <Content data={data} />
             <Content data={data} />
             <Content data={data} />

@@ -37,7 +37,8 @@ export default function Carousel ({
                     </List>
                     </div>
                 </div>
-                <div className="carousel__button align-center flex-row justify-space-between">
+                <div className="carousel__button align-center 
+                flex-row justify-space-between">
                     <Button 
                         disabled={isAtStart}
                         onClick={() => setPosition(position - 1)}

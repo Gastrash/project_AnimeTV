@@ -7,7 +7,7 @@ export default function Series ({}) {
     const data = Object.values(dataSeries);
     return (
         <>
-            <Hero data={data[1]} />
+            <Hero data={data[0]} />
             <Content data={data} />
             <Content data={data} />
             <Content data={data} />

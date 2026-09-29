@@ -13,7 +13,7 @@ const COMPONENTS = {
             </li>
         )),
     default: ({ children, classLi }) =>
-        Children.map(children, (child, index) => (
+        Children.toArray(children).map((child, index) => (
         <li key={index} className={`list__element ${classLi}`}>{child}</li>
     ))
 }

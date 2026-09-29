@@ -7,14 +7,15 @@ function Input({
   placeholder = "texto predeterminado",
   iconPosition = "left", //left, right.
   required = false,
+  className = "",
   icon,
   children
 }) {
   return (
-    <div className="input__container">
+    <div className={`input__container`}>
       {icon && iconPosition === "left" && <span className="field__icon">{icon}</span>}
 
-      <input className={`input input--variant-${variant} input--size-${size} input--layout-${layout}`} placeholder={placeholder} required={required} />
+      <input className={`input input--variant-${variant} input--size-${size} input--layout-${layout} ${className}`} placeholder={placeholder} required={required} />
 
       {icon && iconPosition === "right" && <span className="field__icon">{icon}</span>}
     </div>

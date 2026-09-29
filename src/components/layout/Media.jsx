@@ -28,9 +28,9 @@ export default function Media ({
                 <div className="media__footer flex flex-column justify-flex-start align-center">
                     <div className="media__actions flex flex-row justify-center align-center">
                         <List classUl="media__actions-list">
-                            <Button size="1" variant="secondary" layout="icontext" icon={<Icon name="download" />}>Descargar</Button>
-                            <Button size="1" variant="secondary" layout="icontext" icon={<Icon name="share" />}>Compartir</Button>
-                            <Button size="1" variant="secondary" layout="icontext" icon={<Icon name="like" />}>Me gusta</Button>
+                            <Button size="2" variant="secondary" layout="icontext" icon={<Icon name="download" />}>Descargar</Button>
+                            <Button size="2" variant="secondary" layout="icontext" icon={<Icon name="share" />}>Compartir</Button>
+                            <Button size="2" variant="secondary" layout="icontext" icon={<Icon name="like" />}>Me gusta</Button>
                         </List>
                     </div>
                 </div>

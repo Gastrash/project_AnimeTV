@@ -18,9 +18,10 @@ blur
 
     /* background */
     --bg-main: #0e2345;
-    --bg-surface: #202F49; /*superficies internas: sections, cards, containers, paneles*/
+    --bg-surface: #202F49;
     --bg-surface-2: #202F49;
-    --bg-elevated: #1d1630; /*Elementos sobresalientes: modal, dropdown, sidebar, card importante, hover potente*/
+    --bg-surface-3: #181c23;
+    --bg-elevated: #1d1630;
     --bg-elevated-2: #36285d;
 
     /* gradients*/

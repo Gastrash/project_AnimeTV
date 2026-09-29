@@ -30,7 +30,7 @@
 */
 
 import { useState } from "react";
-import { Button, List, Card, Icon, NavDisplay } from "../ui"
+import { Button, List, EpisodeCard, Icon, NavDisplay } from "../ui"
 
 export default function Season ({
     container = "container", //primary, secondary,
@@ -42,7 +42,7 @@ export default function Season ({
         <section id="season" className={`${container}`}>
             <div className="season">
                 <div className="season__actions flex flex-row justify-flex-start">
-                    <Button size="2" layout="split" variant="secondary" icon={<Icon name="arrow" rotate="270" />}>Temporada {seasonPosition + 1}</Button>
+                    <Button size="3" layout="split" variant="secondary" icon={<Icon name="arrow" rotate="270" />}>Temporada {seasonPosition + 1}</Button>
                 </div>
                 <div className="season__content">
                     <List
@@ -51,11 +51,9 @@ export default function Season ({
                     type="data"
                     data={currentSeason?.episodes ?? []}
                     renderItem={(item) => (
-                        <Card 
-                        type="episodeCard"
+                        <EpisodeCard 
                         variant="default"
                         size="2"
-                        layout="horizontal"
                         data={item} />)}
                     />
                 </div>
