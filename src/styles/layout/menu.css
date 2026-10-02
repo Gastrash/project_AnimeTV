@@ -1,0 +1,23 @@
+/* menu.css */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+    padding: 2rem;
+}
+
+.menu__list {
+    gap: var(--space-m);
+}
+
+.menu__navLink {
+    border: red solid 9px;
+    outline: auto;
+}

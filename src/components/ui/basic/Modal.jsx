@@ -1,18 +1,21 @@
 // Modal.jsx
 
-import { useState } from "react";
 import { createPortal } from "react-dom";
 
 export default function Modal ({
   className = "",
-  Open = false,
-  Close,
+  layout = "short", //short, medium, large
+  blur = false,
+  isOpen,
+  onClose,
   children
 }) {
-    const [isOpen, setOpen] = useState(false);
-        return (
-          <dialog className={`modal ${isOpen ? "open" : "close"}`} open={Open} id="modal">
-            <div className={`modal__container ${className} flex justify-center align-center`}>
+    if (!isOpen) return null;
+        return createPortal (
+          <dialog className={`modal open ${blur ? "blur" : ""} flex flex-column justify-center align-center`} open onClick={(event) => {
+        if (event.target === event.currentTarget) onClose?.();
+      }}>
+            <div className={`modal__container modal__container--layout-${layout} ${className} flex justify-center align-center`}>
               {children}
             </div>
           </dialog>,

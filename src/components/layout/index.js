@@ -12,3 +12,6 @@ export { default as Season } from "./Season";
 export { default as Media } from "./Media";
 export { default as Comments } from "./Comments";
 export { default as Footer } from "./Footer";
+export { default as Novedades } from "./Novedades";
+export { default as Login } from "./Login";
+export { default as Menu } from "./Menu";

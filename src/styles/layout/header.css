@@ -13,7 +13,7 @@
 
 .header__title {
     color: var(--text-heading);
-    font-size: var(--font-size-xl);
+    font-size: clamp(var(--font-size-l), 3vw, var(--font-size-xl));
     text-decoration: none;
     font-weight: var(--font-weight-bold);
 }
@@ -56,4 +56,29 @@
 .header__btnRight {
     color: var(--text-default);
     background-color: transparent;
+}
+
+@media (max-width: 720px) {
+  .header {
+    gap: var(--space-3xs);
+  }
+
+  .header__left {
+    gap: var(--space-s);
+    padding: var(--space-2xs) var(--space-xs);
+  }
+
+  .header__right {
+    gap: var(--space-s);
+    padding: var(--space-2xs) var(--space-xs);
+    margin-left: auto;
+  }
+
+  .header__nav {
+    padding: var(--space-3xs) var(--space-xs);
+  }
+  
+  .header__left .header__list {
+    display: none;
+  }
 }

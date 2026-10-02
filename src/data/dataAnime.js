@@ -53,6 +53,11 @@ import userAvatar1 from "../assets/dataAnime/userAvatar/userAvatar1.jpg";
 import userAvatar2 from "../assets/dataAnime/userAvatar/userAvatar2.jpg";
 import userAvatar3 from "../assets/dataAnime/userAvatar/userAvatar3.jpg";
 
+//news
+import newsImage1 from "../assets/dataAnime/news/newsImage1.jpeg";
+import newsImage2 from "../assets/dataAnime/news/newsImage2.jpeg";
+import newsImage3 from "../assets/dataAnime/news/newsImage3.jpeg";
+
 const users = {
     1: {
         username: "user1",
@@ -270,6 +275,24 @@ const episodes = [
     
 ]
 
+const news = [
+  {
+    image: newsImage1,
+    title: "Estreno de El regreso de Tung Tung.",
+    description: "Mira esta joyita antes de que la borren"
+  },
+  {
+    image: newsImage2,
+    title: "mañana llueve",
+    description: "Capaz"
+  },
+  {
+    image: newsImage3,
+    title: "admin",
+    description: "1234"
+  }
+]
+
 const seasons = [
     {
         id: 1,
@@ -359,7 +382,7 @@ const dataAnime = {
 }
 
 export const dataAux = {
-    users, comments, episodes, seasons, dataContent
+    users, comments, episodes, seasons, dataContent, news
 }
 
 export const dataSeries = Object.values(dataAnime).filter(

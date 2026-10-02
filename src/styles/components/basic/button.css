@@ -44,21 +44,21 @@ flex-direction: column;
 /* size */
 .btn--size-1 {
     padding: var(--space-2xs) var(--space-s);
-    font-size: var(--font-size-2xs);
+    font-size: clamp(var(--font-size-3xs), 2vw, var(--font-size-2xs));
     font-weight: var(--font-weight-medium);
     line-height: 1.2;
 }
 
 .btn--size-2 {
     padding: var(--space-3xs) var(--space-s);
-    font-size: var(--font-size-xs);
+    font-size: clamp(var(--font-size-2xs), 2vw, var(--font-size-xs));
     font-weight: var(--font-weight-medium);
     line-height: 1.7;
 }
 
 .btn--size-3 {
     padding: var(--space-3xs) var(--space-m);
-    font-size: var(--font-size-s);
+    font-size: clamp(var(--font-size-xs), 2vw, var(--font-size-s));
     line-height: 2;
     font-weight: var(--font-weight-medium);
 }
@@ -185,4 +185,18 @@ flex-direction: column;
 /* utilities */
 .btn--utilities-split .btn__icon .icon {
     transform: rotate(180deg);
+}
+
+@media (max-width: 720px) {
+  .btn--size-1 {
+      
+  }
+
+  .btn--size-2 {
+      
+  }
+
+  .btn--size-3 {
+      
+  }
 }

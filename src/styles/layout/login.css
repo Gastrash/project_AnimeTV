@@ -1,0 +1,14 @@
+/* login.css */
+
+.login {
+
+}
+
+.login__container {
+    padding: 2rem;
+    border-radius: var(--radius-m);
+    background-color: var(--bg-surface-1);
+    box-shadow: var(--shadow-default);
+    width: 100%;
+    max-width: var(--container-s);
+}

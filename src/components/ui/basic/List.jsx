@@ -36,7 +36,7 @@ export default function List ({
             data={data}
             renderItem={renderItem}
             layout={layout}
-            
+            classLi={classLi}
             />
         </ul>
     )

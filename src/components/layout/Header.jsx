@@ -9,18 +9,18 @@ aria-label para navs.
 import { useState } from "react";
 import { NavLink } from "react-router";
 import { List, Button, Icon, Modal } from "../ui";
+import { Novedades, Login, Menu } from "./";
 
 export default function Header ({
-    container = "container", //secondary,
     title = "AnimeTV"
 }) {
-    const [OpenNotifications, setOpenNotifications] = useState(false);
+    const [OpenNovedades, setOpenNovedades] = useState(false);
     const [OpenLogin, setOpenLogin] = useState(false);
     const [OpenMenu, setOpenMenu] = useState(false);
 
     return (
-        <header id="header" className={`${container}`}>
-            <div className="header flex flex-row justify-center align-center">
+        <header id="header">
+            <div className="header flex flex-row justify-flex-start align-center">
                 <div className="header__left flex flex-row justify-center align-center">
                     <NavLink to="/" className="header__title">
                         {title}
@@ -40,7 +40,7 @@ export default function Header ({
                     <nav className="header__nav flex flex-row justify-center align-center">
                         <List classUl="header__list">
                             <Button className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="search" />}></Button>
-                            <Button onClick={() => setOpenNotifications(value => !value)} className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="notifications" />}></Button>
+                            <Button onClick={() => setOpenNovedades(value => !value)} className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="notifications" />}></Button>
                             <Button
                             onClick={() => setOpenLogin(value => !value)} className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="account" />}></Button>
                             <Button
@@ -48,27 +48,24 @@ export default function Header ({
                         </List>
                     </nav>
                 </div>
+
+                {OpenNovedades && (
+                    <Modal isOpen={OpenNovedades} onClose={() => setOpenNovedades(false)}>
+                        <Novedades/>
+                    </Modal>
+                )}
                 {OpenLogin && (
-                    <Modal>
-                    <div className="header__search flex flex-row justify-center align-center">
-                        <input type="text" className="header__searchInput" placeholder="Buscar..." />
-                    </div>
+                    <Modal isOpen={OpenLogin} onClose={() => setOpenLogin(false)}>
+                        <Login />
                     </Modal>
                 )}
                 {OpenMenu && (
-                    <Modal Open={OpenMenu} Close={() => setOpenMenu(false)}>
-                    <div className="header__search flex flex-row justify-center align-center">
-                        <input type="text" className="header__searchInput" placeholder="Buscar..." />
-                    </div>
+                    <Modal isOpen={OpenMenu} onClose={() => setOpenMenu(false)}>
+                        <Menu />
                     </Modal>
                 )}
-                {OpenNotifications && (
-                    <Modal>
-                    <div className="header__search flex flex-row justify-center align-center">
-                        <input type="text" className="header__searchInput" placeholder="Buscar..." />
-                    </div>
-                    </Modal>
-                )}
+                
+                
             </div>
         </header>
     )
