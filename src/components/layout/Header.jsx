@@ -2,8 +2,6 @@
 
 /*
 aria-label para navs.
-
-<Button size="1" variant="link">Favoritos</Button>
 */
 
 import { useState } from "react";
@@ -55,7 +53,7 @@ export default function Header ({
                     </Modal>
                 )}
                 {OpenLogin && (
-                    <Modal isOpen={OpenLogin} onClose={() => setOpenLogin(false)}>
+                    <Modal isOpen={OpenLogin} onClose={() => setOpenLogin(false)} blur={true}>
                         <Login />
                     </Modal>
                 )}

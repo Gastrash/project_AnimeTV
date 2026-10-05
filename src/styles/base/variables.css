@@ -19,10 +19,12 @@ blur
     /* background */
     --bg-main: #0e2345;
     --bg-surface: #222f4b;
-    --bg-surface-2: #202F49;
+    --bg-surface-2: #1b0921;
     --bg-surface-3: #181c23;
     --bg-elevated: #1d1630;
     --bg-elevated-2: #36285d;
+
+    --bg-surface-2-hover: #44235d;
 
     /* gradients*/
     --gradient-1: linear-gradient(
@@ -48,7 +50,8 @@ blur
     --text-default: #ffffff;
     --text-secondary: rgb(63, 60, 60);
     --text-heading: #b49eda;
-    --text-muted: #797979; 
+    --text-muted: #797979;
+    --text-link: #575edc;
 
     /* accent */
     --accent-default: #b49eda;
@@ -139,7 +142,7 @@ blur
     --breakpoint-1: ;
     
     /*transition*/
-    --transition-all: all 0.5 ease;
+    --transition-all: all 0.5s ease;
     
     --transition-default:
     background-color 0.3s ease,

@@ -22,17 +22,19 @@ export default function Novedades ({
                         type="data"
                         data={dataNews}
                         renderItem={(item) => (
-                            <div className="novedades__item">
-                                <div className="novedades__item--header flex flex-row justify-flex-start align-center">
-                                    <div className="novedades__header--profile">
-                                        <img src={item.image} alt={item.title} className="novedades__item--image" />
+                            <div className="novedades__item flex flex-row justify-flex-start align-center">
+                                <div className="novedades__item--content flex flex-column justify-center align-center">
+                                    <div className="novedades__item--header flex flex-row justify-flex-start align-center">
+                                        <div className="novedades__item--header-profile">
+                                            <img src={item.image} alt={item.title} className="novedades__item--image" />
+                                        </div>
+                                        <h4>{item.title}</h4>
                                     </div>
-                                    <h4>{item.title}</h4>
+                                    <div className="novedades__item--description flex flex-row justify-space-between align-center">
+                                        <p>{item.description}</p>
+                                    </div>
                                 </div>
-                                <div className="novedades__item--content flex flex-row justify-space-between align-center">
-                                    <p>{item.description}</p>
-                                    <div className="novedades__item--dot">
-                                    </div>
+                                <div className="novedades__item--delete flex flex-column justify-center align-center">
                                 </div>
                             </div>
                         )} />

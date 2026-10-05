@@ -1,7 +1,9 @@
 /* login.css */
 
 .login {
-
+    color: var(--text-default);
+    border: var(--border-default) 1px solid;
+    border-radius: var(--radius-m);
 }
 
 .login__container {
@@ -11,4 +13,52 @@
     box-shadow: var(--shadow-default);
     width: 100%;
     max-width: var(--container-s);
+    gap: var(--space-xs);
+}
+
+.login__header, .login__body, .login__footer, .login__actions {
+    width: 100%;
+}
+
+.login__header {
+    padding: var(--space-xs) 0;
+}
+
+.login__body {
+    gap: var(--space-s);
+    padding: var(--space-3xs) 0;
+}
+
+.login__actions {
+    gap: var(--space-2xs);
+    padding-block: var(--space-3xs);
+}
+
+.login__footer {
+    gap: var(--space-s);
+    padding: var(--space-3xs) 0;
+}
+
+.login__actions--link {
+    color: var(--text-link);
+    transition: var(--transition-default);
+}
+
+.login__button {
+    font-size: var(--font-size-s);
+}
+
+.login__button--register {
+    color: var(--text-default);
+    transition: var(--transition-default);
+    font-size: var(--font-size-xs);
+    padding: var(--space-3xs) var(--space-2xs);
+}
+
+.login__actions--link:hover {
+    color: var(--text-default);
+}
+
+.login__button--register:hover {
+    color: var(--text-heading);
 }
