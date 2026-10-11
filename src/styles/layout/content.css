@@ -3,7 +3,6 @@
 .content {
     width: 100%;
     gap: var(--space-l);
-    padding: var(--space-s) 0;
 }
 
 .content__header {
@@ -14,8 +13,6 @@
 
 .content__viewport {
     width: 100%;
-    padding: var(--space-xs) var(--space-l);
-    margin: 0 auto;
 }
 
 .content__list {

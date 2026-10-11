@@ -18,11 +18,11 @@ export default function Hero ({
                     <img src={data.heroImage} alt={data.title}/>
                 </div>
                 <div className="hero__overlay flex flex-column justify-flex-end">
-                        <div className="hero__info flex flex-column">
-                            <div className="hero__info--badges flex flex-row">
+                        <div className="hero__badges flex flex-row justify-flex-start align-center">
                             <Badge size="1">{data.ranking}</Badge>
                             <Badge size="1" className="hero__badges">{data.rating}</Badge>
                         </div>
+                        <div className="hero__info flex flex-column justify-flex-start align-flex-start">
                             <h1 className="hero__title">{data.title}</h1>
                             <p className="">{data.description}</p>
                         </div>

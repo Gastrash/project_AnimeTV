@@ -18,7 +18,7 @@ export default function Header ({
 
     return (
         <header id="header">
-            <div className="header flex flex-row justify-flex-start align-center">
+            <div className="header flex flex-row justify-space-between align-center">
                 <div className="header__left flex flex-row justify-center align-center">
                     <NavLink to="/" className="header__title">
                         {title}
@@ -28,9 +28,6 @@ export default function Header ({
                             <NavLink to="/movies" className="header__navLink">Películas</NavLink>
                             <NavLink to="/series" className="header__navLink">Series</NavLink>
                             <NavLink to="/favorites" className="header__navLink">Favoritos</NavLink>
-                            <NavLink to="/anime/3" className="header__navLink">AnimeDetail/3</NavLink>
-                            <NavLink to="/anime/2" className="header__navLink">AnimeDetail/2</NavLink>
-                            <NavLink to="/animePlayer/2" className="header__navLink">AnimePlayer/2</NavLink>
                         </List>
                     </nav>
                 </div>

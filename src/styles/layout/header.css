@@ -4,7 +4,7 @@
     background-color: var(--bg-elevated);
     box-shadow: var(--shadow-l);
     gap: var(--space-xl);
-    min-width: 100%;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,24 +13,27 @@
 
 .header__title {
     color: var(--text-heading);
-    font-size: clamp(var(--font-size-l), 3vw, var(--font-size-xl));
+    font-size: clamp(var(--font-size-xl), 3vw, var(--font-size-l));
     text-decoration: none;
     font-weight: var(--font-weight-bold);
 }
 
 .header__left {
-    gap: var(--space-xl);
-    padding: var(--space-xs) var(--space-m);
+    gap: clamp(var(--space-m), 3vw, var(--space-xl));
+    padding-inline: clamp(var(--space-3xs), 3vw, var(--space-xs));
+    padding-block: clamp(var(--space-2xs), 3vw, var(--space-s));
 }
 
 .header__right {
-    gap: var(--space-l);
-    padding: var(--space-xs) var(--space-m);
+    gap: clamp(var(--space-s), 3vw, var(--space-l));
+    padding-inline: clamp(var(--space-3xs), 3vw, var(--space-xs));
+    padding-block: clamp(var(--space-2xs), 3vw, var(--space-s));
 }
 
 .header__nav {
     gap: var(--space-l);
-    padding: var(--space-2xs) var(--space-m);
+    padding-inline: clamp(var(--space-xs), 3vw, var(--space-m));
+    padding-block: clamp(0, 3vw, var(--space-xs));
 }
 
 .header__navLink {
@@ -65,20 +68,43 @@
 
   .header__left {
     gap: var(--space-s);
-    padding: var(--space-2xs) var(--space-xs);
+    padding: clamp(var(--space-3xs), 3vw, var(--space-xs)) clamp(var(--space-3xs), 3vw, var(--space-xs));
   }
 
   .header__right {
     gap: var(--space-s);
-    padding: var(--space-2xs) var(--space-xs);
-    margin-left: auto;
+    padding: clamp(var(--space-3xs), 3vw, var(--space-xs)) clamp(var(--space-3xs), 3vw, var(--space-xs));
   }
 
-  .header__nav {
-    padding: var(--space-3xs) var(--space-xs);
+  .header__right .header__nav {
+    padding: 0;
+  }
+}
+
+/*Responsive Mobile*/
+@media (max-width: 480px) {
+  .header__title {
+    
+  }
+
+  .header__left {
+    gap: clamp(var(--space-xs), 3vw, var(--space-m));
+    padding-inline: clamp(var(--space-2xs), 3vw, var(--space-s));
+    padding-block: clamp(var(--space-s), 3vw, var(--space-l));
+  }
+
+  .header__right {
+    gap: clamp(var(--space-2xs), 3vw, var(--space-s));
+    padding-inline: clamp(var(--space-2xs), 3vw, var(--space-s));
+    padding-block: clamp(var(--space-s), 3vw, var(--space-l))
   }
   
-  .header__left .header__list {
+  .header__left .header__nav {
     display: none;
+    padding: 0;
+  }
+
+  .header__right .header__nav {
+    padding: 0;
   }
 }

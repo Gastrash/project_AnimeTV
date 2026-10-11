@@ -1,17 +1,26 @@
-/* ancho + centrado */
-
-.section {}
-
 .container {
     width: 100%;
-    margin-block: var(--space-l);
-    padding: 0 var(--space-3xl);
+    margin-block: clamp(
+        var(--space-2xs),
+        5vw,
+        var(--space-l)
+    );
+    padding-inline: clamp(
+        var(--space-s),
+        5vw,
+        var(--space-3xl)
+    );
+    outline: white solid 3px;
 }
 
 .container-secondary {
     width: 100%;
-    margin-block: var(--space-l);
-    padding: 0;
+    margin-block: clamp(
+        var(--space-2xs),
+        5vw,
+        var(--space-l)
+    );
+    padding-inline: 0;
 }
 
 .desactivar-container {

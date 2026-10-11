@@ -7,17 +7,19 @@ const shuffledData = [...contentData].sort(() => Math.random() - 0.5);
 */
 
 export default function Content ({
-    
     title = "Novedades para ti",
     container = "none", //primary, secondary,
+    header = true, //true, false
     data = []
 }) {
     return (
         <section id="content" className={`container--${container}`}>
             <div className="content">
-                <div className="content__header">
-                    <h3>{title}</h3>
-                </div>
+                {header && (
+                    <div className="content__header ">
+                        <h3>{title}</h3>
+                    </div>
+                )}
                 <div className="content__viewport">
                     <Carousel
                         className="content__list"

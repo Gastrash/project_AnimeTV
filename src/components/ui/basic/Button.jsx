@@ -7,7 +7,7 @@ export default function Button({
 
   disabled = false,
   onClick,
-
+  type = "button",
   className = "",
   icon,
   iconPosition = "left", //left, right
@@ -24,6 +24,7 @@ export default function Button({
       btn--variant-${variant}
       btn--size-${size}
       btn--layout-${layout}
+      type={type}
       ${className}`}>
 
       {icon && iconPosition === "left" && <span className="btn__icon">{icon}</span>}

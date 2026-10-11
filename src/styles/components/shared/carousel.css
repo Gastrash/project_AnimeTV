@@ -4,9 +4,19 @@
     position: relative;        
 }
 
-.carousel__viewport {
+.carousel__display {
+    display: inline-flex;
+    flex-wrap: nowrap;
     width: 100%;
-    padding: var(--space-xs) var(--space-m);
+    overflow: hidden;
+}
+
+.carousel__viewport {
+    flex: 1 1 0;
+    min-width: 0;
+    width: 100%;
+    padding: var(--space-xs) var(--space-l);
+    overflow: hidden;
 }
 
 .carousel__track {
@@ -14,18 +24,41 @@
 }
 
 .carousel__button {
-    display: inline-flex;
-    
-}
-
-.carousel__button--variant {
-    background-color: var(--overlay-s);
-    border: none;
+    position: absolute;
+    background-color: linear-gradient(
+        to right,
+        var(--overlay-s),
+        var(--overlay-s)
+    );
     color: var(--text-default);
-    box-shadow: none;
+    box-shadow: var(--shadow-s);
+    border-radius: 0;
     opacity: 0.5;
+    width: clamp(var(--space-m), 5vw, var(--container-s));
+    height: 100%;
+    transition: opacity 0.3s ease;
+    z-index: 2;
 }
 
-.carousel__button--variant:hover{
+.carousel__button--left {
+    left: 0;
+    background-color: linear-gradient(
+        to left,
+        transparent,
+        var(--overlay-s),
+        var(--overlay-l)
+    );
+}
+
+.carousel__button--right {
+    right: 0;
+    background-color: linear-gradient(
+        to right,
+        var(--overlay-s),
+        var(--overlay-s)
+    );
+}
+
+.carousel__button:hover{
     opacity: 1;
 }

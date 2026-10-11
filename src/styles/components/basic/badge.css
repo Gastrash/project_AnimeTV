@@ -5,6 +5,16 @@
     gap: var(--space-2xs)
 }
 
+.badge__label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.badge__icon {
+    flex-shrink: 0;
+}
+
 .badge--size-1 {
     padding: var(--space-3xs) var(--space-2xs);
     font-size: var(--font-size-2xs);

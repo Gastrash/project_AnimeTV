@@ -8,7 +8,7 @@ export default function Home ({}) {
     return (
         <>
             <Hero data={data[1]}/>
-            <Content data={data} />
+            <Content header={false} data={data} />
             <Content data={data} />
             <Content data={data} />
         </>

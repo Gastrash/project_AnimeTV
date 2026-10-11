@@ -20,10 +20,6 @@ body {
     color: var(--text-default); /*quitar*/
 }
 
-section {
-    outline: none;
-}
-
 main {
     width: 100%;
 }

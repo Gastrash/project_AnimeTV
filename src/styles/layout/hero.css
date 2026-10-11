@@ -1,67 +1,199 @@
-/* hero */
+/* =========================
+   HERO
+========================= */
 
 .hero {
-    height: 70vh;
-    width: 100%;
     position: relative;
+    width: 100%;
+    height: 75vh;
+    min-height: 32rem;
+    isolation: isolate;
 }
+
+/* =========================
+   IMAGEN
+========================= */
 
 .hero__image {
     position: absolute;
     inset: 0;
     z-index: -1;
-    height: 90vh;
+    overflow: hidden;
 }
 
 .hero__image img {
+    display: block;
     width: 100%;
-    height: 90vh;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 .hero__image::after {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     z-index: 1;
+    pointer-events: none;
+
     background: linear-gradient(
         to top,
-        var(--bg-main),
-        transparent 40%,
-        transparent,
-        transparent
+        var(--bg-main) 0%,
+        transparent 65%
     );
-    /*pointer-events: none;*/
 }
+
+/* =========================
+   OVERLAY
+========================= */
 
 .hero__overlay {
     position: absolute;
-    z-index: 0;
-    max-width: 50%;
-    min-height: 70%;
-    bottom: 0;
+    z-index: 1;
     left: 0;
-    padding: 0 var(--space-xl) 5vh var(--space-xl);
+    bottom: 0;
+
+    width: 100%;
+    max-width: 50%;
+    min-height: 60%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: clamp(
+        var(--space-s),
+        3vw,
+        var(--space-l)
+    );
+
     color: var(--text-default);
 }
 
+/* =========================
+   BADGES
+========================= */
+
+.hero__badges {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-s);
+}
+
+/* =========================
+   INFO
+========================= */
+
 .hero__info {
-    gap: var(--space-xs);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(
+        var(--space-s),
+        3vw,
+        var(--space-m)
+    );
+
+    padding-block: var(--space-xs);
+}
+
+.hero__info p {
+    margin: 0;
+    padding-inline: var(--space-2xs);
+    font-size: clamp(
+        var(--font-size-2xs),
+        1.1vw,
+        var(--font-size-xs)
+    );
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-s);
     padding-block: var(--space-s);
-    p {        
-        font-size: var(--font-size-xs);
-        max-width: 80%;
-        padding: 0 var(--space-2xs);
+}
+
+/* =========================
+   RESPONSIVE: TABLET
+========================= */
+
+@media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+        min-height: 28rem;
+    }
+
+    .hero__overlay {
+        max-width: 100%;
+        padding: clamp(
+            var(--space-s),
+            4vw,
+            var(--space-l)
+        );
+    }
+
+    .hero__info {
+        gap: var(--space-s);
     }
 }
 
-.hero__info--badges {
-    gap: var(--space-s);
+/* =========================
+   RESPONSIVE: MÓVIL
+========================= */
+
+@media (max-width: 480px) {
+    .hero {
+        height: 75vh;
+        min-height: 30rem;
+        max-height: 42rem;
+    }
+
+    .hero__overlay {
+        inset: auto 0 0;
+        width: 100%;
+        max-width: 100%;
+        min-height: 0;
+        padding: var(--space-s);
+    }
+
+    .hero__badges {
+        gap: var(--space-2xs);
+    }
+
+    .hero__info {
+        gap: var(--space-xs);
+        padding-block: var(--space-2xs);
+    }
+
+    .hero__info p {
+        font-size: var(--font-size-2xs);
+        padding-inline: 0;
+    }
+
+    .hero__actions {
+        gap: var(--space-2xs);
+        padding-block: var(--space-xs);
+    }
 }
 
-.hero__actions {
-    gap: var(--space-s);
-    padding-block: var(--space-s);
-}
+/* =========================
+   ACCESIBILIDAD
+========================= */
 
-/* actions */
+@media (prefers-reduced-motion: reduce) {
+    .hero,
+    .hero__image,
+    .hero__image img,
+    .hero__overlay {
+        transition: none;
+    }
+}
