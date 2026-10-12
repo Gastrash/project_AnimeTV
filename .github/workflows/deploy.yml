@@ -2,7 +2,8 @@ name: Deploy AnimeTV
 
 on:
 push:
-branches: [main]
+branches:
+- main
 workflow_dispatch:
 
 permissions:
@@ -32,9 +33,6 @@ uses: actions/checkout@v4
 
   - name: Build
     run: npm run build
-
-  - name: Setup Pages
-    uses: actions/configure-pages@v5
 
   - name: Upload artifact
     uses: actions/upload-pages-artifact@v3
