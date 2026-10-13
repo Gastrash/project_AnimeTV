@@ -23,7 +23,7 @@ export default function Novedades ({
                         data={dataNews}
                         renderItem={(item) => (
                             <div className="novedades__item flex flex-row justify-flex-start align-center">
-                                <div className="novedades__item--content flex flex-column justify-center align-center">
+                                <div className="novedades__item--content flex flex-column justify-center align-flex-start">
                                     <div className="novedades__item--header flex flex-row justify-flex-start align-center">
                                         <div className="novedades__item--header-profile">
                                             <img src={item.image} alt={item.title} className="novedades__item--image" />

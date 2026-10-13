@@ -43,10 +43,6 @@
     );
 }
 
-/* =========================
-   OVERLAY
-========================= */
-
 .hero__overlay {
     position: absolute;
     z-index: 1;
@@ -71,20 +67,12 @@
     color: var(--text-default);
 }
 
-/* =========================
-   BADGES
-========================= */
-
 .hero__badges {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: var(--space-s);
 }
-
-/* =========================
-   INFO
-========================= */
 
 .hero__info {
     display: flex;
@@ -110,11 +98,8 @@
     overflow-wrap: anywhere;
 }
 
-/* =========================
-   ACTIONS
-========================= */
-
 .hero__actions {
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -122,9 +107,7 @@
     padding-block: var(--space-s);
 }
 
-/* =========================
-   RESPONSIVE: TABLET
-========================= */
+/*RESPONSIVE: TABLET*/
 
 @media (max-width: 768px) {
     .hero {
@@ -146,9 +129,7 @@
     }
 }
 
-/* =========================
-   RESPONSIVE: MÓVIL
-========================= */
+/*RESPONSIVE: MÓVIL*/
 
 @media (max-width: 480px) {
     .hero {
@@ -180,14 +161,13 @@
     }
 
     .hero__actions {
+        width: 100%;
         gap: var(--space-2xs);
         padding-block: var(--space-xs);
     }
 }
 
-/* =========================
-   ACCESIBILIDAD
-========================= */
+/*ACCESIBILIDAD*/
 
 @media (prefers-reduced-motion: reduce) {
     .hero,

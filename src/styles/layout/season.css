@@ -105,3 +105,24 @@
     transform: scale(1.03);
     box-shadow: var(--shadow-m); /* box-shadow */
 }
+
+@media (max-width: 768px) {
+  .season__grid {
+    min-height: 35vh;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--space-2xs); /* column-gap: / row-gap */
+    padding-block: var(--space-s);
+  }
+}
+
+@media (max-width: 480px) {
+  .season__grid {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--space-m); /* column-gap: / row-gap */
+    padding: 0;
+  }
+}

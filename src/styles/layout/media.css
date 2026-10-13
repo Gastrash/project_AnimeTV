@@ -2,7 +2,6 @@
 
 .media {
     border-top: var(--border-muted) solid 3px;
-    outline: none;
 }
 
 .media__viewer {
@@ -19,9 +18,8 @@
     box-shadow: var(--shadow-m);
 }
 
-.media__footer { /* posible mejora si se cambia a adentro de video-container */
+.media__footer {
     width: 100%;
-    outline: auto;
 }
 
 .media__actions, 
@@ -33,13 +31,11 @@
 .media__actions {
     width: 100%;
     gap: var(--space-l);
-    outline: auto;
 }
 
 .media__serieNav {
     width: 100%;
     gap: var(--space-l);
-    outline: auto;
 }
 
 .media__actions-list {

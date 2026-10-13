@@ -43,7 +43,7 @@ flex-direction: column;
 
 /* size */
 .btn--size-1 {
-    padding: var(--space-2xs) var(--space-s);
+    padding: var(--space-2xs) var(--space-xs);
     font-size: clamp(var(--font-size-3xs), 2vw, var(--font-size-2xs));
     font-weight: var(--font-weight-medium);
     line-height: 1.2;

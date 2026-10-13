@@ -22,3 +22,29 @@
 .content__item {
     border: none;
 }
+
+@media (max-width: 480px) {
+    
+    .content {
+        width: 100%;
+        gap: var(--space-l);
+    }
+
+    .content__header {
+        border-bottom: 1px solid var(--border-muted);
+        padding: var(--space-s);
+        width: 100%;
+    }
+
+    .content__viewport {
+        width: 100%;
+    }
+
+    .content__list {
+        gap: var(--space-xs);
+    }
+
+    .content__item {
+        border: none;
+    }
+}

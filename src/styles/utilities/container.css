@@ -10,7 +10,6 @@
         5vw,
         var(--space-3xl)
     );
-    outline: white solid 3px;
 }
 
 .container-secondary {

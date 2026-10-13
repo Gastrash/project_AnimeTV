@@ -1,5 +1,6 @@
 /* Card.jsx */
 
+import { useNavigate } from "react-router";
 import Actions from "./Actions"
 
 //refactor de clases, realizar versión con ActionsAnimeTV en vez de description.
@@ -11,10 +12,15 @@ export default function Card({
   className,
   data = {} //cardImage, title, description.
 }) {
+  const navigate = useNavigate();
   return (
-    <article className={`card__container card--size-${size} card--layout-${layout}`}>
+    <article
+      onClick={() => navigate(`/anime/${data.id}#info`)}
+      role="link"
+      
+      className={`card__container card--size-${size} card--layout-${layout}`}>
         <div className={`card card--variant-${variant} ${className}`} style={{ backgroundImage: `url(${data.cardImage})`}}>
-            <div className={`card__meta flex flex-column justify-center align-flex-start`}>
+            <div className={`card__meta flex flex-column justify-center align-center`}>
                 <h4>{data.title}</h4>
                 <div className={`card__meta-hidden`}>
                   <Actions className={`card__actions`} size="1" data={data}/>

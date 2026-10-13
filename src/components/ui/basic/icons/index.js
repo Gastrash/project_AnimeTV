@@ -1,6 +1,7 @@
 // icons/index.js
 
 import arrow from "./arrow";
+import arrow2 from "./arrow2";
 import account from "./account";
 import heart from "./heart";
 import like from "./like";
@@ -14,6 +15,7 @@ import list from "./list";
 
 const icons = {
     arrow,
+    arrow2,
     account,
     heart,
     like,

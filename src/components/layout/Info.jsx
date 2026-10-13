@@ -9,7 +9,7 @@ export default function Info ({
     const type = data.isMovie ? "Pelicula" : "Serie";
     return (
         <section id="info" className={`${container}`}>
-            <div className="info flex flex-row">
+            <div className="info flex">
                 <div className="info__image">
                     <img src={data.heroImage} alt={data.title}/>
                 </div>

@@ -2,6 +2,7 @@
 
 .comment {
     background-color: var(--bg-surface-2);
+    margin-block: clamp(var(--space-m), 5vw, var(--space-l));
 }
 
 .comment__header {

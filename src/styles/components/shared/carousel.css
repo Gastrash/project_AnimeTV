@@ -21,28 +21,31 @@
 
 .carousel__track {
     transition: transform 400ms ease;
+    padding-inline: clamp(var(--space-2xs), 3vw, var(--space-s));
 }
 
 .carousel__button {
     position: absolute;
-    background-color: linear-gradient(
-        to right,
+    background: linear-gradient(
+        to left,
+        transparent,
         var(--overlay-s),
-        var(--overlay-s)
+        var(--overlay-l)
     );
+    border: var(--border-secondary) 2px solid;
     color: var(--text-default);
     box-shadow: var(--shadow-s);
     border-radius: 0;
-    opacity: 0.5;
-    width: clamp(var(--space-m), 5vw, var(--container-s));
+    opacity: 0.7;
+    width: clamp(var(--space-m), 4vw, var(--container-m));
     height: 100%;
-    transition: opacity 0.3s ease;
+    transition: var(--transition-default);
     z-index: 2;
 }
 
 .carousel__button--left {
     left: 0;
-    background-color: linear-gradient(
+    background: linear-gradient(
         to left,
         transparent,
         var(--overlay-s),
@@ -52,13 +55,16 @@
 
 .carousel__button--right {
     right: 0;
-    background-color: linear-gradient(
+    background: linear-gradient(
         to right,
-        var(--overlay-s),
+        transparent,
         var(--overlay-s)
+        ,var(--overlay-l)
     );
 }
 
 .carousel__button:hover{
     opacity: 1;
+    border: var(--border-accent) 2px solid;
+    color: var(--border-accent);
 }

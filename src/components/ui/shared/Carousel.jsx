@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button, List } from "../basic";
+import { Button, List, Icon } from "../basic";
 
 export default function Carousel({
     layout = "horizontal",
@@ -27,7 +27,6 @@ export default function Carousel({
         Math.ceil(data.length / itemsPerPage) - 1
     );
 
-    // Evita que la posición quede fuera de rango al cambiar de pantalla.
     const currentPosition = Math.min(position, maxPosition);
 
     const isAtStart = currentPosition === 0;
@@ -39,8 +38,9 @@ export default function Carousel({
                 <Button
                     disabled={isAtStart}
                     onClick={() => setPosition(currentPosition - 1)}
+                    icon={<Icon name="arrow2" rotate="180" />}
                     layout="full"
-                    variant="ghost"
+                    variant="none"
                     className="carousel__button carousel__button--left"
                 />
 
@@ -64,8 +64,9 @@ export default function Carousel({
                 <Button
                     disabled={isAtEnd}
                     onClick={() => setPosition(currentPosition + 1)}
+                    icon={<Icon name="arrow2" />}
                     layout="full"
-                    variant="ghost"
+                    variant="none"
                     className="carousel__button carousel__button--right"
                 />
             </div>
