@@ -6,7 +6,7 @@ import { dataAnime, dataAux } from "../data";
 export default function Favorites ({}) {
     const data = Object.values(dataAnime);
     const id = 1;
-    const Favorites = Object.values(dataAux.users).find(item => item.id == id);
+    const Favorites = dataAux.favorites;
     return (
         <>
             <Hero data={Favorites[1]} />

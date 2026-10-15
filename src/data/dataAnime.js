@@ -1,48 +1,3 @@
-// dataAnime.js
-
-/*
-datos de pelicula:
-video: "./assets/movie/video2315.mp4",
-    cardImage: "./assets/cardImage/image2315.jpg",
-    title: "Pelicula 2315",
-    duration: "1h 35m",
-    classification: "+16",
-    description: "está es la pelicula 2315",
-    heroImage: "./assets/heroImage/image2315.jpg",
-    rating: "7.5/10",
-    ranking: "no disponible",
-    trailer: "./assets/trailerPeli/video2315.mp4",
-    isMovie: true,
-    comments
-
-datos de serie:
-
-
-{
-    title: "...",
-    comments: [...],
-    season: [
-        {
-            number: 1,
-            episodes: [...]
-        },
-        {
-            number: 2,
-            episodes: [...]
-        }
-    ]
-}
-
-{!data.isMovie && (
-  <SeasonAnimeTV data={data.season} />
-)}
-
-- temporadas por id.
- 
-// userAvatar, cardImage, heroImage, trailer, media.
-
-*/
-
 import cardImage1 from "../assets/dataAnime/cardImage/cardImage1.jpg";
 import cardImage2 from "../assets/dataAnime/cardImage/cardImage2.jpg";
 import cardImage3 from "../assets/dataAnime/cardImage/cardImage3.jpg";
@@ -187,9 +142,9 @@ const comments = {
     }
 }
 
-const dataContent = [
+/*const dataContent = [
   {number: 1,},{number: 2,},{number: 3,},{number: 4,},{number: 5,},{number: 6,},{number: 7,},{number: 8,},{number: 9,},{number: 10,}, {number: 1,},{number: 2,},{number: 3,},{number: 4,},{number: 5,},{number: 6,},{number: 7,},{number: 8,},{number: 9,},{number: 10,}
-]
+]*/
 
 const episodes = [
     {
@@ -302,6 +257,83 @@ const seasons = [
         id: 3,
         seasons: 3
     }
+]
+
+const favorites = [
+  {
+    id: 1,
+    cardImage: cardImage1,
+    title: "serie 1",
+    duration: "3 Temporadas",
+    classification: "+16",
+    description: "está es la serie 1",
+    heroImage: heroImage1,
+    rating: "7/10",
+    ranking: "no disponible",
+    trailer: "trailer1",
+    state: false,
+    isMovie: false,
+    seasons: seasons[1]
+  },
+  {
+    id: 2,
+    media: "media3",
+    cardImage: cardImage3,
+    title: "Pelicula 67",
+    duration: "1h 35m",
+    classification: "+16",
+    description: "está es la pelicula 67",
+    heroImage: heroImage3,
+    rating: "6.7/10",
+    ranking: "6",
+    trailer: "trailer3",
+    isMovie: true,
+    comments: 
+    [
+    {    
+        user: users[1],
+        content: "borra la serie",
+        createdAt: "Hace 17 años",
+        reactions: {
+            likes: 12,
+            dislikes: 2
+        }
+    },
+    {
+        user: users[1],
+        content: "borra la serie",
+        createdAt: "Hace 17 años",
+        reactions: {
+            likes: 12,
+            dislikes: 2
+        }
+    },
+    {
+        user: users[1],
+        content: "borra la serie",
+        createdAt: "Hace 17 años",
+        reactions: {
+            likes: 12,
+            dislikes: 2
+        }
+    }
+    ]
+  },
+  {
+    id: 3,
+    cardImage: cardImage2,
+    title: "serie 3",
+    duration: "3 Temporadas",
+    classification: "+16",
+    description: "está es la serie 3",
+    heroImage: heroImage2,
+    rating: "8.5/10",
+    ranking: "no disponible",
+    trailer: "trailer2",
+    state: false,
+    isMovie: false,
+    seasons: seasons[3]
+  }
 ]
 
 const dataAnime = {
@@ -530,7 +562,7 @@ const dataAnime = {
 }
 
 export const dataAux = {
-    users, comments, episodes, seasons, dataContent, news
+    users, comments, episodes, seasons, favorites, news
 }
 
 export const dataSeries = Object.values(dataAnime).filter(
