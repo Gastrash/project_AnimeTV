@@ -1,6 +1,6 @@
 CSS:
 
-1 - 
+1 - episodios, peliculas, comentarios, novedades, favoritos, user
 
 7 - breakpoints:
 
