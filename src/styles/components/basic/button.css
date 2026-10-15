@@ -1,24 +1,19 @@
 /* buttons */
 
-/* cambiar icon btn a btn cuadrado 
+/*
 
 mejora en buttons:
-loading - ⚙️ Guardando...
+loading
 disabled
 active - estado
 pressed - manteniendo click
 outline - parecido a ghost
 soft - fondo más suave
 split button
-
 white-space: nowrap;
-flex-shrink: 1;
-
-flex-direction: column;
 
 */
 
-/* clases base: */
 .btn {
     display: inline-flex;
     justify-content: center;
@@ -63,9 +58,9 @@ flex-direction: column;
     font-weight: var(--font-weight-medium);
 }
 
-.btn--loading {
-    background: black;
-} /* gradiente animado */
+/* .btn--loading {
+    
+} gradiente animado */
 
 /* layout */
 .btn--layout-square {
@@ -188,15 +183,24 @@ flex-direction: column;
 }
 
 @media (max-width: 720px) {
-  .btn--size-1 {
-      
-  }
+    .btn--size-1 {
+        padding: var(--space-2xs) var(--space-xs);
+        font-size: clamp(var(--font-size-3xs), 2vw, var(--font-size-2xs));
+        font-weight: var(--font-weight-medium);
+        line-height: 1.2;
+    }
 
-  .btn--size-2 {
-      
-  }
+    .btn--size-2 {
+        padding: var(--space-3xs) var(--space-s);
+        font-size: clamp(var(--font-size-2xs), 2vw, var(--font-size-xs));
+        font-weight: var(--font-weight-medium);
+        line-height: 1.7;
+    }
 
-  .btn--size-3 {
-      
-  }
+    .btn--size-3 {
+        padding: var(--space-3xs) var(--space-m);
+        font-size: clamp(var(--font-size-xs), 2vw, var(--font-size-m));
+        line-height: 2;
+        font-weight: var(--font-weight-medium);
+    }
 }

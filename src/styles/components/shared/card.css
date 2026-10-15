@@ -1,10 +1,9 @@
-/*CLASES BASE*/
+
 .card {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -59,26 +58,27 @@
     gap: var(--space-3xs);
 }
 
-/*SIZE*/
+/* Size */
+
 .card--size-1 {
-    width: clamp(7rem, 13vw, var(--space-3xl));
-    --card-title-size: clamp(var(--font-size-2xs), 1.2vw, var(--font-size-s));
+    width: clamp(var(--space-2xl), 13vw, var(--space-3xl));
+    --card-title-size: clamp(var(--font-size-xs), 1.2vw, var(--font-size-s));
     --card-text-size: clamp(var(--font-size-2xs), 0.9vw, var(--font-size-xs));
 }
 
 .card--size-2 {
-    width: clamp(9rem, 17vw, var(--container-3xs));
-    --card-title-size: clamp(var(--font-size-2xs), 1.4vw, var(--font-size-m));
+    width: clamp(var(--space-3xl), 17vw, var(--container-3xs));
+    --card-title-size: clamp(var(--font-size-s), 1.4vw, var(--font-size-m));
     --card-text-size: clamp(var(--font-size-2xs), 1vw, var(--font-size-xs));
 }
 
 .card--size-3 {
-    width: clamp(10rem, 21vw, var(--container-2xs));
-    --card-title-size: clamp(var(--font-size-2xs), 1.5vw, var(--font-size-m));
+    width: clamp(var(--container-3xs), 21vw, var(--container-2xs));
+    --card-title-size: clamp(var(--font-size-m), 1.5vw, var(--font-size-l));
     --card-text-size: clamp(var(--font-size-2xs), 1vw, var(--font-size-xs));
 }
 
-/*LAYOUT*/
+/* Layout */
 
 .card--layout-vertical {
     aspect-ratio: 3 / 4;
@@ -95,18 +95,18 @@
 }
 
 .card--layout-horizontal.card--size-1 {
-    width: clamp(10rem, 22vw, var(--space-3xl));
+    width: clamp(var(----container-3xs), 22vw, var(--container-2xs));
 }
 
 .card--layout-horizontal.card--size-2 {
-    width: clamp(14rem, 28vw, var(--container-2xl));
+    width: clamp(var(--container-2xs), 28vw, var(--container-xs));
 }
 
 .card--layout-horizontal.card--size-3 {
-    width: clamp(17rem, 34vw, var(--container-3xl));
+    width: clamp(var(--container-xs), 34vw, var(--container-s));
 }
 
-/*VARIANT*/
+/* Variant */
 
 .card--variant-default {
     --card-meta-color: var(--text-default);
@@ -118,7 +118,7 @@
     --card-meta-bg: var(--gradient-2);
 }
 
-/*HOVER / FOCUS*/
+/* Hover / focus */
 
 .card__container:hover {
     z-index: 10;
@@ -140,7 +140,7 @@
 
 .card__container:hover .card__meta-hidden {
     opacity: 1;
-    max-height: 6rem;
+    max-height: var(--space-3xl);
 }
 
 .card__container:focus-within {
@@ -153,69 +153,57 @@
 
 .card__container:focus-within .card__meta-hidden {
     opacity: 1;
-    max-height: 6rem;
+    max-height: var(--space-3xl);
 }
 
-/*RESPONSIVE: TABLET*/
+/* Tablet */
+
 @media (max-width: 768px) {
     .card--size-1 {
-        width: clamp(7rem, 22vw, var(--space-3xl));
-        --card-title-size: clamp(var(--font-size-2xs), 2vw, var(--font-size-s));
+        width: clamp(var(--space-2xl), 22vw, var(--space-3xl));
+        --card-title-size: clamp(var(--font-size-xs), 2vw, var(--font-size-s));
         --card-text-size: var(--font-size-2xs);
     }
 
     .card--size-2 {
-        width: clamp(8.5rem, 27vw, var(--container-3xs));
-        --card-title-size: clamp(var(--font-size-2xs), 2.2vw, var(--font-size-m));
+        width: clamp(var(--space-3xl), 27vw, var(--container-3xs));
+        --card-title-size: clamp(var(--font-size-s), 2.2vw, var(--font-size-m));
         --card-text-size: var(--font-size-2xs);
     }
 
     .card--size-3 {
-        width: clamp(9rem, 30vw, var(--container-2xs));
-        --card-title-size: clamp(var(--font-size-2xs), 2.4vw, var(--font-size-m));
+        width: clamp(var(--container-3xs), 30vw, var(--container-2xs));
+        --card-title-size: clamp(var(--font-size-m), 2.4vw, var(--font-size-l));
         --card-text-size: var(--font-size-2xs);
     }
-
-    .card--layout-horizontal {
-        --card-increase-x-value: 1;
-        --card-increase-y-value: 1;
-    }
-
-    .card--layout-vertical {
-        --card-increase-x-value: 1;
-        --card-increase-y-value: 1;
-    }
-  
 }
-
-/*RESPONSIVE: MÓVIL*/
 
 @media (max-width: 480px) {
     .card--size-1 {
-        width: clamp(7rem, 36vw, 9rem);
-        --card-title-size: clamp(var(--font-size-2xs), 3.2vw, var(--font-size-xs));
+        width: clamp(var(--space-3xl), 36vw, var(--container-3xs));
+        --card-title-size: clamp(var(--font-size-s), 3.2vw, var(--font-size-m));
     }
 
     .card--size-2 {
-        width: clamp(8rem, 42vw, 10rem);
-        --card-title-size: clamp(var(--font-size-2xs), 3.5vw, var(--font-size-xs));
+        width: clamp(var(--space-3xl), 42vw, var(--container-2xs));
+        --card-title-size: clamp(var(--font-size-m), 3.5vw, var(--font-size-l));
     }
 
     .card--size-3 {
-        width: clamp(9rem, 46vw, 11rem);
-        --card-title-size: clamp(var(--font-size-2xs), 3.8vw, var(--font-size-xs));
+        width: clamp(var(--container-3xs), 46vw, var(--container-2xs));
+        --card-title-size: clamp(var(--font-size-l), 3.8vw, var(--font-size-xl));
     }
 
     .card--layout-horizontal.card--size-1 {
-        width: clamp(10rem, 65vw, var(--container-3xs));
+        width: clamp(var(--container-2xs), 65vw, var(--container-3xs));
     }
 
     .card--layout-horizontal.card--size-2 {
-        width: clamp(12rem, 78vw, var(--container-xs));
+        width: clamp(var(--container-2xs), 78vw, var(--container-xs));
     }
 
     .card--layout-horizontal.card--size-3 {
-        width: clamp(14rem, 88vw, var(--container-s));
+        width: clamp(var(--container-2xs), 88vw, var(--container-s));
     }
 
     .card__meta {
@@ -224,12 +212,6 @@
     }
 }
 
-/*DISPOSITIVOS SIN HOVER*/
-
-@media (hover: none) {
-}
-
-/*REDUCIR ANIMACIONES*/
 @media (prefers-reduced-motion: reduce) {
     .card,
     .card__meta,

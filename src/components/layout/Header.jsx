@@ -1,12 +1,6 @@
-//layout/sections/Header.jsx
-
-/*
-aria-label para navs.
-*/
-
 import { useState } from "react";
-import { NavLink } from "react-router";
-import { List, Button, Icon, Modal } from "../ui";
+import { NavLink } from "react-router-dom";
+import { List, Button, Icon, Modal, Input } from "../ui";
 import { Novedades, Login, Menu } from "./";
 
 export default function Header ({
@@ -31,16 +25,23 @@ export default function Header ({
                         </List>
                     </nav>
                 </div>
-                <div className="header__right flex flex-row justify-center align-center">
+                <div className="header__right flex flex-row align-center">
+                    <div className="header__search flex-row justify-center align-center">
+                        <form className="header__form flex flex-row justify-center align-center">
+                            <Input className="header__input" type="text" placeholder="Buscar..." />
+                            <Button className="header__btnSearch" variant="secondary" size="2" layout="square" icon={<Icon name="search" />}></Button>
+                        </form>
+                    </div>
                     <nav className="header__nav flex flex-row justify-center align-center">
                         <List classUl="header__list">
-                            <Button className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="search" />}></Button>
                             <Button onClick={() => setOpenNovedades(value => !value)} className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="notifications" />}></Button>
                             <Button
                             onClick={() => setOpenLogin(value => !value)} className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="account" />}></Button>
-                            <Button
-                            onClick={() => setOpenMenu(value => !value)} className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="options" />}></Button>
                         </List>
+                        <div className="header__menu">
+                            <Button
+                            onClick={() => setOpenMenu(value => !value)} className="header__btnMenu" variant="secondary" size="2" layout="square" icon={<Icon name="options" />}></Button>
+                        </div>
                     </nav>
                 </div>
 

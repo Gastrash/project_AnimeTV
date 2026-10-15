@@ -1,7 +1,7 @@
 // Login
 
 import { useState } from "react";
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 import { Input, Button, Icon } from "../ui";
 import "../../styles/layout/login.css";
 

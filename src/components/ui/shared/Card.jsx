@@ -1,6 +1,6 @@
 /* Card.jsx */
 
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import Actions from "./Actions"
 
 //refactor de clases, realizar versión con ActionsAnimeTV en vez de description.

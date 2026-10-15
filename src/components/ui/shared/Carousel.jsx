@@ -29,7 +29,7 @@ export default function Carousel({
 
     const currentPosition = Math.min(position, maxPosition);
 
-    const isAtStart = currentPosition === 0;
+    const isAtStart = currentPosition === 0; 
     const isAtEnd = currentPosition === maxPosition;
 
     return (

@@ -1,5 +1,3 @@
-/* comments */
-
 .comment {
     background-color: var(--bg-surface-2);
     margin-block: clamp(var(--space-m), 5vw, var(--space-l));
@@ -11,7 +9,7 @@
 }
 
 .comment__main {
-    padding-inline: var(--container-s)
+    padding-inline: var(--container-s);
 }
 
 .comment__footer {
@@ -38,7 +36,9 @@
 
 /* buttons */
 
-.comment__btn {outline: auto;}
+.comment__btn {
+    outline: auto;
+}
 
 .comment__btn--form {
     height: 100%;
