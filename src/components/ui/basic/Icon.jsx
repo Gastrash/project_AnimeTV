@@ -1,11 +1,8 @@
-// Icon.jsx
-
 import icons from "./icons";
 
 export default function Icon({
     name = "heart",
-    variant = "default",
-    layout = "default",
+    
     rotate = "0"
     /*
     left = 0,
@@ -22,16 +19,7 @@ export default function Icon({
 
     return (
         <SelectedIcon
-            className={`icon icon--variant-${variant} icon--layout-${layout} icon--rotate-${rotate}`}
+            className={`icon icon--rotate-${rotate}`}
         />
     )
 }
-
-/* 
-<Icon
-    name="arrow"
-    rotation={90}
-/>
-*
-
-*/

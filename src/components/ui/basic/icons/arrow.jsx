@@ -1,5 +1,3 @@
-// icons/arrow.jsx
-
 export default function arrow({
     className
 }) {

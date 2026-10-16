@@ -1,5 +1,3 @@
-// icons/episodes.jsx
-
 export default function episodes({}) {
     return (
         <svg

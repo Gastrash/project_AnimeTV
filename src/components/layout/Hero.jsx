@@ -1,10 +1,8 @@
-//layout/sections/Hero.jsx
-
 import { Badge, Actions } from "../ui";
 
 /*
-refactor a hero__overlay. ...
-List type="data" para badges.
+- refactor a hero__overlay.
+- List type="data" para badges.
 */
 
 export default function Hero ({

@@ -233,13 +233,13 @@ const episodes = [
 const news = [
   {
     image: newsImage1,
-    title: "Estreno de El regreso de Tung Tung.",
+    title: "Estreno de ...",
     description: "Mira esta joyita antes de que la borren"
   },
   {
     image: newsImage2,
-    title: "mañana llueve",
-    description: "Capaz"
+    title: "no te pierdas ...",
+    description: "..."
   },
   {
     image: newsImage3,
@@ -279,10 +279,10 @@ const favorites = [
     id: 2,
     media: "media3",
     cardImage: cardImage3,
-    title: "Pelicula 67",
+    title: "Pelicula 6",
     duration: "1h 35m",
     classification: "+16",
-    description: "está es la pelicula 67",
+    description: "está es la pelicula 6",
     heroImage: heroImage3,
     rating: "6.7/10",
     ranking: "6",
@@ -292,29 +292,29 @@ const favorites = [
     [
     {    
         user: users[1],
-        content: "borra la serie",
-        createdAt: "Hace 17 años",
+        content: "muy buena",
+        createdAt: "Hace 8 años",
         reactions: {
-            likes: 12,
-            dislikes: 2
+            likes: 5,
+            dislikes: 3
         }
     },
     {
         user: users[1],
-        content: "borra la serie",
-        createdAt: "Hace 17 años",
+        content: "Peor peli de 2026:",
+        createdAt: "Hace 12 años",
         reactions: {
-            likes: 12,
-            dislikes: 2
+            likes: 5,
+            dislikes: 1
         }
     },
     {
         user: users[1],
-        content: "borra la serie",
-        createdAt: "Hace 17 años",
+        content: "borra la peli",
+        createdAt: "Hace 2 años",
         reactions: {
-            likes: 12,
-            dislikes: 2
+            likes: 4,
+            dislikes: 9
         }
     }
     ]
@@ -356,10 +356,10 @@ const dataAnime = {
     id: 2,
     media: "media3",
     cardImage: cardImage3,
-    title: "Pelicula 67",
+    title: "Pelicula 6",
     duration: "1h 35m",
     classification: "+16",
-    description: "está es la pelicula 67",
+    description: "está es la pelicula 6",
     heroImage: heroImage3,
     rating: "6.7/10",
     ranking: "6",
@@ -369,29 +369,29 @@ const dataAnime = {
     [
     {    
         user: users[1],
-        content: "borra la serie",
-        createdAt: "Hace 17 años",
+        content: "muy buena",
+        createdAt: "Hace 8 años",
         reactions: {
-            likes: 12,
-            dislikes: 2
+            likes: 2,
+            dislikes: 3
         }
     },
     {
         user: users[1],
-        content: "borra la serie",
-        createdAt: "Hace 17 años",
+        content: "Peor peli de 2026:",
+        createdAt: "Hace 12 años",
         reactions: {
             likes: 12,
-            dislikes: 2
+            dislikes: 7
         }
     },
     {
         user: users[1],
-        content: "borra la serie",
-        createdAt: "Hace 17 años",
+        content: "borra la peli",
+        createdAt: "Hace 2 años",
         reactions: {
-            likes: 12,
-            dislikes: 2
+            likes: 15,
+            dislikes: 0
         }
     }
     ]
@@ -430,10 +430,10 @@ const dataAnime = {
     id: 5,
     media: "media3",
     cardImage: cardImage3,
-    title: "Pelicula 67",
+    title: "Pelicula 6",
     duration: "1h 35m",
     classification: "+16",
-    description: "está es la pelicula 67",
+    description: "está es la pelicula 6",
     heroImage: heroImage3,
     rating: "6.7/10",
     ranking: "6",
@@ -443,29 +443,29 @@ const dataAnime = {
     [
     {    
         user: users[1],
-        content: "borra la serie",
-        createdAt: "Hace 17 años",
+        content: "muy buena",
+        createdAt: "Hace 8 años",
         reactions: {
-            likes: 12,
-            dislikes: 2
+            likes: 10,
+            dislikes: 7
         }
     },
     {
         user: users[1],
-        content: "borra la serie",
-        createdAt: "Hace 17 años",
+        content: "Peor peli de 2026:",
+        createdAt: "Hace 12 años",
         reactions: {
-            likes: 12,
-            dislikes: 2
+            likes: 1,
+            dislikes: 5
         }
     },
     {
         user: users[1],
-        content: "borra la serie",
-        createdAt: "Hace 17 años",
+        content: "borra la peli",
+        createdAt: "Hace 2 años",
         reactions: {
-            likes: 12,
-            dislikes: 2
+            likes: 9,
+            dislikes: 8
         }
     }
     ]
@@ -504,10 +504,10 @@ const dataAnime = {
     id: 8,
     media: "media3",
     cardImage: cardImage3,
-    title: "Pelicula 67",
+    title: "Pelicula 6",
     duration: "1h 35m",
     classification: "+16",
-    description: "está es la pelicula 67",
+    description: "está es la pelicula 6",
     heroImage: heroImage3,
     rating: "6.7/10",
     ranking: "6",
@@ -517,8 +517,8 @@ const dataAnime = {
     [
     {    
         user: users[1],
-        content: "borra la serie",
-        createdAt: "Hace 17 años",
+        content: "muy buena",
+        createdAt: "Hace 8 años",
         reactions: {
             likes: 12,
             dislikes: 2
@@ -526,20 +526,20 @@ const dataAnime = {
     },
     {
         user: users[1],
-        content: "borra la serie",
-        createdAt: "Hace 17 años",
+        content: "Peor peli de 2026:",
+        createdAt: "Hace 12 años",
         reactions: {
-            likes: 12,
-            dislikes: 2
+            likes: 9,
+            dislikes: 9
         }
     },
     {
         user: users[1],
-        content: "borra la serie",
-        createdAt: "Hace 17 años",
+        content: "borra la peli",
+        createdAt: "Hace 2 años",
         reactions: {
-            likes: 12,
-            dislikes: 2
+            likes: 11,
+            dislikes: 1
         }
     }
     ]

@@ -1,5 +1,3 @@
-// Badge.jsx
-
 export default function Badge ({
     variant = "default",
     size = "1",

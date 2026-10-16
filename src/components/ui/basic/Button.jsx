@@ -1,7 +1,5 @@
-/* Button.jsx */
-
 export default function Button({
-  variant = "default", // default, secondary, danger, ghost, success, link,
+  variant = "default", // default, secondary, danger, ghost, success
   size = "1", // 1, 2, 3
   layout = "", //square, full
 
@@ -13,9 +11,6 @@ export default function Button({
   iconPosition = "left", //left, right
   children
 }) {
-
-  /* const validIconPosition = iconPosition === "right" ? "right" : "left" */
-
   return (
     <button 
       disabled={disabled}
@@ -38,8 +33,5 @@ export default function Button({
 }
 
 /*
-pendiente: loading, onClick, fullWidth, href (a), events, accesibilidad (aria-*), forwardRef, className externa, style externa.
-
-<Button variant="secondary" size="2" layout="icontext" icon={<Arrow />}>Siguiente</Button>
-
+pendiente: loading, onClick, fullWidth, href (a), events, accesibilidad (aria-*), forwardRef, style externa.
 */

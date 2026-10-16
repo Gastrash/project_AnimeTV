@@ -1,5 +1,3 @@
-// icons/search.jsx
-
 export default function search({}) {
     return (
         <svg 

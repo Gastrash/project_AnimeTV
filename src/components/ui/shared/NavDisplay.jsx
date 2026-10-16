@@ -1,5 +1,3 @@
-// NavDisplay.jsx
-
 import { Button, List, Icon } from "../basic";
 
 export default function NavDisplay ({
@@ -7,7 +5,7 @@ export default function NavDisplay ({
     data = {}
 }) {
     return (
-        <List classUl={className}>
+        <List classUl={'flex flex-row justify-center align-center ${className}'}>
             <Button
                 size="2"
                 layout="square"
@@ -19,7 +17,7 @@ export default function NavDisplay ({
                 classUl="navDisplay__display"
                 renderItem={(item) => (
                     <Button
-                        size="1" className=" navDisplay__dot"></Button>
+                        size="none" className=" navDisplay__dot"></Button>
                     )}>
             </List>
             <Button

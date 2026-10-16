@@ -1,7 +1,4 @@
-//layout/sections/Season.jsx
-
 /*
-
 <select
     value={seasonPosition}
     onChange={(event) => setSeasonPosition(Number(event.target.value))}
@@ -12,21 +9,6 @@
         </option>
     ))}
 </select>
-
-<List
-    layout="grid"
-    type="data"
-    data={currentSeason?.episodes ?? []}
-    renderItem={(item) => (
-        <Card
-            variant="default"
-            size="2"
-            layout="horizontal"
-            data={item}
-        />
-    )}
-/>
-
 */
 
 import { useState } from "react";

@@ -1,5 +1,3 @@
-// Series.jsx
-
 import { Hero, Content } from "../components/layout";
 import { dataSeries } from "../data";
 

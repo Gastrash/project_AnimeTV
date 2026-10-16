@@ -1,5 +1,3 @@
-// icons/share.jsx
-
 export default function share({}) {
     return (
         <svg

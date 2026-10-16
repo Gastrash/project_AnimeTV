@@ -1,5 +1,3 @@
-// AnimeDetail.jsx
-
 import { useParams } from "react-router-dom";
 import { Content, Info, Season, Comments } from "../components/layout";
 import { dataAnime, dataAux } from "../data";

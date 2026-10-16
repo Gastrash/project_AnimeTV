@@ -1,5 +1,3 @@
-// AnimePlayer.jsx
-
 import { useParams } from "react-router-dom";
 import { Info, Media, Content, Comments } from "../components/layout";
 import { dataAnime } from "../data";

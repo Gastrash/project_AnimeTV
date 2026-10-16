@@ -1,18 +1,21 @@
-/* navDisplay */
+.navDisplay__display {
+    gap: var(--space-2xs);
+    padding-inline: var(--space-xs);
+}
 
-.navDisplay__btn-dot {
+.navDisplay__dot {
     border-radius: var(--radius-full);
     background-color: transparent;
     border: 2px solid var(--border-secondary);
-    width: var(--space-xs);
-    height: var(--space-xs);
-    transition: all ease 0.3s;
+    width: var(--space-s);
+    aspect-ratio: 1;
+    transition: var(--transition-default);
 }
 
-.navDisplay__btn-dot.active {
+.navDisplay__dot.active {
     border: 2px solid var(--border-secondary);
 }
 
-.navDisplay__btn-dot:hover {
+.navDisplay__dot:hover {
     border: 2px solid var(--border-secondary);
 }

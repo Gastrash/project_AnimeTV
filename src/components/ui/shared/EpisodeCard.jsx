@@ -1,5 +1,3 @@
-/* EpisodeCard.jsx */
-
 export default function EpisodeCard({
   variant = "default", //default, secondary
   size = "2", //1, 2, 3

@@ -1,5 +1,3 @@
-//layout/sections/Footer.jsx
-
 export default function Footer ({
     container = "none", //primary, secondary,
     data = []

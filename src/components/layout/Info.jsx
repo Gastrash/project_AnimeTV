@@ -1,5 +1,3 @@
-//layout/sections/Info.jsx
-
 import { List, Badge, Actions } from "../ui";
 
 export default function Info ({

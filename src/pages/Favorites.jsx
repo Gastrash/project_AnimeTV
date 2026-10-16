@@ -1,5 +1,3 @@
-// Favorites.jsx
-
 import { Hero, Content } from "../components/layout";
 import { dataAnime, dataAux } from "../data";
 

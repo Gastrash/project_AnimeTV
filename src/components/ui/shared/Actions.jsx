@@ -1,5 +1,3 @@
-// Actions.jsx
-
 import { Button, List, Icon } from "../basic";
 import { useNavigate } from "react-router-dom";
 

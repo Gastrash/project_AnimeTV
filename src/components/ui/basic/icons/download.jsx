@@ -1,5 +1,3 @@
-// icons/download.jsx
-
 export default function download({}) {
     return (
         <svg

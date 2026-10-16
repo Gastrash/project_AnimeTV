@@ -1,18 +1,12 @@
-//layout/sections/Media.jsx
-
 import { List, Button, Icon } from "../ui";
 
 /*
-terminar video.
-
-{!isMovie && ()}
-
 datos: video, isMovie.
 
 <video className="media__video" controls> 
-                        <source src="assets/image/img-01.jpeg" type="image/jpeg"/>
-                        Tu navegador no soporta la reproducción de videos.
-                    </video>
+    <source src="assets/image/img-01.jpeg" type="image/jpeg"/>
+    Tu navegador no soporta la reproducción de videos.
+</video>
 */
 
 export default function Media ({

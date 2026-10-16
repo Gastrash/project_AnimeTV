@@ -1,5 +1,3 @@
-// Home.jsx
-
 import { Content, Hero } from "../components/layout";
 import { dataAnime } from "../data";
 

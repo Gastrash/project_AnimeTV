@@ -1,8 +1,5 @@
-// AnimeTVRoutes.jsx
-
 import { Routes, Route } from "react-router-dom";
 
-// pages
 import { Home, AnimeDetail, Movies, Series, Favorites, AnimePlayer } from "../pages";
 
 export default function AnimeTVRoutes() {

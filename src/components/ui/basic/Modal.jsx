@@ -1,5 +1,3 @@
-// Modal.jsx
-
 import { createPortal } from "react-dom";
 
 export default function Modal ({
@@ -23,7 +21,3 @@ export default function Modal ({
           document.body
           )
 }
-
-/*
-<button onClick={() => setOpen(true)}>Abrir modal</button>
-*/

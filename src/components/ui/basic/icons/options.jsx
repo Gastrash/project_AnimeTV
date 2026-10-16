@@ -1,5 +1,3 @@
-// icons/options.jsx
-
 export default function options({}) {
     return (
         <svg 

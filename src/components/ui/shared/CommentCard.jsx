@@ -1,14 +1,6 @@
-// CommentCard.jsx
-
 import { Button, Icon, List, Badge } from "../basic";
 
-/*
-  var user.
-*/
-
 export default function CommentCard ({
-  /*variant = "default",
-  layout = "default",*/
   data = {}
 }) {
     const user = data.user;

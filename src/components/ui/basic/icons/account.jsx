@@ -1,5 +1,3 @@
-// icons/account.jsx
-
 export default function account({}) {
     return (
         <svg

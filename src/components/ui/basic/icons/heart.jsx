@@ -1,5 +1,3 @@
-// icons/heart.jsx
-
 export default function heart({}) {
     return (
         <svg 

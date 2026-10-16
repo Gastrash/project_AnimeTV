@@ -1,5 +1,3 @@
-// icons/like.jsx
-
 export default function like({
     className
 }) {

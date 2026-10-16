@@ -1,5 +1,3 @@
-//layout/sections/Content.jsx
-
 import { Carousel, Card } from "../ui";
 
 /*

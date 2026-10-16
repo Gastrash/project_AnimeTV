@@ -1,9 +1,5 @@
-/* Card.jsx */
-
 import { useNavigate } from "react-router-dom";
 import Actions from "./Actions"
-
-//refactor de clases, realizar versión con ActionsAnimeTV en vez de description.
 
 export default function Card({
   variant = "default", //default, secondary
@@ -30,9 +26,3 @@ export default function Card({
     </article>
   )
 } 
-
-/*
-
-<Card variant="default" size="1" layout="vertical" data=[data]/>
-
-*/

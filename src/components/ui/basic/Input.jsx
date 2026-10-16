@@ -1,5 +1,3 @@
-/* Input.jsx */
-
 function Input({
   variant = "default", //default, secondary,
   size = "1", //1, 2, 3
@@ -24,14 +22,3 @@ function Input({
 }
 
 export default Input
-
-/*
-
-refactor de estilos, dividir container de estilos visuales del input.
-
-icono = flex: 0 0 auto;
-input = flex: 1 1 auto;
-
-<Input variant="secondary" size="2" layout="textarea">
-
-*/

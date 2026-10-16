@@ -1,19 +1,13 @@
-/* buttons */
-
 /*
 
-mejora en buttons:
+pendiente en buttons:
 loading
-disabled
 active - estado
 pressed - manteniendo click
-outline - parecido a ghost
 soft - fondo más suave
 split button
-white-space: nowrap;
 
 */
-
 .btn {
     display: inline-flex;
     justify-content: center;
@@ -87,7 +81,6 @@ white-space: nowrap;
     justify-content: space-between;
     align-items: center;
     gap: var(--space-2xs);
-    .icon {outline: auto;}
 }
 
 .btn--layout-full {

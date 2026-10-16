@@ -1,6 +1,4 @@
-//layout/sections/Comments.jsx
-
-import { List, CommentCard, Button, Input, Icon } from "../ui";
+import { List, CommentCard, Button, Input } from "../ui";
 
 export default function Comments ({
     container = "none", //primary, secondary,

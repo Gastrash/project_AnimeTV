@@ -1,9 +1,4 @@
-// List.jsx
-
 import { Children } from "react";
-
-/*
-*/
 
 const COMPONENTS = {
     data: ({ classLi, data, renderItem}) =>

@@ -1,5 +1,3 @@
-// Menu
-
 import { List } from "../ui";
 import { NavLink } from "react-router-dom";
 import "../../styles/layout/menu.css";

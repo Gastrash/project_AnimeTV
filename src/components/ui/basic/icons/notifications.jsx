@@ -1,5 +1,3 @@
-// icons/notifications.jsx
-
 export default function notifications({}) {
     return (
         <svg

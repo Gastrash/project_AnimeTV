@@ -1,5 +1,3 @@
-// Novedades
-
 import React from "react";
 import { List } from "../ui";
 import { dataAux } from "../../data";
