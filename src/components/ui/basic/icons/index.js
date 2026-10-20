@@ -12,6 +12,7 @@ import episodes from "./episodes";
 import download from "./download";
 import options from "./options";
 import list from "./list";
+import menu from "./menu";
 
 const icons = {
     arrow,
@@ -25,7 +26,8 @@ const icons = {
     episodes,
     download,
     options,
-    list
+    list,
+    menu
 }
 
 export default icons

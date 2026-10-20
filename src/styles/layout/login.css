@@ -4,6 +4,27 @@
     color: var(--text-default);
     border: var(--border-default) 1px solid;
     border-radius: var(--radius-m);
+    background-color: var(--bg-surface-2);
+}
+
+/* modalContainer*/
+.login__modal {
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--overlay-s);
+    overflow: hidden;
+}
+
+.login__modal > .login {
+    inset: 0;
+    flex-shrink: 0;
+    overflow-y: auto;
+}
+
+.login__modal.open > .login {
 }
 
 .login__container {

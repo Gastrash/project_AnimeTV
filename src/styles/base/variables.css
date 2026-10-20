@@ -98,6 +98,8 @@
     --space-2xl: 5rem; /*96px*/
     --space-3xl: 7rem; /*128px*/
 
+    --header-size: var(--space-2xl);
+
     /*container*/
     --container-3xs: 10rem;  /*160px*/
     --container-2xs: 14rem;  /*224px*/

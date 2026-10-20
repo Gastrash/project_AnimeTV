@@ -6,9 +6,7 @@ import { Novedades, Login, Menu } from "./";
 export default function Header ({
     title = "AnimeTV"
 }) {
-    const [OpenNovedades, setOpenNovedades] = useState(false);
-    const [OpenLogin, setOpenLogin] = useState(false);
-    const [OpenMenu, setOpenMenu] = useState(false);
+    const [activeModal, setActiveModal] = useState(null);
 
     return (
         <header id="header">
@@ -25,8 +23,8 @@ export default function Header ({
                         </List>
                     </nav>
                 </div>
-                <div className="header__right flex flex-row align-center">
-                    <div className="header__search flex-row justify-center align-center">
+                <div className="header__right flex flex-row justify-space-between align-center">
+                    <div className="header__search flex flex-row justify-center align-center">
                         <form className="header__form flex flex-row justify-center align-center">
                             <Input className="header__input" type="text" placeholder="Buscar..." />
                             <Button className="header__btnSearch" variant="secondary" size="2" layout="square" icon={<Icon name="search" />}></Button>
@@ -34,34 +32,32 @@ export default function Header ({
                     </div>
                     <nav className="header__nav flex flex-row justify-center align-center">
                         <List classUl="header__list">
-                            <Button onClick={() => setOpenNovedades(value => !value)} className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="notifications" />}></Button>
-                            <Button
-                            onClick={() => setOpenLogin(value => !value)} className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="account" />}></Button>
+                            <Button onClick={() => setActiveModal(
+                                current => current === "novedades" ? null : "novedades"
+                                )} className="header__btnRight" variant="secondary" size="2" layout="square" icon={<Icon name="notifications" />}></Button>
                         </List>
-                        <div className="header__menu">
-                            <Button
-                            onClick={() => setOpenMenu(value => !value)} className="header__btnMenu" variant="secondary" size="2" layout="square" icon={<Icon name="options" />}></Button>
-                        </div>
                     </nav>
+                    <div className="header__menu flex justify-flex-end">
+                        <Button
+                            onClick={() => setActiveModal(
+                            current => current === "menu" ? null : "menu"
+                                )}
+                            className="header__btnMenu" variant="secondary" size="3" layout="square" icon={<Icon name="menu" />}></Button>
+                    </div>
                 </div>
 
-                {OpenNovedades && (
-                    <Modal isOpen={OpenNovedades} onClose={() => setOpenNovedades(false)}>
-                        <Novedades/>
-                    </Modal>
-                )}
-                {OpenLogin && (
-                    <Modal isOpen={OpenLogin} onClose={() => setOpenLogin(false)} blur={true}>
-                        <Login />
-                    </Modal>
-                )}
-                {OpenMenu && (
-                    <Modal isOpen={OpenMenu} onClose={() => setOpenMenu(false)}>
-                        <Menu />
-                    </Modal>
-                )}
-                
-                
+                <Modal
+                    name="novedades"
+                    isOpen={activeModal === "novedades"}
+                    onClose={() => setActiveModal(null)}>
+                    <Novedades/>
+                </Modal>
+                <Modal
+                    name="menu"
+                    isOpen={activeModal === "menu"}
+                    onClose={() => setActiveModal(null)}>
+                    <Menu />
+                </Modal>
             </div>
         </header>
     )
